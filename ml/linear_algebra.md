@@ -7,4 +7,4 @@
 * Purpose in ML: represent observations and predictions.
 
 ### Norm
-* 
+* The norm of a vector $\\textbf{u}$, noted $\\left \\Vert \\textbf{u} \\right \\|$, is a measure of the length (a.k.a. the magnitude) of $\\textbf{u}$.
