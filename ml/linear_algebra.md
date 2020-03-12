@@ -18,3 +18,7 @@
 * **Dot product**: u.v. np.dot(). The * will perform an elementwise multiplication, not a dot product.
 * Calculating the angle between vectors.
 * Projecting a point onto an axis.
+
+### Matrices
+* np.array(), A[1,:], A[:2], A[1:2,:] excluded
+* square, triangular, diagonal and identity matrices. np.diag(), np.eye().
