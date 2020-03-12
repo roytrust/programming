@@ -8,6 +8,9 @@
 * Custom conversion: df['c'].apply(f)
 * np.where
 * np.to_datetime(); np.to_numeric()
+* functools.reduce()
+* filter(), map()
+
 
 ### Options
 * pd.options.display.max_rows; pd.set_option('display.max_rows')
