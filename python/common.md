@@ -13,3 +13,11 @@ os.environ[''] = ''
 ### module path
 * PYTHONPATH
 * sys.path.append()
+
+### Asterisk `*,**` prefix operator
+* unpack into function call. 
+```python
+print(*sys.verson_info)
+list(row) for row in zip(*lists)
+
+```
