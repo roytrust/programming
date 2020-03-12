@@ -6,6 +6,13 @@
 * A *vector* is a quantity defined by a magnitude and a direction.
 * Purpose in ML: represent observations and predictions.
 
-### Norm
-* The *norm* of a vector u, noted ||u||, is a measure of the length (a.k.a. the magnitude) of u.
+* **Norm**: The *norm* of a vector u, noted ||u||, is a measure of the length (a.k.a. the magnitude) of u.
+* `import numpy.linalg as LA; LA.norm(u)`
+
+* Victor **addition** is *commutative*, also *associative*
+* **Scalar multiplication** results in changing the scale of a figure. Commutative, associative, distributive.
+* A **zero-vector** is a vector full of 0s.
+* A **unit vector** is a vector with a norm equal to 1.
+* A **normalized vector** of a non-null vactor u, is the unit vector that points in the same detection as u.
+
 
