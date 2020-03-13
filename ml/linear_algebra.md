@@ -22,3 +22,5 @@
 ### Matrices
 * np.array(), A[1,:], A[:2], A[1:2,:] excluded
 * square, triangular, diagonal and identity matrices. np.diag(), np.eye().
+* multiplication, `A@D; np.matmul()
+* transpose, A.T. Symmetric matrix: M.T=M. M.dot(M.T) is symmetric.
