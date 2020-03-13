@@ -1,3 +1,10 @@
+## NumPy ``
+* `x=np.random.randint(20,size=12)`
+* N largest value. `ind=np.argpartition(x,-4)[-4:]; np.sort(x[ind])`
+* matching within a tolerance. `np.allclose(x1,x2,0.1)`
+* Keep values within an interval.`np.clip(x,lower,upper_limit)`
+* Extract based on condition. `np.extract((x<3)|(x>10),x)`
+
 ## pandas
 * df[c].unique()
 * df.iloc[:, :-1].values; iloc[:, -1]; [[]] get df back
