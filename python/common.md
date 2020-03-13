@@ -14,7 +14,7 @@ os.environ[''] = ''
 * PYTHONPATH
 * sys.path.append()
 
-### Asterisk `*,**` prefix operator
+### [Asterisk `*,**` prefix operator](https://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/)
 * unpack into function call. 
 ```python
 print(*sys.verson_info)
@@ -30,4 +30,9 @@ def tag(tag_name, **attributes):
     ]
     return f"<{tag_name} {' '.join(attribute_list)}>"
 ```
+* Positional arguments with keyword only arguments. `func(*p, k)`
+* Keyword only arguments without positional arguments. `func(iterable,*,k)`
+* tuple unpacking. `f,*r,l=alist`
+* list literal. `{*iterable1,*iterable2}`
+* dictionary literals. Copy/merge `{**d1, k:v}`
 
