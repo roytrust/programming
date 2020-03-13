@@ -1,4 +1,5 @@
 ## NumPy ``
+* [NumPy cheat sheet](https://www.google.com/url?sa=t&source=web&rct=j&url=https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf)
 * `x=np.random.randint(20,size=12)`
 * N largest value. `ind=np.argpartition(x,-4)[-4:]; np.sort(x[ind])`
 * matching within a tolerance. `np.allclose(x1,x2,0.1)`
