@@ -4,6 +4,9 @@
 * matching within a tolerance. `np.allclose(x1,x2,0.1)`
 * Keep values within an interval.`np.clip(x,lower,upper_limit)`
 * Extract based on condition. `np.extract((x<3)|(x>10),x)`
+* Return values based on condition. `np.where(x>5); np.where(x>5,"hit","miss")`
+* nth percentile. `np.percentile(x,30,axis=0)`
+
 
 ## pandas
 * df[c].unique()
