@@ -9,6 +9,7 @@
 
 
 ## pandas
+* [pandas cheat sheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf)
 * df[c].unique()
 * df.iloc[:, :-1].values; iloc[:, -1]; [[]] get df back
 * df.info(), df.describe()
@@ -20,6 +21,10 @@
 * np.to_datetime(); np.to_numeric()
 * functools.reduce()
 * filter(), map()
+* read_csv(nrows=n)
+* isin([])
+* subset of columns based on type, select_dtypes()
+* pivot_tables()
 
 
 ### Options
