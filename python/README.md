@@ -3,6 +3,7 @@
 1. [Proxy setup](web.md)
 1. [Jupyter](jupyter.md)
 1. [Data Science](data_science.md)
+1. [Asterisk `*,**` prefix operator](common.md)
 
 
 ## Reference
