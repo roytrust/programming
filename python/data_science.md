@@ -6,6 +6,11 @@
 
 ## NumPy ``
 * `x=np.random.randint(20,size=12)`
+* Conditional operators, `x<10, x[x>10]`
+* Indexing, `x[2::2]; x[::-1]; x[(0,2),(2:5)]; x[:,(-1,2,-1)]; x[(-1,1),(2,3)]; x[1,...]; np.ix_`
+* vstack, hstack, stack
+* split, vsplit, hsplit
+* transpose, swapaxes
 * N largest value. `ind=np.argpartition(x,-4)[-4:]; np.sort(x[ind])`
 * matching within a tolerance. `np.allclose(x1,x2,0.1)`
 * Keep values within an interval.`np.clip(x,lower,upper_limit)`
@@ -16,6 +21,10 @@
 * np.fromfunction, Initialize using a function.
 * x.itemsize. Data buffer, x.data.tobytes()
 * **Reshape**. In place, x.shape=(2,3). Pointing at the same data, x.reshape(2,3). New ndarray, x.ravel()
+* QR decomposition, linalg.qr()
+* Solving a system of linear scholar equations. `solution=linalg.solve(coeffs,depvars); coeffs.dot(solution),depvars; np.allclose(coeffs.dot(solution),depvars)`
+* **Vectorization**, `X,Y=np.meshgrid(x,y), np.sin(X*Y/30.5)`
+* np.save, np.load, savetxt, loadtxt, savez
 
 
 ## pandas
