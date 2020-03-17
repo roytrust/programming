@@ -37,4 +37,7 @@
 
 ## matplotlib
 
-
+## Reference
+* [NumPy notebook](https://github.com/ageron/handson-ml2/blob/master/tools_numpy.ipynb)
+* [Pandas notebook](https://github.com/ageron/handson-ml2/blob/master/tools_pandas.ipynb)
+* [Matplotlib notebook](https://github.com/ageron/handson-ml2/blob/master/tools_matplotlib.ipynb)
