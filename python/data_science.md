@@ -13,6 +13,9 @@
 * Return values based on condition. `np.where(x>5); np.where(x>5,"hit","miss")`
 * nth percentile. `np.percentile(x,30,axis=0)`
 * np.linspace, Evenly distributed between 2 values.
+* np.fromfunction, Initialize using a function.
+* x.itemsize. Data buffer, x.data.tobytes()
+* **Reshape**. In place, x.shape=(2,3). Pointing at the same data, x.reshape(2,3). New ndarray, x.ravel()
 
 
 ## pandas
