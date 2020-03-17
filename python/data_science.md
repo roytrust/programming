@@ -12,6 +12,7 @@
 * Extract based on condition. `np.extract((x<3)|(x>10),x)`
 * Return values based on condition. `np.where(x>5); np.where(x>5,"hit","miss")`
 * nth percentile. `np.percentile(x,30,axis=0)`
+* np.linspace, Evenly distributed between 2 values.
 
 
 ## pandas
