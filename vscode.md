@@ -1,5 +1,6 @@
 ### Keyboard
 * [vscode keyboard cheatsheet](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+* ctrl+ks keyboard shortcut
 * ctrl+G go to line
 * ctrl+P go to file
 * ctrl+shift+O go to symbol
