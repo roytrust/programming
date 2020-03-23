@@ -8,6 +8,8 @@
 pprint(dict(os.environ))
 os.environ.get('')
 os.environ[''] = ''
+
+shutil.which()
 ```
 
 ### module path
