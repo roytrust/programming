@@ -1,8 +1,17 @@
 
 ## Training Models
 ### Linear regression
-* Closed-form equation that directly computes the model parameters that best fit the model to the training set (minimize cost function).
-* 
+* Simply computing a weighted sum of the input features, plus a constant called the bias term (intercept term).
+* Find the value of theta that minimizes the **RMSE/MSE**.
+* **Normal Equation**, closed-form equation that directly computes the model parameters that best fit the model to the training set (minimize the **cost function**).
+* **Singular value decomposition (SVD)**. np.linalg.pinv, svd.
+* **Gradient dissident (GD)**, iterative optimization.
+* **Learning rate** hyperparameter, size of the steps.
+* **Global/Local minimum**
+* MSE cost function: **convex function**
+* For gradient descent, ensure a similar scale, StandardScaler.
+
+
 
 
 ## Fundamentals of machine learning
