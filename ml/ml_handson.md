@@ -1,5 +1,8 @@
 
-
+## Training Models
+### Linear regression
+* Closed-form equation that directly computes the model parameters that best fit the model to the training set (minimize cost function).
+* 
 
 ## 12 Key Factors
 * Data qualiy
