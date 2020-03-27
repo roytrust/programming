@@ -6,5 +6,4 @@
 
 
 ## Reference
-* [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) 
 * [IPython Cookbook](https://ipython-books.github.io/)
