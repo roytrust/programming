@@ -10,7 +10,7 @@
 * **Global/Local minimum**
 * MSE cost function: **convex function**
 * For gradient descent, ensure a similar scale, StandardScaler.
-
+* **Batch gradient descent**, Partial derivative. Scale well with the number of features.
 
 
 
