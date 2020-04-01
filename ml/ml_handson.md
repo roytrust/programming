@@ -34,6 +34,13 @@
 * **Ridge regression**. Keep the model weights as small as possible. 
 * The regularization term should only be added to the cost function during training. It is common to use different cost functions or measures during the training and the testing.
 * **Lasso regression**, least absolute shrinkage and selection operator regression. Tends to eliminate the weights of the least important features. Automatically performs feature selection and outputs a sparse model.
+* **Elastic net**
+* ridge is a good default, but if you suspect that only a few features are useful, you should prefer lasso or elastic net because they tend to reduce the useless features' weights down to zero. In general, elastic net is preferred over lasso.
+* **Early stopping**, stop training as soon as the validation error reaches minimum.
+
+### Logistic regression
+
+
 
 ## Fundamentals of machine learning
 ### What is machine learning?
