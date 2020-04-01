@@ -31,7 +31,9 @@
 * increasing a model's complexity will typically increase its variance and reduce its bias. Conversely, reducing a model's complexity increases its bias and reduces its variance. This is why it is called a trade-off.
 ### regularized linear models
 * Constrain the weight of the model
-* **Ridge regression**. Keep the model weights as small as possible. The regularization term should only be added to the cost function during training.
+* **Ridge regression**. Keep the model weights as small as possible. 
+* The regularization term should only be added to the cost function during training. It is common to use different cost functions or measures during the training and the testing.
+* **Lasso regression**, least absolute shrinkage and selection operator regression. Tends to eliminate the weights of the least important features. Automatically performs feature selection and outputs a sparse model.
 
 ## Fundamentals of machine learning
 ### What is machine learning?
