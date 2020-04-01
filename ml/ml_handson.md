@@ -6,11 +6,15 @@
 * **Normal Equation**, closed-form equation that directly computes the model parameters that best fit the model to the training set (minimize the **cost function**).
 * **Singular value decomposition (SVD)**. np.linalg.pinv, svd.
 * **Gradient dissident (GD)**, iterative optimization.
-* **Learning rate** hyperparameter, size of the steps.
+* **Learning rate** hyperparameter, size of the steps. To find a good learning rate, you can use grid search.
 * **Global/Local minimum**
 * MSE cost function: **convex function**
 * For gradient descent, ensure a similar scale, StandardScaler.
 * **Batch gradient descent**, Partial derivative. Scale well with the number of features.
+* Number of iterations to reach optimal solution, **tolerance**, convergence rate.
+* **Stochastic gradient descent**. Simulated annealing, Learning schedule function to determine the learning rate. SGDRegressor.
+* **Mini-batch gradient descent.
+
 
 
 
