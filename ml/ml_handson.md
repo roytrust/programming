@@ -15,7 +15,22 @@
 * **Stochastic gradient descent**. Simulated annealing, Learning schedule function to determine the learning rate. SGDRegressor.
 * **Mini-batch gradient descent.
 
-
+### Polynomial regression
+* PolynomialFeatures.
+### Learning curves
+* If a model performs well on the training data but generalizes poorly according to the cross-validation metrics, then your model is over fitting. If it performs poorly on both, then it is underfitting.
+* Learning curves: plots of the model's performance on the training set and the validation set as a function of the training set size (or the training iteration).
+* If your model is underfitting the training data, ddding more training examples will not help. You need to use a more complex model or come up with better features.
+* The gap between the curves, the hallmark of an overfitting model.
+* One way to improve an overfitting model is to feed it more training data until the validation error reaches the training error.
+### The bias/variance trade-off
+* A model's generalization error can be expressed as the sum of 3 very different errors.
+* **Bias**. This part of the generalization error is due to wrong assumption, such as assuming that the data is linear when it is actually quadratic. A high bias model is most likely to underfit the training data.
+* **Variance**. This part is due to the model's excessive sensitivity to small variation in the training data. A model with many degrees of freedom, such as a high degree polynomial model, is likely to have high variance and thus overfit the training data.
+* **Irreducible erroe**. This part is due to the noisiness of the data itself. The only way to reduce this part of the error is to clean up the data.
+* increasing a model's complexity will typically increase its variance and reduce its bias. Conversely, reducing a model's complexity increases its bias and reduces its variance. This is why it is called a trade-off.
+### regularized linear models
+* Constrain the weight of the model
 
 
 ## Fundamentals of machine learning
