@@ -1,46 +1,4 @@
 
-## Training Models
-### Linear regression
-* Simply computing a weighted sum of the input features, plus a constant called the bias term (intercept term).
-* Find the value of theta that minimizes the **RMSE/MSE**.
-* **Normal Equation**, closed-form equation that directly computes the model parameters that best fit the model to the training set (minimize the **cost function**).
-* **Singular value decomposition (SVD)**. np.linalg.pinv, svd.
-* **Gradient dissident (GD)**, iterative optimization.
-* **Learning rate** hyperparameter, size of the steps. To find a good learning rate, you can use grid search.
-* **Global/Local minimum**
-* MSE cost function: **convex function**
-* For gradient descent, ensure a similar scale, StandardScaler.
-* **Batch gradient descent**, Partial derivative. Scale well with the number of features.
-* Number of iterations to reach optimal solution, **tolerance**, convergence rate.
-* **Stochastic gradient descent**. Simulated annealing, Learning schedule function to determine the learning rate. SGDRegressor.
-* **Mini-batch gradient descent.
-
-### Polynomial regression
-* PolynomialFeatures.
-### Learning curves
-* If a model performs well on the training data but generalizes poorly according to the cross-validation metrics, then your model is over fitting. If it performs poorly on both, then it is underfitting.
-* Learning curves: plots of the model's performance on the training set and the validation set as a function of the training set size (or the training iteration).
-* If your model is underfitting the training data, ddding more training examples will not help. You need to use a more complex model or come up with better features.
-* The gap between the curves, the hallmark of an overfitting model.
-* One way to improve an overfitting model is to feed it more training data until the validation error reaches the training error.
-### The bias/variance trade-off
-* A model's generalization error can be expressed as the sum of 3 very different errors.
-* **Bias**. This part of the generalization error is due to wrong assumption, such as assuming that the data is linear when it is actually quadratic. A high bias model is most likely to underfit the training data.
-* **Variance**. This part is due to the model's excessive sensitivity to small variation in the training data. A model with many degrees of freedom, such as a high degree polynomial model, is likely to have high variance and thus overfit the training data.
-* **Irreducible erroe**. This part is due to the noisiness of the data itself. The only way to reduce this part of the error is to clean up the data.
-* increasing a model's complexity will typically increase its variance and reduce its bias. Conversely, reducing a model's complexity increases its bias and reduces its variance. This is why it is called a trade-off.
-### regularized linear models
-* Constrain the weight of the model
-* **Ridge regression**. Keep the model weights as small as possible. 
-* The regularization term should only be added to the cost function during training. It is common to use different cost functions or measures during the training and the testing.
-* **Lasso regression**, least absolute shrinkage and selection operator regression. Tends to eliminate the weights of the least important features. Automatically performs feature selection and outputs a sparse model.
-* **Elastic net**
-* ridge is a good default, but if you suspect that only a few features are useful, you should prefer lasso or elastic net because they tend to reduce the useless features' weights down to zero. In general, elastic net is preferred over lasso.
-* **Early stopping**, stop training as soon as the validation error reaches minimum.
-
-### Logistic regression
-
-
 
 ## Fundamentals of machine learning
 ### What is machine learning?
@@ -185,6 +143,51 @@ Each row in a confusion matrix represents an actual class, while each column rep
 ### Multilabel Classification
 * KNeighborsClassifier
 ### Multioutput Classification
+
+
+## Training Models
+### Linear regression
+* Simply computing a weighted sum of the input features, plus a constant called the bias term (intercept term).
+* Find the value of theta that minimizes the **RMSE/MSE**.
+* **Normal Equation**, closed-form equation that directly computes the model parameters that best fit the model to the training set (minimize the **cost function**).
+* **Singular value decomposition (SVD)**. np.linalg.pinv, svd.
+* **Gradient dissident (GD)**, iterative optimization.
+* **Learning rate** hyperparameter, size of the steps. To find a good learning rate, you can use grid search.
+* **Global/Local minimum**
+* MSE cost function: **convex function**
+* For gradient descent, ensure a similar scale, StandardScaler.
+* **Batch gradient descent**, Partial derivative. Scale well with the number of features.
+* Number of iterations to reach optimal solution, **tolerance**, convergence rate.
+* **Stochastic gradient descent**. Simulated annealing, Learning schedule function to determine the learning rate. SGDRegressor.
+* **Mini-batch gradient descent.
+
+### Polynomial regression
+* PolynomialFeatures.
+### Learning curves
+* If a model performs well on the training data but generalizes poorly according to the cross-validation metrics, then your model is over fitting. If it performs poorly on both, then it is underfitting.
+* Learning curves: plots of the model's performance on the training set and the validation set as a function of the training set size (or the training iteration).
+* If your model is underfitting the training data, ddding more training examples will not help. You need to use a more complex model or come up with better features.
+* The gap between the curves, the hallmark of an overfitting model.
+* One way to improve an overfitting model is to feed it more training data until the validation error reaches the training error.
+### The bias/variance trade-off
+* A model's generalization error can be expressed as the sum of 3 very different errors.
+* **Bias**. This part of the generalization error is due to wrong assumption, such as assuming that the data is linear when it is actually quadratic. A high bias model is most likely to underfit the training data.
+* **Variance**. This part is due to the model's excessive sensitivity to small variation in the training data. A model with many degrees of freedom, such as a high degree polynomial model, is likely to have high variance and thus overfit the training data.
+* **Irreducible erroe**. This part is due to the noisiness of the data itself. The only way to reduce this part of the error is to clean up the data.
+* increasing a model's complexity will typically increase its variance and reduce its bias. Conversely, reducing a model's complexity increases its bias and reduces its variance. This is why it is called a trade-off.
+### regularized linear models
+* Constrain the weight of the model
+* **Ridge regression**. Keep the model weights as small as possible. 
+* The regularization term should only be added to the cost function during training. It is common to use different cost functions or measures during the training and the testing.
+* **Lasso regression**, least absolute shrinkage and selection operator regression. Tends to eliminate the weights of the least important features. Automatically performs feature selection and outputs a sparse model.
+* **Elastic net**
+* ridge is a good default, but if you suspect that only a few features are useful, you should prefer lasso or elastic net because they tend to reduce the useless features' weights down to zero. In general, elastic net is preferred over lasso.
+* **Early stopping**, stop training as soon as the validation error reaches minimum.
+
+### Logistic regression
+* for classification, estimating probabilities. Decision boundaries.
+* **Softmax regression**, multiclass, cross entropy
+
 
 ## References
 * [hands on notebooks] (https://github.com/ageron/handson-ml2/blob/master/index.ipynb)
