@@ -1,4 +1,6 @@
-
+## SVM: vector machines
+### linear svm classification
+* Linear separable, 
 
 ## Fundamentals of machine learning
 ### What is machine learning?
