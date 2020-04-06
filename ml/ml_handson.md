@@ -1,6 +1,13 @@
 ## SVM: vector machines
 ### linear svm classification
-* Linear separable, 
+* Linearly separable, large margin classification, support vectors
+* Soft/hard Margin classification, margin violation.
+* LinearSVC. If your svm model is over fitting you can try regularizing it by reducing C.
+
+### nonlinear svm classification
+* Polynomial features
+* Polynomial kernel, kernel=poly.
+
 
 ## Fundamentals of machine learning
 ### What is machine learning?
