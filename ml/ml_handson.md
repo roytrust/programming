@@ -7,6 +7,13 @@
 ### nonlinear svm classification
 * Polynomial features
 * Polynomial kernel, kernel=poly.
+* Similarity features. **RBF**: Gaussian radial basis function.
+* Try the linear kernel first, especially if the training set is very large or if it has plenty of features. If the trending set is not too large, try Gaussian RBF kernel.
+
+### SVM regression
+* fit as many instances as possible on the street while limiting margin violation.
+* LinearSVR, DVR()
+
 
 
 ## Fundamentals of machine learning
