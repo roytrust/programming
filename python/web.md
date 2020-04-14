@@ -4,7 +4,7 @@
 os.environ['HTTPS_PROXY'] = ''
 
 * urllib
-   ```
+```python
 import urllib.request
 
 proxy_support = urllib.request.ProxyHandler({'http' : 'http://user:pass@server:port', 
