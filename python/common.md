@@ -16,6 +16,13 @@ shutil.which()
 * PYTHONPATH
 * sys.path.append()
 
+### Datetime
+```python
+# current date time
+from datetime import datetime
+datetime.now(); datetime.now().time(); datetime.now().date()
+```
+
 ### [Asterisk `*,**` prefix operator](https://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/)
 * unpack into function call. 
 ```python
