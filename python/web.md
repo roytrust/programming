@@ -1,8 +1,9 @@
 
-### Proxy setup - env
+### Proxy setup
+* env variable: 
 os.environ['HTTPS_PROXY'] = ''
 
-### Proxy setup - urllib
+* urllib
 ```
 import urllib.request
 
