@@ -21,6 +21,7 @@ shutil.which()
 # current date time
 from datetime import datetime
 datetime.now(); datetime.now().time(); datetime.now().date()
+now.strftime('%Y%m%d')
 ```
 
 ### [Asterisk `*,**` prefix operator](https://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/)
