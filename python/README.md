@@ -8,7 +8,7 @@
 
 ## Topics
 1. [Web](web.md)
-   * [Proxy setup](web.md)
+   * [Proxy setup](web.md#proxy-setup)
    * [selenium](web.md#selenium)
 1. [Jupyter](jupyter.md)
 
