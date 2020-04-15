@@ -12,9 +12,10 @@ os.environ[''] = ''
 shutil.which()
 ```
 
-### module path
-* PYTHONPATH
-* sys.path.append()
+### Modules
+* module path: PYTHONPATH; sys.path.append()
+* sys.modules
+* from importlib import reload; reload()
 
 ### Datetime
 ```python
