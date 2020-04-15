@@ -1,6 +1,6 @@
 ## Tips
 1. [Environment variable](common.md)
-1. [Module path](common.md)
+1. [Module path, reload](common.md#modules)
 1. [logging](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
 1. [Date time](common.md#datetime)
 1. [Asterisk `*,**` prefix operator](common.md)
