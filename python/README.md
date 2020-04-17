@@ -5,8 +5,11 @@
 1. [Date time](common.md#datetime)
 1. Platform: os.name=='nt'
 1. Sublist: list(zip(*a))[0]
+1. Append dict: {**d1, **d2}
 1. [Asterisk `*,**` prefix operator](common.md)
 1. Remove Emojis: `t.encode('ascii', 'ignore').decode('ascii')`
+1. Parallel loop with zip. itertools.zip_longest()
+
 
 ## Topics
 1. [Web](web.md)
