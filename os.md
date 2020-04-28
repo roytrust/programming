@@ -1,0 +1,2 @@
+### Tips
+* ldd /bin/ls
