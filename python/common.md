@@ -17,6 +17,11 @@ shutil.which()
 * sys.modules
 * from importlib import reload; reload()
 
+### logging
+* Reset log level: logging.getLogger().setLevel(logging.DEBUG)
+* `logging.basicConfig(format='%(asctime)s %(message)s', level=os.environ.get('LOGLEVEL', 'INFO'))`
+* [tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
+
 ### Datetime
 ```python
 # current date time
