@@ -22,6 +22,11 @@ shutil.which()
 * `logging.basicConfig(format='%(asctime)s %(message)s', level=os.environ.get('LOGLEVEL', 'INFO'))`
 * [tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
 
+### exception
+* sys.exc_info()
+* traceback
+* pdb ! run code. alias in ~/.pdbrc
+
 ### Datetime
 ```python
 # current date time
