@@ -10,6 +10,7 @@
 1. [Asterisk `*,**` prefix operator](common.md)
 1. Remove Emojis: `t.encode('ascii', 'ignore').decode('ascii')`
 1. Parallel loop with zip. itertools.zip_longest()
+1. types.SimpleNamespace
 
 
 ## Topics
