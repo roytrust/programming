@@ -2,6 +2,7 @@
 1. [Environment variable](common.md)
 1. [Module path, reload](common.md#modules)
 1. [logging](common.md#logging)
+1. [exception](common.md#exception)
 1. [Date time](common.md#datetime)
 1. Platform: os.name=='nt'
 1. Sublist: list(zip(*a))[0]
