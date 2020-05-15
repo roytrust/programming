@@ -18,6 +18,8 @@
    * [Proxy setup](web.md#proxy-setup)
    * [selenium](web.md#selenium)
 1. [Jupyter](jupyter.md)
+1. [decorator](decorator.md)
+
 
 ## Reference
 * [IPython Cookbook](https://ipython-books.github.io/)
