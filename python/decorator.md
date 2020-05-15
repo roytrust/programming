@@ -1,0 +1,3 @@
+### Overview
+* A decorator takes a function, add some functionality and returns it.
+* Metaprogramming: the program tries to modify another part of the program at compile time.
