@@ -22,6 +22,8 @@
 
 ## Overview
 * Everything are objects.
+* callable: __call__
+
 
 
 ## Reference
