@@ -1,18 +1,3 @@
-## SVM: vector machines
-### linear svm classification
-* Linearly separable, large margin classification, support vectors
-* Soft/hard Margin classification, margin violation.
-* LinearSVC. If your svm model is over fitting you can try regularizing it by reducing C.
-
-### nonlinear svm classification
-* Polynomial features
-* Polynomial kernel, kernel=poly.
-* Similarity features. **RBF**: Gaussian radial basis function.
-* Try the linear kernel first, especially if the training set is very large or if it has plenty of features. If the trending set is not too large, try Gaussian RBF kernel.
-
-### SVM regression
-* fit as many instances as possible on the street while limiting margin violation.
-* LinearSVR, DVR()
 
 
 
@@ -203,6 +188,22 @@ Each row in a confusion matrix represents an actual class, while each column rep
 ### Logistic regression
 * for classification, estimating probabilities. Decision boundaries.
 * **Softmax regression**, multiclass, cross entropy
+
+## SVM: support vector machines
+### linear svm classification
+* Linearly separable, large margin classification, support vectors
+* Soft/hard Margin classification, margin violation.
+* LinearSVC. If your svm model is over fitting you can try regularizing it by reducing C.
+
+### nonlinear svm classification
+* Polynomial features
+* Polynomial kernel, kernel=poly.
+* Similarity features. **RBF**: Gaussian radial basis function.
+* Try the linear kernel first, especially if the training set is very large or if it has plenty of features. If the trending set is not too large, try Gaussian RBF kernel.
+
+### SVM regression
+* fit as many instances as possible on the street while limiting margin violation.
+* LinearSVR, DVR()
 
 
 ## References
