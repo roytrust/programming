@@ -1,6 +1,11 @@
 ### Tips
 * ldd /bin/ls
 * [ -d tests ] && echo exists
+* last working dir: cd -; home dir: cd ~
+* only if success: cmd1 && cmd2
+* last arg: alt+.
+
+
 
 ### awk
 * `awk '{print $1,$2}'`; printf
