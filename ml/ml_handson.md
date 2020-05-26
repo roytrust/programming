@@ -1,4 +1,10 @@
 
+## Decision Trees
+* sklearn.tree import export_graphviz; dot
+* Requires very little data preparation. they don't require feature scaling or centering at all.
+* White box models: easy to interpret. In contrast, black box.
+* Making predictions. Estimating class probabilities. The CART training algorithm. Gini impurity or entropy. 
+* Random Forest can limit the instability
 
 
 ## Fundamentals of machine learning
