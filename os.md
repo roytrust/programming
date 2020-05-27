@@ -4,6 +4,7 @@
 * last working dir: cd -; home dir: cd ~
 * only if success: cmd1 && cmd2
 * last arg: alt+.
+* set up default group for creating file: newgrp grp
 
 
 
