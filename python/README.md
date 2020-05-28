@@ -11,6 +11,7 @@
 1. Remove Emojis: `t.encode('ascii', 'ignore').decode('ascii')`
 1. Parallel loop with zip. itertools.zip_longest()
 1. types.SimpleNamespace
+1. Partial func call: g=functools.partial(f,1)
 
 
 ## Topics
