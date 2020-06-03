@@ -44,9 +44,11 @@
 * subset of columns based on type, select_dtypes()
 * pivot_tables()
 
-
 ### Options
 * pd.options.display.max_rows; pd.set_option('display.max_rows')
+
+### Topics
+* Missing data: https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
 
 ## matplotlib
 
