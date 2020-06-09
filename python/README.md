@@ -12,6 +12,7 @@
 1. Parallel loop with zip. itertools.zip_longest()
 1. types.SimpleNamespace
 1. Partial func call: g=functools.partial(f,1)
+1. [regex: regular expression](common.md#reged)
 
 
 ## Topics
