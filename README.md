@@ -4,3 +4,5 @@
 1. [os - Linux ](os.md)
 1. [git](git.md)
 1. [vscode](vscode.md)
+1. [Clean code](clean_code.md)
+
