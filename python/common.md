@@ -58,3 +58,10 @@ def tag(tag_name, **attributes):
 * list literal. `{*iterable1,*iterable2}`
 * dictionary literals. Copy/merge `{**d1, k:v}`
 
+### regex
+* Find a Specific Word: `/[^.]* word [^.]*\./gi`
+* Stripe invalid characters: `/[<>|:"*?\\/]+/g`
+* Replace multiple whitespace: `/\s\s+/g`. trim the beginning
+* Limit to alphanumeric chars: `/^[A-Z0-9]+$/i`
+* Turn URLs into links: `str.replace(/\b(https?|ftp|file):\/\/\S+/g, '<a href="$&">$&</a>');`
+* Delete duplicate words: `str.replace(/\b(\w+)\s+\1\b/gi, '$1');`
