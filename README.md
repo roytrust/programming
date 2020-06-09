@@ -6,3 +6,5 @@
 1. [vscode](vscode.md)
 1. [Clean code](clean_code.md)
 1. [Design Pattern](design_pattern.md)
+1. [Principles & Paradigm](principles.md)
+1. [Data Storytelling](storytelling.md)
