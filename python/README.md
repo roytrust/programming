@@ -20,6 +20,10 @@
    * [selenium](web.md#selenium)
 1. [Jupyter](jupyter.md)
 1. [decorator](decorator.md)
+1. Object oriented
+1. Testing
+1. Debug
+1. Code quality check
 
 ## Overview
 * Everything are objects.
