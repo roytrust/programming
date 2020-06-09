@@ -25,6 +25,7 @@
 1. Testing
 1. Debug
 1. Code quality check
+1. [Functional programming](functional.md)
 
 ## Overview
 * Everything are objects.
