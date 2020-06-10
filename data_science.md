@@ -43,6 +43,7 @@
 * isin([])
 * subset of columns based on type, select_dtypes()
 * pivot_tables()
+* Loop row by row: itertuples; index, row in iterrows
 
 ### Options
 * pd.options.display.max_rows; pd.set_option('display.max_rows')
