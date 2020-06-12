@@ -6,6 +6,15 @@
 * last arg: alt+.
 * set up default group for creating file: newgrp grp
 
+### Shell expansion
+* Pathname Expansion: echo *; echo [[:upper:]]*
+* Arithmetic Expansion: echo $((1+2)); 
+* brace expansion: echo {a,b,c}_back; echo {1..5}; echo {z..a}; 
+* Command Substituation: file $(ls /usr/bin/* | grep bin/zip)
+* Double quotes suppress word-splitting
+* Single Quotes suppress all expansions.
+* Backslash to escape
+* http://linuxcommand.org/lc3_lts0080.php
 
 
 ### awk
