@@ -14,3 +14,7 @@ display(HTML(df.to_html()))
 * ExecuteTime: Display when each cell has been executed and how long it took.
 * Table of contents.
 * memory_profiler
+* Hinterland: autocompleting the code
+* Snippets
+* Qgrid
+
