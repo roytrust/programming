@@ -14,6 +14,7 @@
 1. Partial func call: g=functools.partial(f,1)
 1. [regex: regular expression](common.md#reged)
 1. Current user: getpass.getuser()
+1. Find in a list: [[i,s] for i,s in enumerate(sys.path) if 'pandas' in s]
 
 ## Topics
 1. [Web](web.md)
