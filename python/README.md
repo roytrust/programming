@@ -13,7 +13,7 @@
 1. types.SimpleNamespace
 1. Partial func call: g=functools.partial(f,1)
 1. [regex: regular expression](common.md#reged)
-
+1. Current user: getpass.getuser()
 
 ## Topics
 1. [Web](web.md)
