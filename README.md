@@ -8,3 +8,6 @@
 1. [Design Pattern](design_pattern.md)
 1. [Principles & Paradigm](principles.md)
 1. [Data Storytelling](storytelling.md)
+
+### Get start
+* Unix/Linux tutorial: https://www.tutorialspoint.com/unix/index.htm
