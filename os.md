@@ -24,5 +24,6 @@
 * [awk command series](https://www.tecmint.com/tag/awk-command/)
 
 ### Reference
+* [Linux shell scripting tutorial](https://bash.cyberciti.biz/guide/Main_Page)
 * [10 useful chaining operators in Linux](https://www.tecmint.com/chaining-operators-in-linux-with-practical-examples/)
 * awk: https://www.howtogeek.com/562941/how-to-use-the-awk-command-on-linux/amp/
