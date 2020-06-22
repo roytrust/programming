@@ -10,4 +10,4 @@
 1. [Data Storytelling](storytelling.md)
 
 ### Get start
-* Unix/Linux tutorial: https://www.tutorialspoint.com/unix/index.htm
+* [Unix/Linux tutorial](https://www.tutorialspoint.com/unix/index.htm)
