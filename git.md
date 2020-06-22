@@ -1,6 +1,7 @@
 ### Tips
 * `git config -l; git config --get remote.origin.url`
 * Check remote repo: `git remote -v`
+* Branches: `git branch; git branch -a #list all; git branch --merge`
 * Against remote repo: diff origin/master
 * rebase, branch, merge
 
