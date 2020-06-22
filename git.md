@@ -1,10 +1,9 @@
 ### Tips
+* `git config -l; git config --get remote.origin.url`
+* Check remote repo: `git remote -v`
 * Against remote repo: diff origin/master
 * rebase, branch, merge
 
-```
-git remote -v
-```
 
 ### Typical workflow
 ```
@@ -66,8 +65,7 @@ cat .git/HEAD
 
 ### Commands
 ```
-git config -l
-git config --get remote.origin.url
+
 
 git log --since="2 weeks ago"
 git log -2 -p
