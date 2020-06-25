@@ -10,4 +10,6 @@
 1. [Data Storytelling](storytelling.md)
 
 ### Get start
+* [Git tutorial for beginners](https://youtu.be/HVsySz-h9r4)
+* [Python OOP](https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc)
 * [Unix/Linux tutorial](https://www.tutorialspoint.com/unix/index.htm)
