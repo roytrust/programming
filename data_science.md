@@ -28,23 +28,27 @@
 
 
 ## pandas
+* Change a column: df[:, 'c'] = x
+* Drop columns: df.drop(columns=[])
+* Rename columns: df.rename()
 * df[c].unique()
-* df.iloc[:, :-1].values; iloc[:, -1]; [[]] get df back
+* df.iloc[:, :-1].values; iloc[:, -1]; df[['c']] get df back
 * df.info(), df.describe()
-* df.index
+* df.index; df.set_index(col_name,inplace=True); df.reset_index(drop=True,inplace=False)
 * df['date'].dt.date
 * df['c'].astype('int')
-* Custom conversion: df['c'].apply(f)
+* Custom conversion: `f(x,**kwargs); df['c'].apply(f, a=1)`
 * np.where
 * np.to_datetime(); np.to_numeric()
 * functools.reduce()
 * filter(), map()
 * read_csv(nrows=n)
-* isin([])
+* Slice by mask: df[mask]; isin([])
 * subset of columns based on type, select_dtypes()
 * pivot_tables()
 * Loop row by row: itertuples; index, row in iterrows
 * df[co].last_valid_index; first_valid_index
+* Sort by columns: df.sort_values(by = list_of_cols,ascending=True) 
 
 ### Options
 * pd.options.display.max_rows; pd.set_option('display.max_rows')
