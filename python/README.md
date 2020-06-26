@@ -17,6 +17,7 @@
 1. Find in a list: `[[i,s] for i,s in enumerate(sys.path) if 'pandas' in s]`
 1. Converts a string into an expression: eval()
 1. Converts an integer to binary string: bin()
+1. Execution time: timeit.timeit(globals=globals(), number=3, stmt="")
 
 
 ## Topics
