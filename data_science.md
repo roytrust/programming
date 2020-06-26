@@ -49,6 +49,9 @@
 * Loop row by row: itertuples; index, row in iterrows
 * df[co].last_valid_index; first_valid_index
 * Sort by columns: df.sort_values(by = list_of_cols,ascending=True) 
+* Series: s.rename(); s.to_frame()
+* Rows with missing: df[df.isnull().any(axis=1)]
+
 
 ### Options
 * pd.options.display.max_rows; pd.set_option('display.max_rows')
