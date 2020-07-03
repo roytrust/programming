@@ -35,11 +35,10 @@
 * df.iloc[:, :-1].values; iloc[:, -1]; df[['c']] get df back
 * df.info(), df.describe()
 * df.index; df.set_index(col_name,inplace=True); df.reset_index(drop=True,inplace=False)
-* df['date'].dt.date
 * df['c'].astype('int')
 * Custom conversion: `f(x,**kwargs); df['c'].apply(f, a=1)`
 * np.where
-* np.to_datetime(); np.to_numeric()
+* Datetime: `d=np.to_datetime('2020-05-01'); d.weekofyear; d.strftime(format); pd.Timedelta(days=1); df['date'].dt.date; ` np.to_numeric()
 * functools.reduce()
 * filter(), map()
 * read_csv(nrows=n)
