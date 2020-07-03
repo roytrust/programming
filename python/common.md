@@ -28,6 +28,7 @@ shutil.which()
 * pdb ! run code. alias in ~/.pdbrc
 
 ### Datetime
+* [datetime formatting](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)
 ```python
 # current date time
 from datetime import datetime
