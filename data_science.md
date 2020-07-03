@@ -51,6 +51,7 @@
 * Sort by columns: df.sort_values(by = list_of_cols,ascending=True) 
 * Series: s.rename(); s.to_frame()
 * Rows with missing: df[df.isnull().any(axis=1)]
+* Month end: date.to_period('M').to_timestamp('M')
 
 
 ### Options
