@@ -5,6 +5,7 @@
 * only if success: cmd1 && cmd2
 * last arg: alt+.
 * set up default group for creating file: newgrp grp
+* Get file size: find . -type f -exec du -b {} + | awk '{sum+=$1} END{print sum}'
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
