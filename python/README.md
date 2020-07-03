@@ -29,7 +29,7 @@
 1. [Object oriented programming](oop.md)
 1. Testing
 1. Debug
-1. Code quality check
+1. Code quality & style check
 1. [Functional programming](functional.md)
 
 ## Overview
@@ -40,3 +40,5 @@
 
 ## Reference
 * [IPython Cookbook](https://ipython-books.github.io/)
+* [Style guide](https://www.analyticsvidhya.com/blog/2020/07/python-style-guide/)
+
