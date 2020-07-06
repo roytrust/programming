@@ -51,6 +51,7 @@
 * Series: s.rename(); s.to_frame()
 * Rows with missing: df[df.isnull().any(axis=1)]
 * Month end: date.to_period('M').to_timestamp('M')
+* Null: np.nan - float, pd.NaT - datetime, notnull()
 
 
 ### Options
