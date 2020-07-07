@@ -34,7 +34,7 @@
 * df[c].unique()
 * df.iloc[:, :-1].values; iloc[:, -1]; df[['c']] get df back
 * df.info(), df.describe()
-* df.index; df.set_index(col_name,inplace=True); df.reset_index(drop=True,inplace=False)
+* Index: df.index; df.set_index(col_name,inplace=True); df.reset_index(drop=True,inplace=False), df.sort_index() - regenerate index
 * df['c'].astype('int')
 * Custom conversion: `f(x,**kwargs); df['c'].apply(f, a=1)`
 * np.where
@@ -52,6 +52,7 @@
 * Rows with missing: df[df.isnull().any(axis=1)]
 * Month end: date.to_period('M').to_timestamp('M')
 * Null: np.nan - float, pd.NaT - datetime, notnull()
+* Compare: df.equals(df1)
 
 
 ### Options
