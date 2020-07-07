@@ -6,6 +6,7 @@
 * last arg: alt+.
 * set up default group for creating file: newgrp grp
 * Get file size: find . -type f -exec du -b {} + | awk '{sum+=$1} END{print sum}'
+* Test variable exists: if [ -z $VAR ]; then; eacho exists; fi
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
