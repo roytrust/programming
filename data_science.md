@@ -64,6 +64,7 @@
 * Datetime: https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
 
 ## matplotlib
+* Cheatsheet: https://github.com/matplotlib/cheatsheets
 
 ## Reference
 * [NumPy notebook](https://github.com/ageron/handson-ml2/blob/master/tools_numpy.ipynb)
