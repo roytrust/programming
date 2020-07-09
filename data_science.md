@@ -34,7 +34,7 @@
 * df[c].unique()
 * df.iloc[:, :-1].values; iloc[:, -1]; df[['c']] get df back
 * df.info(), df.describe()
-* Index: df.index; df.set_index(col_name,inplace=True); df.reset_index(drop=True,inplace=False), df.sort_index() - regenerate index
+* Index: df.index; df.set_index(col_name); df.reset_index(drop=True), df.sort_index() - regenerate index; df.index.name=''
 * df['c'].astype('int')
 * Custom conversion: `f(x,**kwargs); df['c'].apply(f, a=1)`
 * np.where
