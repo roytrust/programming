@@ -19,3 +19,6 @@ def func():
 
 func()
 ```
+
+### Reference
+* [Primer on Python Decorators](https://realpython.com/primer-on-python-decorators/)
