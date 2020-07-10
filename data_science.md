@@ -55,7 +55,7 @@
 * Compare: df.equals(df1)
 * Float comparison: `np.isclose(df.v1, df.v2, equal_nan=True, rtol=1e-10)`
 * Group: `grp=df.groupby([]); grp['a'].min().reset_index()`
-
+* Select rows by max value in groups: df.loc[df.groupby(['a'])['b'].idxmax()]
 
 ### Options
 * pd.options.display.max_rows; pd.set_option('display.max_rows')
