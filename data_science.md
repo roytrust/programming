@@ -53,7 +53,8 @@
 * Month end: date.to_period('M').to_timestamp('M')
 * Null: np.nan - float, pd.NaT - datetime, notnull()
 * Compare: df.equals(df1)
-* Float comparison: np.isclose(df.v1, df.v2, equal_nan=True, rtol=1e-10)
+* Float comparison: `np.isclose(df.v1, df.v2, equal_nan=True, rtol=1e-10)`
+* Group: `grp=df.groupby([]); grp['a'].min().reset_index()`
 
 
 ### Options
