@@ -28,6 +28,7 @@
 
 
 ## pandas
+* DataFrame: A set of pandas Series that shares the same index.
 * Change a column: df[:, 'c'] = x
 * Drop columns: df.drop(columns=[])
 * Rename columns: df.rename()
