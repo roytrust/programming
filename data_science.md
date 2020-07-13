@@ -29,6 +29,8 @@
 
 ## pandas
 * DataFrame: A set of pandas Series that shares the same index.
+* `index = pd.date_range('1/1/2000', periods=8); df = pd.DataFrame(np.random.randn(8, 3), index=index, columns=['A', 'B', 'C'])` 
+
 * Change a column: df[:, 'c'] = x
 * Drop columns: df.drop(columns=[])
 * Rename columns: df.rename()
