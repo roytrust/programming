@@ -11,8 +11,8 @@
 * Discretization and quantiling, bins: `cut(); qcut()`
 * Reindexing and altering labels: To reindex means to conform the data to match a given set of labels along a particular axis. Fill/limit  
 `reindex(index=index_labels, columns=column_labels); reindex_like(); align(); drop(columns=[]); rename(); rename_axis() # MultiIndex`
-* Index, sorting: `df.index; df.set_index(col_name); df.reset_index(drop=True) - regenerate index; df.index.name=''; df.sort_values(by = list_of_cols,ascending=True)`
-* Sorting: by index: `sort_index()`. Sort by columns: `df.sort_values(by = list_of_cols,ascending=True)` 
+* Index: `df.index; df.set_index(col_name); df.reset_index(drop=True) - regenerate index; df.index.name=''; df.sort_values(by = list_of_cols,ascending=True)`
+* Sorting: by index: `sort_index()`. Sort by columns: `df.sort_values(by = list_of_cols,ascending=True)`. argsort()
 * Iteration: `for row in itertuples(); for index, row in iterrows(); for label, ser in df.items()`. Indices where to be inserted: searchsorted(). `nsmallest(); nlargest(); `
 * [dtypes](https://pandas.pydata.org/pandas-docs/stable/getting_started/basics.html#dtypes). `df['a'].astype('int'); select_dtypes()`
 * Change a column: df[:, 'c'] = x
