@@ -9,23 +9,24 @@
 * Underlying data: `.array; df.to_numpy()` preferrable over value
 * Histogramming: `value_count(), mode()`
 * Discretization and quantiling, bins: `cut(); qcut()`
+* Reindexing and altering labels: To reindex means to conform the data to match a given set of labels along a particular axis. Fill/limit  
+`reindex(index=index_labels, columns=column_labels); reindex_like(); align(); drop(columns=[]); rename(); rename_axis() # MultiIndex`
+* Index, sorting: `df.index; df.set_index(col_name); df.reset_index(drop=True) - regenerate index; df.index.name=''; df.sort_values(by = list_of_cols,ascending=True)`
+* Sorting: by index: `sort_index()`. Sort by columns: `df.sort_values(by = list_of_cols,ascending=True)` 
+* Iteration: `for row in itertuples(); for index, row in iterrows(); for label, ser in df.items()`. Indices where to be inserted: searchsorted(). `nsmallest(); nlargest(); `
+* [dtypes](https://pandas.pydata.org/pandas-docs/stable/getting_started/basics.html#dtypes). `df['a'].astype('int'); select_dtypes()`
 * Change a column: df[:, 'c'] = x
-* Drop columns: df.drop(columns=[])
-* Rename columns: df.rename()
 * df[c].unique()
 * df.iloc[:, :-1].values; iloc[:, -1]; df[['c']] get df back
 * df.info(), df.describe()
-* Index: df.index; df.set_index(col_name); df.reset_index(drop=True), df.sort_index() - regenerate index; df.index.name=''
 * Custom conversion: `f(x,**kwargs); df['c'].apply(f, a=1)`
-* Datetime: `d=np.to_datetime('2020-05-01'); d.weekofyear; d.strftime(format); pd.Timedelta(days=1); df['date'].dt.date; ` np.to_numeric()
+* Datetime, .dt accessor: `d=np.to_datetime('2020-05-01'); d.weekofyear; d.strftime(format); pd.Timedelta(days=1); df['date'].dt.date; ` np.to_numeric()
 * functools.reduce()
 * filter(), map()
 * read_csv(nrows=n)
 * Slice by mask: df[mask]; isin([])
 * pivot_tables()
-* Loop row by row: itertuples; index, row in iterrows
 * df[co].last_valid_index; first_valid_index
-* Sort by columns: df.sort_values(by = list_of_cols,ascending=True) 
 * Series: s.rename(); s.to_frame()
 * Rows with missing: df[df.isnull().any(axis=1)]
 * Month end: date.to_period('M').to_timestamp('M')
@@ -38,10 +39,6 @@
 * Compare array-like objects: `pd.Series(['foo', 'bar', 'baz']) == 'foo'; pd.Series(['foo', 'bar', 'baz']) == pd.Index(['foo', 'bar', 'qux']); pd.Series(['foo', 'bar', 'baz']) == np.array(['foo', 'bar', 'qux'])`
 * Combining overlapping datasets: `df1.combine_first(df2); combine(); return np.where(pd.isna(x), y, x)`
 * Transpose: df.T
-
-### df.dtypes
-* df['a'].astype('int'); select_dtypes()
-* 
 
 ### Function application
 1. Tablewise Function Application: pipe()
