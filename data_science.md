@@ -3,34 +3,12 @@
 * [pandas cheat sheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf)
 * [matplotlib cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Matplotlib_Cheat_Sheet.pdf)
 
-
-## NumPy ``
-* `x=np.random.randint(20,size=12)`
-* Conditional operators, `x<10, x[x>10]`
-* Indexing, `x[2::2]; x[::-1]; x[(0,2),(2:5)]; x[:,(-1,2,-1)]; x[(-1,1),(2,3)]; x[1,...]; np.ix_`
-* vstack, hstack, stack
-* split, vsplit, hsplit
-* transpose, swapaxes
-* N largest value. `ind=np.argpartition(x,-4)[-4:]; np.sort(x[ind])`
-* matching within a tolerance. `np.allclose(x1,x2,0.1)`
-* Keep values within an interval.`np.clip(x,lower,upper_limit)`
-* Extract based on condition. `np.extract((x<3)|(x>10),x)`
-* Return values based on condition. `np.where(x>5); np.where(x>5,"hit","miss")`
-* nth percentile. `np.percentile(x,30,axis=0)`
-* np.linspace, Evenly distributed between 2 values.
-* np.fromfunction, Initialize using a function.
-* x.itemsize. Data buffer, x.data.tobytes()
-* **Reshape**. In place, x.shape=(2,3). Pointing at the same data, x.reshape(2,3). New ndarray, x.ravel()
-* QR decomposition, linalg.qr()
-* Solving a system of linear scholar equations. `solution=linalg.solve(coeffs,depvars); coeffs.dot(solution),depvars; np.allclose(coeffs.dot(solution),depvars)`
-* **Vectorization**, `X,Y=np.meshgrid(x,y), np.sin(X*Y/30.5)`
-* np.save, np.load, savetxt, loadtxt, savez
-
-
 ## pandas
 * DataFrame: A set of pandas Series that shares the same index.
 * `index = pd.date_range('1/1/2000', periods=8); df = pd.DataFrame(np.random.randn(8, 3), index=index, columns=['A', 'B', 'C'])` 
-
+* Underlying data: `.array; df.to_numpy()` preferrable over value
+* Histogramming: `value_count(), mode()`
+* Discretization and quantiling, bins: `cut(); qcut()`
 * Change a column: df[:, 'c'] = x
 * Drop columns: df.drop(columns=[])
 * Rename columns: df.rename()
@@ -65,6 +43,13 @@
 * df['a'].astype('int'); select_dtypes()
 * 
 
+### Function application
+1. Tablewise Function Application: pipe()
+1. Row or Column-wise Function Application: apply(). result_type: reduce, broadcast, expand
+1. Aggregation API: agg() and transform()
+1. Applying Elementwise Functions: applymap()
+* Addtional args: `df.apply(subtract_and_divide, args=(5,), divide=3)`
+* Series map: `s.map(t)`
 
 ### Options
 * pd.options.display.max_rows; pd.set_option('display.max_rows')
@@ -72,6 +57,31 @@
 ### Topics
 * Missing data: https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
 * Datetime: https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
+
+
+
+## NumPy ``
+* `x=np.random.randint(20,size=12)`
+* Conditional operators, `x<10, x[x>10]`
+* Indexing, `x[2::2]; x[::-1]; x[(0,2),(2:5)]; x[:,(-1,2,-1)]; x[(-1,1),(2,3)]; x[1,...]; np.ix_`
+* vstack, hstack, stack
+* split, vsplit, hsplit
+* transpose, swapaxes
+* N largest value. `ind=np.argpartition(x,-4)[-4:]; np.sort(x[ind])`
+* matching within a tolerance. `np.allclose(x1,x2,0.1)`
+* Keep values within an interval.`np.clip(x,lower,upper_limit)`
+* Extract based on condition. `np.extract((x<3)|(x>10),x)`
+* Return values based on condition. `np.where(x>5); np.where(x>5,"hit","miss")`
+* nth percentile. `np.percentile(x,30,axis=0)`
+* np.linspace, Evenly distributed between 2 values.
+* np.fromfunction, Initialize using a function.
+* x.itemsize. Data buffer, x.data.tobytes()
+* **Reshape**. In place, x.shape=(2,3). Pointing at the same data, x.reshape(2,3). New ndarray, x.ravel()
+* QR decomposition, linalg.qr()
+* Solving a system of linear scholar equations. `solution=linalg.solve(coeffs,depvars); coeffs.dot(solution),depvars; np.allclose(coeffs.dot(solution),depvars)`
+* **Vectorization**, `X,Y=np.meshgrid(x,y), np.sin(X*Y/30.5)`
+* np.save, np.load, savetxt, loadtxt, savez
+
 
 ## matplotlib
 * Cheatsheet: https://github.com/matplotlib/cheatsheets
