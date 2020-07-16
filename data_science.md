@@ -15,7 +15,9 @@
 * Sorting: by index: `sort_index()`. Sort by columns: `df.sort_values(by = list_of_cols,ascending=True)`. argsort()
 * Iteration: `for row in itertuples(); for index, row in iterrows(); for label, ser in df.items()`. Indices where to be inserted: searchsorted(). `nsmallest(); nlargest(); `
 * [dtypes](https://pandas.pydata.org/pandas-docs/stable/getting_started/basics.html#dtypes). `df['a'].astype('int'); select_dtypes()`
+* [Scaling to large dataset](https://pandas.pydata.org/pandas-docs/stable/user_guide/scale.html). load less data, use efficient datatypes (category), use chunking, other libs (Dask). `df.memory_usage(deep=True) # in bytes`
 * Change a column: df[:, 'c'] = x
+* DataFrame operations: dict-like: `del df['a']; df.pop()`. Assign in method chains, func: `assign()`. `stack(); unstack()`
 * df[c].unique()
 * df.iloc[:, :-1].values; iloc[:, -1]; df[['c']] get df back
 * df.info(), df.describe()
@@ -36,7 +38,6 @@
 * Group: `grp=df.groupby([]); grp['a'].min().reset_index()`
 * Select rows by max value in groups: df.loc[df.groupby(['a'])['b'].idxmax()]; idxmin()
 * Boolean reduction: (df>0).all(), any(), empty, pd.Series([True]).bool() # single element
-* Compare array-like objects: `pd.Series(['foo', 'bar', 'baz']) == 'foo'; pd.Series(['foo', 'bar', 'baz']) == pd.Index(['foo', 'bar', 'qux']); pd.Series(['foo', 'bar', 'baz']) == np.array(['foo', 'bar', 'qux'])`
 * Combining overlapping datasets: `df1.combine_first(df2); combine(); return np.where(pd.isna(x), y, x)`
 * Transpose: df.T
 
@@ -48,12 +49,19 @@
 * Addtional args: `df.apply(subtract_and_divide, args=(5,), divide=3)`
 * Series map: `s.map(t)`
 
-### Options
-* pd.options.display.max_rows; pd.set_option('display.max_rows')
+### Series
+* Series is ndarray-like. Series like dict: `s['a']`. `s.name; s.rename()`
+* A key difference between Series and ndarray is that operations between Series automatically align the data based on label. ... The result of an operation between unaligned Series will have the **union** of the indexes involved. If a label is not found in one Series or the other, the result will be marked as missing NaN. 
+* `s=pd.Series(dtype=int); s.add()`
+* Compare array-like objects: `pd.Series(['foo', 'bar', 'baz']) == 'foo'; pd.Series(['foo', 'bar', 'baz']) == pd.Index(['foo', 'bar', 'qux']); pd.Series(['foo', 'bar', 'baz']) == np.array(['foo', 'bar', 'qux'])`
+
+### [Time series] (https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html)
+
+### [Categoricals](https://pandas.pydata.org/pandas-docs/stable/user_guide/categorical.html)
 
 ### Topics
 * Missing data: https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
-* Datetime: https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
+* [Options](https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html). `pd.options.display.max_rows; pd.set_option('display.max_rows')`
 
 
 
