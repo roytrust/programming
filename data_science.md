@@ -16,13 +16,14 @@
 * Iteration: `for row in itertuples(); for index, row in iterrows(); for label, ser in df.items()`. Indices where to be inserted: searchsorted(). `nsmallest(); nlargest(); `
 * [dtypes](https://pandas.pydata.org/pandas-docs/stable/getting_started/basics.html#dtypes). `df['a'].astype('int'); select_dtypes()`
 * [Scaling to large dataset](https://pandas.pydata.org/pandas-docs/stable/user_guide/scale.html). load less data, use efficient datatypes (category), use chunking, other libs (Dask). `df.memory_usage(deep=True) # in bytes`
+* Accesors. .sparse, .str, .cat for categorical data, and .dt for datetime-like data. 
 * Change a column: df[:, 'c'] = x
 * DataFrame operations: dict-like: `del df['a']; df.pop()`. Assign in method chains, func: `assign()`. `stack(); unstack()`
 * df[c].unique()
 * df.iloc[:, :-1].values; iloc[:, -1]; df[['c']] get df back
-* df.info(), df.describe()
+* df.info(memory_usage='deep'), df.describe()
 * Custom conversion: `f(x,**kwargs); df['c'].apply(f, a=1)`
-* Datetime, .dt accessor: `d=np.to_datetime('2020-05-01'); d.weekofyear; d.strftime(format); pd.Timedelta(days=1); df['date'].dt.date; ` np.to_numeric()
+* Datetime: `d=np.to_datetime('2020-05-01'); d.weekofyear; d.strftime(format); pd.Timedelta(days=1); df['date'].dt.date; ` np.to_numeric()
 * functools.reduce()
 * filter(), map()
 * read_csv(nrows=n)
@@ -36,7 +37,7 @@
 * Compare: df.equals(df1)
 * Float comparison: `np.isclose(df.v1, df.v2, equal_nan=True, rtol=1e-10)`
 * Group: `grp=df.groupby([]); grp['a'].min().reset_index()`
-* Select rows by max value in groups: df.loc[df.groupby(['a'])['b'].idxmax()]; idxmin()
+* Select rows by max value in groups: `df.loc[df.groupby(['a'])['b'].idxmax()]; idxmin()`. sort then take first of each: df.sort_values(by="b").groupby("a", as_index=False).first()
 * Boolean reduction: (df>0).all(), any(), empty, pd.Series([True]).bool() # single element
 * Combining overlapping datasets: `df1.combine_first(df2); combine(); return np.where(pd.isna(x), y, x)`
 * Transpose: df.T
@@ -61,7 +62,8 @@
 
 ### Topics
 * Missing data: https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
-* [Options](https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html). `pd.options.display.max_rows; pd.set_option('display.max_rows')`
+* [Options](https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html). `pd.options.display.max_rows; pd.set_option('display.max_rows', None), pd.reset_option('all')`
+* [MultiIndex](https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html#advanced-hierarchical)
 
 
 
