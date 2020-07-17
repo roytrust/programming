@@ -21,6 +21,7 @@
 1. Get script directory: os.path.dirname(os.path.realpath(__file__))
 1. File modify timestamp: `Path().stat.st_mtime; datetime.datetime.fromtimestamp(tm)`
 1. File exists: Path.exists(); File mode: Path.chmod(stat.S_IWUSR) # owner writable
+1. First not null: `next((i for i in lst if i), 0)
 
 ## Topics
 1. [Web](web.md)
