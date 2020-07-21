@@ -56,7 +56,7 @@
 * `s=pd.Series(dtype=int); s.add()`
 * Compare array-like objects: `pd.Series(['foo', 'bar', 'baz']) == 'foo'; pd.Series(['foo', 'bar', 'baz']) == pd.Index(['foo', 'bar', 'qux']); pd.Series(['foo', 'bar', 'baz']) == np.array(['foo', 'bar', 'qux'])`
 
-### [Time series] (https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html)
+### [Time series](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html)
 
 ### [Categoricals](https://pandas.pydata.org/pandas-docs/stable/user_guide/categorical.html)
 
