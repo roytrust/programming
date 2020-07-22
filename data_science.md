@@ -55,6 +55,8 @@
 * A key difference between Series and ndarray is that operations between Series automatically align the data based on label. ... The result of an operation between unaligned Series will have the **union** of the indexes involved. If a label is not found in one Series or the other, the result will be marked as missing NaN. 
 * `s=pd.Series(dtype=int); s.add()`
 * Compare array-like objects: `pd.Series(['foo', 'bar', 'baz']) == 'foo'; pd.Series(['foo', 'bar', 'baz']) == pd.Index(['foo', 'bar', 'qux']); pd.Series(['foo', 'bar', 'baz']) == np.array(['foo', 'bar', 'qux'])`
+* Diff 2 df: `pd.concat([dfa, dfb]).drop_duplicates(keep=False)`
+* Float format: `df.round(6)`
 
 ### [Time series](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html)
 
