@@ -59,11 +59,12 @@
 * Float format: `df.round(6)`
 
 ### [MultiIndex / advanced indexing](https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html#advanced-hierarchical)
-* `df.columns.levels; s[::2]`
+* `df.columns.levels; s[::2]; df.swaplevel(0, 1, axis=0); df.reorder_levels([1, 0], axis=0); df.rename_axis(index=['abc', 'def']);  Index.set_names(); dfm.index.is_lexsorted(); dfm.index.lexsort_depth; index.take(positions)`
 * It is important to note that tuples and lists are not treated identically in pandas when it comes to indexing. Whereas a tuple is interpreted as one multi-level key, a list is used to specify several keys. Or in other words, tuples go horizontally (traversing levels), lists go vertically (scanning levels).
 *  a list of tuples indexes several complete MultiIndex keys, whereas a tuple of lists refer to several values within a level: `s.loc[[("A", "c"), ("B", "d")]];  # list of tuples. s.loc[(["A", "B"], ["c", "d"])]  # tuple of lists`
 * Use slicers: `dfmi.loc[(slice('A1', 'A3'), slice(None), ['C1', 'C3']), :]; idx = pd.IndexSlice; dfmi.loc[idx[:, :, ['C1', 'C3']], idx[:, 'foo']]; dfmi.loc['A1', (slice(None), 'foo')]; dfmi.loc[idx[mask, :, ['C1', 'C3']], idx[:, 'foo']]; df2.loc(axis=0)[:, :, ['C1', 'C3']] = -10; df2.loc[idx[:, :, ['C1', 'C3']], :] = df2 * 1000`
 * Cross-section: `df.xs('one', level='second', axis=1, drop_level=False); df.xs(('one', 'bar'), level=('second', 'first'), axis=1); df.loc[:, ('bar', 'one')]; `
+* **level** in the reindex() and align() to broadcast values across a level: `df.mean(level=0); df2.reindex(df.index, level=0); df.align(df2, level=0)`
 
 ### [Time series](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html)
 
