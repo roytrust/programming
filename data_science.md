@@ -63,7 +63,7 @@
 * It is important to note that tuples and lists are not treated identically in pandas when it comes to indexing. Whereas a tuple is interpreted as one multi-level key, a list is used to specify several keys. Or in other words, tuples go horizontally (traversing levels), lists go vertically (scanning levels).
 *  a list of tuples indexes several complete MultiIndex keys, whereas a tuple of lists refer to several values within a level: `s.loc[[("A", "c"), ("B", "d")]];  # list of tuples. s.loc[(["A", "B"], ["c", "d"])]  # tuple of lists`
 * Use slicers: `dfmi.loc[(slice('A1', 'A3'), slice(None), ['C1', 'C3']), :]; idx = pd.IndexSlice; dfmi.loc[idx[:, :, ['C1', 'C3']], idx[:, 'foo']]; dfmi.loc['A1', (slice(None), 'foo')]; dfmi.loc[idx[mask, :, ['C1', 'C3']], idx[:, 'foo']]; df2.loc(axis=0)[:, :, ['C1', 'C3']] = -10; df2.loc[idx[:, :, ['C1', 'C3']], :] = df2 * 1000`
-
+* Cross-section: `df.xs('one', level='second', axis=1, drop_level=False); df.xs(('one', 'bar'), level=('second', 'first'), axis=1); df.loc[:, ('bar', 'one')]; `
 
 ### [Time series](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html)
 
