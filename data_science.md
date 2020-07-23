@@ -65,6 +65,9 @@
 * Use slicers: `dfmi.loc[(slice('A1', 'A3'), slice(None), ['C1', 'C3']), :]; idx = pd.IndexSlice; dfmi.loc[idx[:, :, ['C1', 'C3']], idx[:, 'foo']]; dfmi.loc['A1', (slice(None), 'foo')]; dfmi.loc[idx[mask, :, ['C1', 'C3']], idx[:, 'foo']]; df2.loc(axis=0)[:, :, ['C1', 'C3']] = -10; df2.loc[idx[:, :, ['C1', 'C3']], :] = df2 * 1000`
 * Cross-section: `df.xs('one', level='second', axis=1, drop_level=False); df.xs(('one', 'bar'), level=('second', 'first'), axis=1); df.loc[:, ('bar', 'one')]; `
 * **level** in the reindex() and align() to broadcast values across a level: `df.mean(level=0); df2.reindex(df.index, level=0); df.align(df2, level=0)`
+* IntervalIndex. `pd.IntervalIndex.from_breaks([0, 1, 2, 3, 4]); pd.Interval(1, 2); idxr = df.index.overlaps(pd.Interval(0.5, 2.5)); c = pd.cut(range(4), bins=2); c.categories; pd.cut([0, 3, 5, 1], bins=c.categories); pd.interval_range(start=0, end=5); pd.interval_range(start=pd.Timestamp('2017-01-01'), periods=4, freq='W')`
+* `index.is_monotonic_increasing; index.is_monotonic_decreasing; index.is_unique
+* Compared with standard Python sequence slicing in which the slice endpoint is not inclusive, label-based slicing in pandas **is inclusive**. 
 
 ### [Time series](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html)
 
