@@ -5,7 +5,7 @@
 
 ## pandas
 * DataFrame: A set of pandas Series that shares the same index.
-* `index = pd.date_range('1/1/2000', periods=8); df = pd.DataFrame(np.random.randn(8, 3), index=index, columns=['A', 'B', 'C'])` 
+* `df = pd.DataFrame(np.random.rand(n, 3), columns=list('abc')); index = pd.date_range('1/1/2000', periods=8); df = pd.DataFrame(np.random.randn(8, 3), index=index, columns=['A', 'B', 'C'])` 
 * Underlying data: `.array; df.to_numpy()` preferrable over value
 * Histogramming: `value_count(), mode()`
 * Discretization and quantiling, bins: `cut(); qcut()`
@@ -27,7 +27,7 @@
 * functools.reduce()
 * filter(), map()
 * read_csv(nrows=n)
-* Slice by mask: df[mask]; isin([])
+* Slice by mask: `df[mask]; isin([]); isin(dict)`
 * pivot_tables()
 * df[co].last_valid_index; first_valid_index
 * Series: s.rename(); s.to_frame()
@@ -39,8 +39,10 @@
 * Group: `grp=df.groupby([]); grp['a'].min().reset_index()`
 * Select rows by max value in groups: `df.loc[df.groupby(['a'])['b'].idxmax()]; idxmin()`. sort then take first of each: df.sort_values(by="b").groupby("a", as_index=False).first()
 * Boolean reduction: (df>0).all(), any(), empty, pd.Series([True]).bool() # single element
-* Combining overlapping datasets: `df1.combine_first(df2); combine(); return np.where(pd.isna(x), y, x)`
+* Combining overlapping datasets: `df1.combine_first(df2); combine(); return np.where(pd.isna(x), y, x)`. where() returns the same shape.
 * Transpose: df.T
+* assign a dict to a row: `df.iloc[1] = {'x': 9, 'y': 99}`
+* Query: `df.query('(a < b) & (b < c)'); ilevel_0; `
 
 ### Function application
 1. Tablewise Function Application: pipe()
@@ -55,7 +57,7 @@
 * A key difference between Series and ndarray is that operations between Series automatically align the data based on label. ... The result of an operation between unaligned Series will have the **union** of the indexes involved. If a label is not found in one Series or the other, the result will be marked as missing NaN. 
 * `s=pd.Series(dtype=int); s.add()`
 * Compare array-like objects: `pd.Series(['foo', 'bar', 'baz']) == 'foo'; pd.Series(['foo', 'bar', 'baz']) == pd.Index(['foo', 'bar', 'qux']); pd.Series(['foo', 'bar', 'baz']) == np.array(['foo', 'bar', 'qux'])`
-* Diff 2 df: `pd.concat([dfa, dfb]).drop_duplicates(keep=False)`
+* Diff 2 df: `pd.concat([dfa, dfb]).drop_duplicates(keep=False); df.duplicated(['a']); index.duplicated()`
 * Float format: `df.round(6)`
 
 ### [MultiIndex / advanced indexing](https://pandas.pydata.org/pandas-docs/stable/user_guide/advanced.html#advanced-hierarchical)
@@ -64,7 +66,7 @@
 *  a list of tuples indexes several complete MultiIndex keys, whereas a tuple of lists refer to several values within a level: `s.loc[[("A", "c"), ("B", "d")]];  # list of tuples. s.loc[(["A", "B"], ["c", "d"])]  # tuple of lists`
 * Use slicers: `dfmi.loc[(slice('A1', 'A3'), slice(None), ['C1', 'C3']), :]; idx = pd.IndexSlice; dfmi.loc[idx[:, :, ['C1', 'C3']], idx[:, 'foo']]; dfmi.loc['A1', (slice(None), 'foo')]; dfmi.loc[idx[mask, :, ['C1', 'C3']], idx[:, 'foo']]; df2.loc(axis=0)[:, :, ['C1', 'C3']] = -10; df2.loc[idx[:, :, ['C1', 'C3']], :] = df2 * 1000`
 * Cross-section: `df.xs('one', level='second', axis=1, drop_level=False); df.xs(('one', 'bar'), level=('second', 'first'), axis=1); df.loc[:, ('bar', 'one')]; `
-* **level** in the reindex() and align() to broadcast values across a level: `df.mean(level=0); df2.reindex(df.index, level=0); df.align(df2, level=0)`
+* **level** in the reindex() and align() to broadcast values across a level: `df.mean(level=0); df2.reindex(df.index, level=0); df.align(df2, level=0); index.levels[1]; index.levels[1]`
 * IntervalIndex. `pd.IntervalIndex.from_breaks([0, 1, 2, 3, 4]); pd.Interval(1, 2); idxr = df.index.overlaps(pd.Interval(0.5, 2.5)); c = pd.cut(range(4), bins=2); c.categories; pd.cut([0, 3, 5, 1], bins=c.categories); pd.interval_range(start=0, end=5); pd.interval_range(start=pd.Timestamp('2017-01-01'), periods=4, freq='W')`
 * `index.is_monotonic_increasing; index.is_monotonic_decreasing; index.is_unique
 * Compared with standard Python sequence slicing in which the slice endpoint is not inclusive, label-based slicing in pandas **is inclusive**. 
