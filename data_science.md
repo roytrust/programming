@@ -85,7 +85,7 @@
 
 
 ## NumPy ``
-* `x=np.random.randint(20,size=12)`
+* Random: `np.random.randint(20,size=(3,5); random.choice([]); shuffle(); permutation(); normal(loc=1, scale=2, size=(2, 3))`
 * Conditional operators, `x<10, x[x>10]`
 * Indexing, `x[2::2]; x[::-1]; x[(0,2),(2:5)]; x[:,(-1,2,-1)]; x[(-1,1),(2,3)]; x[1,...]; np.ix_`
 * vstack, hstack, stack
