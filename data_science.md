@@ -43,6 +43,9 @@
 * Transpose: df.T
 * assign a dict to a row: `df.iloc[1] = {'x': 9, 'y': 99}`
 * Query: `df.query('(a < b) & (b < c)'); ilevel_0; `
+* Computing indicator / dummy variables: `pd.get_dummies(df['key']); pd.get_dummies(pd.cut(values, bins)); pd.get_dummies(df, drop_first=True)`
+* Factorizing values: `labels, uniques = pd.factorize(x); np.unique(x, return_inverse=True)[::-1]`
+* Exploding a list-like column: `df.assign(var1=df.var1.str.split(',')).explode('var1')`
 
 ### Function application
 1. Tablewise Function Application: pipe()
