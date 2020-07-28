@@ -47,6 +47,10 @@
 * Factorizing values: `labels, uniques = pd.factorize(x); np.unique(x, return_inverse=True)[::-1]`
 * Exploding a list-like column: `df.assign(var1=df.var1.str.split(',')).explode('var1')`
 * Select rows with data closest to certain value using argsort: `df.loc[(df.C - aValue).abs().argsort()]`
+* [Efficiently and dynamically creating new columns using applymap](https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#new-columns): `df[new_cols] = df[source_cols].applymap(categories.get)`
+* Setting portions of a MultiIndex with xs: `df2.xs('y',level='variable3',axis=1,drop_level=False).ffill()`
+* Prepending a level to a multiindex: `pd.concat({'Foo': df}, names=['Firstlevel'])`
+
 
 ### Function application
 1. Tablewise Function Application: pipe()
