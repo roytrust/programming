@@ -53,7 +53,7 @@
 * Flatten Hierarchical columns: `df.columns = ['_'.join(tup).rstrip('_') for tup in df.columns.values]; df.columns = df.columns.get_level_values(0)`
 * Fill forward a reversed timeseries: `df.reindex(df.index[::-1]).ffill()`
 * [cumsum reset at NaN values](https://stackoverflow.com/questions/18196811/cumsum-reset-at-nan)
-
+* Using replace with backrefs: `df.replace({ 'A' : "http:.+\d\d\/(.*?)(;|\\?).*$"}, { 'A' : r'\1'} ,regex=True)`
 
 ### Function application
 1. Tablewise Function Application: pipe()
