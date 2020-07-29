@@ -51,6 +51,9 @@
 * Setting portions of a MultiIndex with xs: `df2.xs('y',level='variable3',axis=1,drop_level=False).ffill()`
 * Prepending a level to a multiindex: `pd.concat({'Foo': df}, names=['Firstlevel'])`
 * Flatten Hierarchical columns: `df.columns = ['_'.join(tup).rstrip('_') for tup in df.columns.values]; df.columns = df.columns.get_level_values(0)`
+* Fill forward a reversed timeseries: `df.reindex(df.index[::-1]).ffill()`
+* [cumsum reset at NaN values](https://stackoverflow.com/questions/18196811/cumsum-reset-at-nan)
+
 
 ### Function application
 1. Tablewise Function Application: pipe()
