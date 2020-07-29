@@ -4,6 +4,7 @@
 * Branches: `git branch; git branch -a #list all; git branch --merge`
 * Against remote repo: diff origin/master
 * rebase, branch, merge
+* Modify the most recent commit: `git commit --amend -m "msg"`
 
 
 ### Typical workflow
@@ -92,8 +93,6 @@ git checkout
 # Branch
 git checkout -b mybranch
 
-# Change history
-git commit --amend -m "test amend"
 
 # Merge
 git merge -m "Merge work in mybranch" mybranch
