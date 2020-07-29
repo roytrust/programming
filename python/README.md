@@ -22,6 +22,7 @@
 1. File modify timestamp: `Path().stat.st_mtime; datetime.datetime.fromtimestamp(tm)`
 1. File exists: Path.exists(); File mode: Path.chmod(stat.S_IWUSR) # owner writable
 1. First not null: `next((i for i in lst if i), 0)
+1. Read dict from a file: `dc=ast.literal_eval(open('dict.txt').read())`
 
 ## Topics
 1. [Web](web.md)
