@@ -50,7 +50,7 @@
 * [Efficiently and dynamically creating new columns using applymap](https://pandas.pydata.org/pandas-docs/stable/user_guide/cookbook.html#new-columns): `df[new_cols] = df[source_cols].applymap(categories.get)`
 * Setting portions of a MultiIndex with xs: `df2.xs('y',level='variable3',axis=1,drop_level=False).ffill()`
 * Prepending a level to a multiindex: `pd.concat({'Foo': df}, names=['Firstlevel'])`
-
+* Flatten Hierarchical columns: `df.columns = ['_'.join(tup).rstrip('_') for tup in df.columns.values]; df.columns = df.columns.get_level_values(0)`
 
 ### Function application
 1. Tablewise Function Application: pipe()
