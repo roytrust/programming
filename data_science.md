@@ -6,6 +6,7 @@
 ## pandas
 * DataFrame: A set of pandas Series that shares the same index.
 * `df = pd.DataFrame(np.random.rand(n, 3), columns=list('abc')); index = pd.date_range('1/1/2000', periods=8); df = pd.DataFrame(np.random.randn(8, 3), index=index, columns=['A', 'B', 'C'])` 
+* From text: `df = pd.read_csv(io.StringIO(text), header=0, index_col=0, sep='\s+')`
 * Underlying data: `.array; df.to_numpy()` preferrable over value
 * Histogramming: `value_count(), mode()`
 * Discretization and quantiling, bins: `cut(); qcut()`
@@ -58,6 +59,10 @@
 * Sort groups by aggregated data: `ord = gb[['data']].transform(sum).sort_values(by='data'); df.loc[ord.index]`
 * Shift groups of the values in a column based on the index: `df.groupby(level=0)['beyer'].shift(1)`
 * Calculating the number of specific consecutive equal values: `df['A'].groupby((df['A'] != df['A'].shift()).cumsum()).cumsum()`
+* Expanding data
+  * [Alignment and to-date - group handler](https://stackoverflow.com/questions/15489011/python-time-series-alignment-and-to-date-functions). 
+  * [Rolling Computation window based on values instead of counts](https://stackoverflow.com/questions/14300768/pandas-rolling-computation-with-window-based-on-values-instead-of-counts)
+  * 
 
 ### Function application
 1. Tablewise Function Application: pipe()
