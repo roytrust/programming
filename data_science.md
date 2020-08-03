@@ -62,7 +62,11 @@
 * Expanding data
   * [Alignment and to-date - group handler](https://stackoverflow.com/questions/15489011/python-time-series-alignment-and-to-date-functions). 
   * [Rolling Computation window based on values instead of counts](https://stackoverflow.com/questions/14300768/pandas-rolling-computation-with-window-based-on-values-instead-of-counts)
-  * 
+* Splitting by edge: `dfs = list(zip(*df.groupby((1 * (df['Case'] == 'B')).cumsum().rolling(window=3, min_periods=1).median())))[-1]; list(df.groupby((df.a == "B").shift(1).fillna(0).cumsum()))`
+* Vectorized Lookup: `prices.lookup(orders.Date, orders.ticker)`
+* kdb like asof join: `pd.merge_asof(trades, quotes, on='time')`
+* [SQL like non-equal join](https://stackoverflow.com/questions/15581829/how-to-perform-an-inner-or-outer-join-of-dataframes-with-pandas-on-non-simplisti)
+* [merge with logic - searchsorted](https://stackoverflow.com/questions/25125626/pandas-merge-with-logic/2512764)
 
 ### Function application
 1. Tablewise Function Application: pipe()
@@ -92,6 +96,12 @@
 * Compared with standard Python sequence slicing in which the slice endpoint is not inclusive, label-based slicing in pandas **is inclusive**. 
 
 ### [Time series](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html)
+* `between_time(); indexer_between_time()`
+* [Constructing a datetime range that excludes weekends and includes only certain times](https://stackoverflow.com/questions/24010830/pandas-generate-sequential-timestamp-with-jump/24014440#24014440?)
+* Divide single values of a dataframe by monthly averages: `grouper = pd.Grouper(key='Date', freq='M'); df.groupby(grouper).transform(lambda x: x/x.mean())`
+* Customized agg func: `gpy = df.groupby(pd.Grouper(level='Date', freq='Q')); gpy.agg(lambda x: np.nan if (np.isnan(x).any() or len(x)<3) else x.sum())`
+* [Valid frequency arguments to Grouper](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#timeseries-offset-aliases)
+* resample: `df.resample('60Min', how=conversion, base=30); res=df.groupby('string').resample('M', how='sum'); res.groupby(level='date').apply(lambda x: x / x.sum())`
 
 ### [Categoricals](https://pandas.pydata.org/pandas-docs/stable/user_guide/categorical.html)
 
