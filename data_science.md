@@ -132,6 +132,7 @@
 * Solving a system of linear scholar equations. `solution=linalg.solve(coeffs,depvars); coeffs.dot(solution),depvars; np.allclose(coeffs.dot(solution),depvars)`
 * **Vectorization**, `X,Y=np.meshgrid(x,y), np.sin(X*Y/30.5)`
 * np.save, np.load, savetxt, loadtxt, savez
+* ufunc: `np.less.outer(range(1,3), range(1,7))`
 
 
 ## matplotlib
