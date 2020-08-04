@@ -136,6 +136,9 @@
 
 
 ## matplotlib
+* Show plots: `import matplotlib.pyplot as plt; import matplotlib as mpl; plt.show()`
+* backend: `mpl.rcParams["backend"];  MPLBACKEND env-var; mpl.use()`
+* Interactive mode: `mpl.is_interactive(); mpl.interactive(); plt.ion() # turn on; plt.ioff(); plt.draw()`
 * Cheatsheet: https://github.com/matplotlib/cheatsheets
 
 ## Reference
