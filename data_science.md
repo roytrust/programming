@@ -124,7 +124,7 @@
 * Extract based on condition. `np.extract((x<3)|(x>10),x)`
 * Return values based on condition. `np.where(x>5); np.where(x>5,"hit","miss")`
 * nth percentile. `np.percentile(x,30,axis=0)`
-* np.linspace, Evenly distributed between 2 values.
+* Evenly distributed between 2 values. `np.linspace(1,20,100)`
 * np.fromfunction, Initialize using a function.
 * x.itemsize. Data buffer, x.data.tobytes()
 * **Reshape**. In place, x.shape=(2,3). Pointing at the same data, x.reshape(2,3). New ndarray, x.ravel()
