@@ -5,7 +5,8 @@
 * only if success: cmd1 && cmd2
 * last arg: alt+.
 * set up default group for creating file: newgrp grp
-* Get file size: find . -type f -exec du -b {} + | awk '{sum+=$1} END{print sum}'
+* Get file size: `find . -type f -exec du -b {} + | awk '{sum+=$1} END{print sum}'` (The difference between ; and + is that with ; a single command for each file is executed whereas with + as many files as possible are given as parameters at once).
+* Find by size: `find . -type f -size +30M -size -40M -exec ls -l {} +`
 * Test variable not exists: `if [ -z "$VAR" ]; then; echo not-exists; fi`
 
 ### Shell expansion
