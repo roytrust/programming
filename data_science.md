@@ -141,6 +141,7 @@
 * Interactive mode: `mpl.is_interactive(); mpl.interactive(); plt.ion() # turn on; plt.ioff(); plt.draw()`
 
 * [Parts of a figure](https://matplotlib.org/tutorials/introductory/usage.html#figure-parts)
+* [pyplot tutorial](https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py)
 * Cheatsheet: https://github.com/matplotlib/cheatsheets
 
 ## Reference
