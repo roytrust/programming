@@ -10,4 +10,6 @@
 * rename symbol entire project: f2
 * ctrl+-
 * alt+left: go back
+* Check logs: goto Help | Toggle Developer tools, click on the console tab
+* winpty solved up/down arrow not working.
 
