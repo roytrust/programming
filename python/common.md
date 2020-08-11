@@ -60,6 +60,7 @@ def tag(tag_name, **attributes):
 * dictionary literals. Copy/merge `{**d1, k:v}`
 
 ### regex
+* `import re; re.sub(r'reg', '', s)`
 * Find a Specific Word: `/[^.]* word [^.]*\./gi`
 * Stripe invalid characters: `/[<>|:"*?\\/]+/g`
 * Replace multiple whitespace: `/\s\s+/g`. trim the beginning
