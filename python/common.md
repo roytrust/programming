@@ -14,7 +14,7 @@ shutil.which()
 
 ### Modules
 * module path: PYTHONPATH; sys.path.append()
-* sys.modules
+* sys.modules[]
 * from importlib import reload; reload()
 
 ### logging
