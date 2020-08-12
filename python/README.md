@@ -23,6 +23,7 @@
 1. File exists: Path.exists(); File mode: Path.chmod(stat.S_IWUSR) # owner writable
 1. First not null: `next((i for i in lst if i), 0)
 1. Read dict from a file: `dc=ast.literal_eval(open('dict.txt').read())`
+1. argparse: `parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter) # show default; add_argument(help="(default: %(default)s)")`
 
 ## Topics
 1. [Web](web.md)
