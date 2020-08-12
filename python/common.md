@@ -34,7 +34,8 @@ shutil.which()
 from datetime import datetime
 datetime.now(); datetime.now().time(); datetime.now().date()
 now.strftime('%Y%m%d')
-from date time import date; date.today()
+datetime.strptime('20200801', '%Y%m%d').weekday()
+from datetime import date; date.today()
 ```
 
 ### [Asterisk `*,**` prefix operator](https://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/)
