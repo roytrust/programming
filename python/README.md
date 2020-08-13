@@ -17,7 +17,7 @@
 1. Find in a list: `[[i,s] for i,s in enumerate(sys.path) if 'pandas' in s]`
 1. Converts a string into an expression: eval()
 1. Converts an integer to binary string: bin()
-1. Execution time: timeit.timeit(globals=globals(), number=3, stmt="")
+1. Execution time: `timeit.timeit(globals=globals(), number=3, stmt=""); from __main__ import x`
 1. Get script directory: os.path.dirname(os.path.realpath(__file__))
 1. File modify timestamp: `Path().stat.st_mtime; datetime.datetime.fromtimestamp(tm)`
 1. File exists: Path.exists(); File mode: Path.chmod(stat.S_IWUSR) # owner writable
