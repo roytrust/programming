@@ -113,8 +113,9 @@
 
 ## NumPy
 * Random: `np.random.randint(20,size=(3,5); random.choice([]); shuffle(); permutation(); normal(loc=1, scale=2, size=(2, 3))`
-* Slice: `np.s_[::2]; np.s_[:, [2]]`
+* [Slice, basic/advanced indexing](https://numpy.org/doc/stable/reference/arrays.indexing.html): `np.s_[::2]; np.s_[:, [2]]; x[...,0]; x[:,np.newaxis,:,:].shape; x[np.ix_(rows, columns)]`
 * Map/ufunc/vectorization, use the broadcasting rules of numpy: `np.frompyfunc(len, 1, 1); np.vectorize(len); type(np.add) == np.ufunc # test if a ufunc; np.add.reduce(); set ops`
+* [ndarray](https://numpy.org/doc/stable/reference/arrays.ndarray.html): `a.ndim; a.dtype`
 * Conditional operators, `x<10, x[x>10]`
 * Indexing, `x[2::2]; x[::-1]; x[(0,2),(2:5)]; x[:,(-1,2,-1)]; x[(-1,1),(2,3)]; x[1,...]; np.ix_`
 * vstack, hstack, stack
