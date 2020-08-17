@@ -148,6 +148,8 @@
 * Interactive mode: `mpl.is_interactive(); mpl.interactive(); plt.ion() # turn on; plt.ioff(); plt.draw()`
 * plt.gca() returns the current axes, and gcf() returns the current figure.
 * plt.subplot(211) specifies numrows, numcols, plot_number.
+* Install and config: `mpl.get_configdir(); matplotlibrc file: mpl.matplotlib_fname()`
+* Style sheets: `plt.style.available; plt.style.use(); `
 
 * [Parts of a figure](https://matplotlib.org/tutorials/introductory/usage.html#figure-parts)
 * [pyplot tutorial](https://matplotlib.org/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py)
