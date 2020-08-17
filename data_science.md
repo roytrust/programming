@@ -131,7 +131,7 @@
 * Evenly distributed between 2 values. `np.linspace(1,20,100)`
 * np.fromfunction, Initialize using a function.
 * x.itemsize. Data buffer, x.data.tobytes()
-* **Reshape**. In place, x.shape=(2,3). Pointing at the same data, x.reshape(2,3). New ndarray, x.ravel(). -1 auto cal.
+* **Reshape**. In place, x.shape=(2,3). Pointing at the same data, x.reshape(2,3). New ndarray, x.ravel(). -1 auto cal whatever is needed.
 * QR decomposition, linalg.qr()
 * Solving a system of linear scholar equations. `solution=linalg.solve(coeffs,depvars); coeffs.dot(solution),depvars; np.allclose(coeffs.dot(solution),depvars)`
 * **Vectorization**, `X,Y=np.meshgrid(x,y), np.sin(X*Y/30.5)`
