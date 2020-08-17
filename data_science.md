@@ -118,8 +118,9 @@
 * [ndarray](https://numpy.org/doc/stable/reference/arrays.ndarray.html): `a.ndim; a.dtype`
 * Conditional operators, `x<10, x[x>10]`
 * Indexing, `x[2::2]; x[::-1]; x[(0,2),(2:5)]; x[:,(-1,2,-1)]; x[(-1,1),(2,3)]; x[1,...]; np.ix_`
-* vstack, hstack, stack
+* **Stacking** together different arrays: vstack, hstack, stack
 * split, vsplit, hsplit
+* **Copies and Views**: `c = a.view(); c.base is a; c.flags.owndata `
 * transpose, swapaxes
 * N largest value. `ind=np.argpartition(x,-4)[-4:]; np.sort(x[ind])`
 * matching within a tolerance. `np.allclose(x1,x2,0.1)`
@@ -130,13 +131,16 @@
 * Evenly distributed between 2 values. `np.linspace(1,20,100)`
 * np.fromfunction, Initialize using a function.
 * x.itemsize. Data buffer, x.data.tobytes()
-* **Reshape**. In place, x.shape=(2,3). Pointing at the same data, x.reshape(2,3). New ndarray, x.ravel()
+* **Reshape**. In place, x.shape=(2,3). Pointing at the same data, x.reshape(2,3). New ndarray, x.ravel(). -1 auto cal.
 * QR decomposition, linalg.qr()
 * Solving a system of linear scholar equations. `solution=linalg.solve(coeffs,depvars); coeffs.dot(solution),depvars; np.allclose(coeffs.dot(solution),depvars)`
 * **Vectorization**, `X,Y=np.meshgrid(x,y), np.sin(X*Y/30.5)`
 * np.save, np.load, savetxt, loadtxt, savez
 * ufunc: `np.less.outer(range(1,3), range(1,7))`
 
+* [**Broadcasting**](https://numpy.org/devdocs/user/basics.broadcasting.html)
+  * The first rule of broadcasting is that if all input arrays do not have the same number of dimensions, a “1” will be repeatedly prepended to the shapes of the smaller arrays until all the arrays have the same number of dimensions.
+  * The second rule of broadcasting ensures that arrays with a size of 1 along a particular dimension act as if they had the size of the array with the largest shape along that dimension. The value of the array element is assumed to be the same along that dimension for the “broadcast” array.
 
 ## matplotlib
 * Start: `import matplotlib.pyplot as plt; import matplotlib as mpl; ptl.plot(range(4); plt.show()`
