@@ -1,11 +1,25 @@
 
-## Decision Trees
-* sklearn.tree import export_graphviz; dot
-* Requires very little data preparation. they don't require feature scaling or centering at all.
-* White box models: easy to interpret. In contrast, black box.
-* Making predictions. Estimating class probabilities. The CART training algorithm. Gini impurity or entropy. 
-* Random Forest can limit the instability
-
+## CH7. Ensemble learning and random forests
+* Ensemble learning: aggregate the predictions of a group predictors (ensemble), produce better predictions than with the best individual predictor.
+* Random forest: an ensemable of decision trees.
+* Ensemble methods work best when the predictors are as independent from one another as possible.
+* **Voting Classifiers**: multiple training algorithm. voting=hard/soft. soft: predict_proba()
+* **Bagging and Pasting**
+  * Use the same training algorithm for every predictor and train them on different random subsets of the training set.
+  * **Bagging (bootstrap aggregating)**: sampling is performed with replacement.
+  * **passting**: sampling is performed without replacement.
+  * BaggingClassifier, BiggingRegressor. 
+  * **Out-of-Bag Evaluation**: training instances that are not sampled (oob). oob_score=True, oob_score_, oob_decision_function_.
+* **Random Patches**: sampling both training instances and features. Useful when dealing with high-demensional inputs e.g. images.
+* **Random Subspaces**: keeping all training instances (boostrap=False and max_sample=1.0), but sampling features (bootstrap_features=True or max_features < 1.0).
+* **Random Forests**: ensemble of decision trees. pass RandomForestClassifier to BaggingClassifier. 
+  * **Extra-Trees** (Extremely Randomized Trees ensemple): use random thresholds for each feature rather than searching for the best possible thresholds. ExtraTreesClassifier.
+  * **Feature Importance**: feature_importances_.
+* **Boosting** (hypothesis boosting): train predictors sequentially, each trying to correct its predecessor.
+  * **AdaBoost** (Adaptive Boosting): pay more attention to the training instances that the predecessor underfitted, tweaking the instance weights. This results in new predictors focusing more and more on the hard cases.Predictors have different weights depending on their overall accuracy on the weighted training set. AdaBoostClassifier, AdaBoostRegressor.
+  * **Gradient Boosting**: fit the new predictor to the residual errors made by the previous predictor. Gradient Tree Boosting, or Gradient Boosted Regression Trees (GBRT). GradientBoostingRegressor, staged_predict(). XGBoost lib for Extreme Gradient Boosting. 
+* **Stacking**:
+  
 
 ## Fundamentals of machine learning
 ### What is machine learning?
@@ -210,6 +224,13 @@ Each row in a confusion matrix represents an actual class, while each column rep
 ### SVM regression
 * fit as many instances as possible on the street while limiting margin violation.
 * LinearSVR, DVR()
+
+## CH6. Decision Trees
+* sklearn.tree import export_graphviz; dot
+* Requires very little data preparation. they don't require feature scaling or centering at all.
+* White box models: easy to interpret. In contrast, black box.
+* Making predictions. Estimating class probabilities. The CART training algorithm. Gini impurity or entropy. 
+* Random Forest can limit the instability
 
 
 ## References
