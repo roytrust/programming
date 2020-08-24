@@ -8,6 +8,8 @@
 * `kmeans = sklearn.cluster.KMeans(n_clusters=k); kmeans.labels_; cluster_centers_; kmeans.inertia_` 
 * hard clustering: assign each instance to a single cluster
 * soft clustering: give each instance a score per cluster. `kmeans.transform(X_new)`
+* Centroid initialization methods. 
+* Accelerated k-means and mini-batch k-means.
 
 
 ## Fundamentals of machine learning
