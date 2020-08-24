@@ -7,8 +7,8 @@
 * **Bagging and Pasting**
   * Use the same training algorithm for every predictor and train them on different random subsets of the training set.
   * **Bagging (bootstrap aggregating)**: sampling is performed with replacement.
-  * **passting**: sampling is performed without replacement.
-  * BaggingClassifier, BiggingRegressor. 
+  * **Pasting**: sampling is performed without replacement.
+  * BaggingClassifier, BaggingRegressor. 
   * **Out-of-Bag Evaluation**: training instances that are not sampled (oob). oob_score=True, oob_score_, oob_decision_function_.
 * **Random Patches**: sampling both training instances and features. Useful when dealing with high-demensional inputs e.g. images.
 * **Random Subspaces**: keeping all training instances (boostrap=False and max_sample=1.0), but sampling features (bootstrap_features=True or max_features < 1.0).
@@ -17,9 +17,9 @@
   * **Feature Importance**: feature_importances_.
 * **Boosting** (hypothesis boosting): train predictors sequentially, each trying to correct its predecessor.
   * **AdaBoost** (Adaptive Boosting): pay more attention to the training instances that the predecessor underfitted, tweaking the instance weights. This results in new predictors focusing more and more on the hard cases.Predictors have different weights depending on their overall accuracy on the weighted training set. AdaBoostClassifier, AdaBoostRegressor.
-  * **Gradient Boosting**: fit the new predictor to the residual errors made by the previous predictor. Gradient Tree Boosting, or Gradient Boosted Regression Trees (GBRT). GradientBoostingRegressor, staged_predict(). XGBoost lib for Extreme Gradient Boosting. 
-* **Stacking**:
-  
+  * **Gradient Boosting**: fit the new predictor to the residual errors made by the previous predictor. Gradient Tree Boosting, or Gradient Boosted Regression Trees (GBRT). GradientBoostingRegressor, staged_predict(). **XGBoost** lib for Extreme Gradient Boosting. 
+* **Stacking** (stacked generalization): instead of using trivial functions (e.g. hard voting) to aggregate the predictions of all predictors in an ensemble, why don't train a model to perform this aggregation.
+  * **Blender**, or meta learner: the final predictor takes these predictions as inputs and makes the final prediction.
 
 ## Fundamentals of machine learning
 ### What is machine learning?
