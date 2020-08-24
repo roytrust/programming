@@ -1,5 +1,13 @@
 
 ## CH9. Unsupervised Learning Techniques
+* **Clustering**: identifying similar instances and assigning them to clusters, or groups of similar instances.
+  * Applications: customer segmentation/recommender system. data analysis. dimensionality reduction. anomaly detection/fraud detection. semi-supervised learning. Search engine. Segment an image/object detection/tracking.
+  * K-Means
+### K-Means
+* Find each blob's center and assign each instance to the closest blob.
+* `kmeans = sklearn.cluster.KMeans(n_clusters=k); kmeans.labels_; cluster_centers_; kmeans.inertia_` 
+* hard clustering: assign each instance to a single cluster
+* soft clustering: give each instance a score per cluster. `kmeans.transform(X_new)`
 
 
 ## Fundamentals of machine learning
