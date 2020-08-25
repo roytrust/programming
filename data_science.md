@@ -137,6 +137,7 @@
 * **Vectorization**, `X,Y=np.meshgrid(x,y), np.sin(X*Y/30.5)`
 * np.save, np.load, savetxt, loadtxt, savez
 * ufunc: `np.less.outer(range(1,3), range(1,7))`
+* memmap: accessing small segments of large files on disk.
 
 * [**Broadcasting**](https://numpy.org/devdocs/user/basics.broadcasting.html)
   * The first rule of broadcasting is that if all input arrays do not have the same number of dimensions, a “1” will be repeatedly prepended to the shapes of the smaller arrays until all the arrays have the same number of dimensions.
