@@ -1,3 +1,4 @@
+## Linux/Unix
 ### Tips
 * ldd /bin/ls
 * [ -d tests ] && echo exists
@@ -26,7 +27,17 @@
 * pattern match: '/pattern/ action'
 * [awk command series](https://www.tecmint.com/tag/awk-command/)
 
-### Reference
+## Windows
+### Win tips
+* List groups: `whoami /groups; gpresult /r`
+* Ticket reset: `klist purge; klist tgt`
+* update GPO: `gpupdate /force`. GPO editor console: rsop.msc
+* Map network drive: `net use m: path /persistent:yes
+* `runas /user:username explorer
+*
+
+
+## Reference
 * [Linux shell scripting tutorial](https://bash.cyberciti.biz/guide/Main_Page)
 * [10 useful chaining operators in Linux](https://www.tecmint.com/chaining-operators-in-linux-with-practical-examples/)
 * awk: https://www.howtogeek.com/562941/how-to-use-the-awk-command-on-linux/amp/
