@@ -13,7 +13,11 @@
 * Accelerated k-means and mini-batch k-means.
 * Find the optimal number of clusters. silhouette score: the mean silhouette coefficient over all the instances. Silhouette diagram. 
 * Limits of K-Means: specify the number of clusters. the clusters have varying sizes, different densities, or nonspherical shapes.
-* import to scale the input features.
+* important to scale the input features.
+* Using clustering for image segmentation. _semantic segmentation_, all pixels that are part of the same object type get assinged to the same segment. _instance segmentation_, all pixels that are part of the same individual object are assigned to the same segment. _color segmentation_
+* Using clustering for preprocessing.
+* Using clustering for Semi-Supervised learning. _label propagation_
+* Active learning. _uncertainty sampling_, most uncertain (i.e., when its estimated probability is lowest) are given to the expert to be labeled. 
 
 
 ## Fundamentals of machine learning
