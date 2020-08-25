@@ -3,6 +3,7 @@
 * **Clustering**: identifying similar instances and assigning them to clusters, or groups of similar instances.
   * Applications: customer segmentation/recommender system. data analysis. dimensionality reduction. anomaly detection/fraud detection. semi-supervised learning. Search engine. Segment an image/object detection/tracking.
   * K-Means
+  
 ### K-Means
 * Find each blob's center and assign each instance to the closest blob.
 * `kmeans = sklearn.cluster.KMeans(n_clusters=k); kmeans.labels_; cluster_centers_; kmeans.inertia_` 
@@ -10,6 +11,9 @@
 * soft clustering: give each instance a score per cluster. `kmeans.transform(X_new)`
 * Centroid initialization methods. 
 * Accelerated k-means and mini-batch k-means.
+* Find the optimal number of clusters. silhouette score: the mean silhouette coefficient over all the instances. Silhouette diagram. 
+* Limits of K-Means: specify the number of clusters. the clusters have varying sizes, different densities, or nonspherical shapes.
+* import to scale the input features.
 
 
 ## Fundamentals of machine learning
