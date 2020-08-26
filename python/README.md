@@ -25,6 +25,7 @@
 1. Read dict from a file: `dc=ast.literal_eval(open('dict.txt').read())`
 1. argparse: `parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter) # show default; add_argument(help="(default: %(default)s)")
     nargs='*' # list like 1 2. + 1 or more; action='append' # multi times`
+1. [Memory mapped file mmap](https://realpython.com/python-mmap/). `mmap.mmap(file_obj.fileno(), length=0, access=mmap.ACCESS_READ); mmap_obj[10:20] # as string; `
 
 ## Topics
 1. [Web](web.md)
