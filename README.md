@@ -8,6 +8,7 @@
 1. [Design Pattern](design_pattern.md)
 1. [Principles & Paradigm](principles.md)
 1. [Data Storytelling](storytelling.md)
+1. [Basic](basic.md)
 
 ### Get start
 * [Git tutorial for beginners](https://youtu.be/HVsySz-h9r4)
