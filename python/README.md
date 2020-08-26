@@ -28,10 +28,11 @@
 1. [Memory mapped file mmap](https://realpython.com/python-mmap/). `mmap.mmap(file_obj.fileno(), length=0, access=mmap.ACCESS_READ); mmap_obj[10:20] # as string; `
 1. Reflection: `dir(dir); a=getattr(dir, '__str__'); callable(a)`
 
-## Topics
+## Topics/Packages
 1. [Web](web.md)
    * [Proxy setup](web.md#proxy-setup)
    * [selenium](web.md#selenium)
+   * [requests](web.md#requests)
 1. [Jupyter](jupyter.md)
 1. [decorator](decorator.md)
 1. [Object oriented programming](oop.md)
@@ -39,6 +40,7 @@
 1. Debug
 1. Code quality & style check
 1. [Functional programming](functional.md)
+1. [parse - Matching Strings](https://realpython.com/python-packages/#parse-for-matching-strings). `parse.search("Author: {name} <{email}>", pep498)`
 
 ## Overview
 * Everything are objects.
