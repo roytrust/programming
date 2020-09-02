@@ -34,7 +34,7 @@
 * update GPO: `gpupdate /force`. GPO editor console: rsop.msc
 * Map network drive: `net use m: path /persistent:yes`
 * `runas /user:username explorer`
-* Check user: `net user username /domain 2>&1 | findstr changeable
+* Check user: `net user username /domain 2>&1 | findstr changeable`
 
 
 ## Reference
