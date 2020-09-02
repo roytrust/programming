@@ -32,9 +32,9 @@
 * List groups: `whoami /groups; gpresult /r`
 * Ticket reset: `klist purge; klist tgt`
 * update GPO: `gpupdate /force`. GPO editor console: rsop.msc
-* Map network drive: `net use m: path /persistent:yes
-* `runas /user:username explorer
-*
+* Map network drive: `net use m: path /persistent:yes`
+* `runas /user:username explorer`
+* Check user: `net user username /domain 2>&1 | findstr changeable
 
 
 ## Reference
