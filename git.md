@@ -5,7 +5,7 @@
 * Against remote repo: diff origin/master
 * rebase, branch, merge
 * Modify the most recent commit: `git commit --amend -m "msg"`
-
+* Clean up local for performance: `git gc; git gc --aggressive --auto`
 
 ### Typical workflow
 ```
