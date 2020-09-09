@@ -67,6 +67,7 @@
 * kdb like asof join: `pd.merge_asof(trades, quotes, on='time')`
 * [SQL like non-equal join](https://stackoverflow.com/questions/15581829/how-to-perform-an-inner-or-outer-join-of-dataframes-with-pandas-on-non-simplisti)
 * [merge with logic - searchsorted](https://stackoverflow.com/questions/25125626/pandas-merge-with-logic/2512764)
+* Add multiple new columns: `df = df.assign(c1='1', c2='2'); df[['c1', 'c2']] = pd.DataFrame([[np.nan, 3]], index=df.index)`
 
 ### Function application
 1. Tablewise Function Application: pipe()
