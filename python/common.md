@@ -37,6 +37,7 @@ datetime.now(); datetime.now().time(); datetime.now().date()
 now.strftime('%Y%m%d')
 datetime.strptime('20200801', '%Y%m%d').weekday()
 from datetime import date; date.today()
+datetime.timedelta(days=1)
 ```
 
 ### [Asterisk `*,**` prefix operator](https://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/)
