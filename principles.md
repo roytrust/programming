@@ -79,6 +79,14 @@ As an analogy,
 ### Scrum Master
 * Ceremonies: Sprint planning, backlog review, daily standup, sprint review, retrospective
 * Framework: Briefing from clients and other stakeholders, proudct owner
+* Backlog review is effective:
+  * Stories are refined in order or priority
+  * Business value drives prioritization
+  * Focus is on getting stories ready
+  * Acceptance criteria are defined
+  * Product owner sends agenda in advance
+  * Backlog is clear
+  
 
 ## References
 * Style guide: http://google.github.io/styleguide/
