@@ -21,7 +21,7 @@ urllib.request.install_opener(opener)
 * `driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent":"python", "platform":"Windows"}); driver.execute_script("return navigator.userAgent") `
 
 ### requests
-* `import requests; r=requests.get("http://www.example.com"); r.content; r.text; r.status_code, r.headers['Content-Type']`
+* `import requests; r=requests.get("http://www.example.com"); r.content; r.text; r.status_code, r.headers['Content-Type']; r.request.headers`
 * Handle response: `if response: print('Success!'); response.raise_for_status(); except requests.exceptions.HTTPError as err: `
 
 * [Guide](https://realpython.com/python-requests/). 
