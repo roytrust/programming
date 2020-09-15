@@ -1,7 +1,7 @@
 ### Tips
 * sys.version
 * module location: `m.__file__`
-
+* os.name == 'nt'  # Windows
 
 ### Environment variable
 ```
