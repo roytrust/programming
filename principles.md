@@ -86,6 +86,17 @@ As an analogy,
   * Acceptance criteria are defined
   * Product owner sends agenda in advance
   * Backlog is clear
+* Sprint Review is effective:
+* Retrospective is effective: retromat.org
+  * Squad has open and honest discussion
+  * Issues are being resolved
+  * Each issue has an owner
+  * The session is fund!
+  * Squad members express gratitude
+  * Achievements are celebrated
+* Squad: small 8-12 members. cross functional. dedicated. persistent 12-18 months.
+
+  
   
 
 ## References
