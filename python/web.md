@@ -23,10 +23,10 @@ urllib.request.install_opener(opener)
 ### requests
 * `import requests; r=requests.get("http://www.example.com"); r.content; r.text; r.status_code, r.headers['Content-Type']; r.request.headers`
 * Handle response: `if response: print('Success!'); response.raise_for_status(); except requests.exceptions.HTTPError as err: `
-
+* requests-html, requests-random-user-agent
 * [Guide](https://realpython.com/python-requests/). 
   [Brief intro](https://realpython.com/python-packages/#requests-for-interacting-with-the-web)
 
 ### Reference
 * [avoid getting blocked](https://www.codementor.io/@scrapingdog/10-tips-to-avoid-getting-blocked-while-scraping-websites-16papipe62)
-* Get header: https://httpbin.org/headers
+* Get header/test http: https://httpbin.org/headers
