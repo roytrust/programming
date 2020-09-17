@@ -27,6 +27,7 @@
     nargs='*' # list like 1 2. + 1 or more; action='append' # multi times`
 1. [Memory mapped file mmap](https://realpython.com/python-mmap/). `mmap.mmap(file_obj.fileno(), length=0, access=mmap.ACCESS_READ); mmap_obj[10:20] # as string; `
 1. Reflection: `dir(dir); a=getattr(dir, '__str__'); callable(a)`
+1. [from dataclasses import dataclass](https://realpython.com/python-data-classes/). `@dataclass(order=True); make_dataclass('Position', ['name', 'lat', 'lon']); typing.Any; cards: List[PlayingCard] = field(default_factory=make_french_deck)`
 
 ## Topics/Packages
 1. [Web](web.md)
