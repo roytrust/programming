@@ -17,7 +17,8 @@ urllib.request.install_opener(opener)
 * [selenium dev](https://www.selenium.dev/)
 * [ChromeDriver](https://chromedriver.chromium.org/)
 * [selenium with python](https://selenium-python.readthedocs.io/)
-* driver. get_log('browser'), page_source, name
+* `driver.get_log('browser'), page_source, name; refresh()`
+* `from selenium.webdriver.common.by import By; e=driver.find_elements(By.XPATH, P), e.send_keys('')`
 * `driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent":"python", "platform":"Windows"}); driver.execute_script("return navigator.userAgent") `
 * [Cookie: `driver.get_cookies(); delete_cookie(); add_cookie()`](https://www.selenium.dev/documentation/en/support_packages/working_with_cookies/)
 
