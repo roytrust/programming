@@ -37,7 +37,7 @@
 1. [Jupyter](jupyter.md)
 1. [decorator](decorator.md)
 1. [Object oriented programming](oop.md)
-1. Testing
+1. [Testing](test.md)
 1. Debug
 1. Code quality & style check
 1. [Functional programming](functional.md)
