@@ -24,8 +24,8 @@ shutil.which()
 * [tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
 
 ### exception
-* sys.exc_info()
-* traceback
+* sys.exc_info(), logging.exception(e), repr(e)
+* traceback.print_exc()
 * pdb ! run code. alias in ~/.pdbrc
 
 ### Datetime
