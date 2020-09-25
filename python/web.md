@@ -29,6 +29,10 @@ urllib.request.install_opener(opener)
 * [Guide](https://realpython.com/python-requests/). 
   [Brief intro](https://realpython.com/python-packages/#requests-for-interacting-with-the-web)
 
+### Javascript
+* `console.dir(obj); methods only: console.dir(obj.__proto__); console.log(obj); Object.getOwnPropertyNames(obj) `
+
+
 ### Reference
 * [avoid getting blocked](https://www.codementor.io/@scrapingdog/10-tips-to-avoid-getting-blocked-while-scraping-websites-16papipe62)
 * Get header/test http: https://httpbin.org/headers
