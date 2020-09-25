@@ -40,6 +40,7 @@
 1. [Testing](test.md)
 1. Debug
 1. Code quality & style check: `# pylint: disable=`
+1. [Docstring](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/docstrings.html)
 1. [Functional programming](functional.md)
 1. [parse - Matching Strings](https://realpython.com/python-packages/#parse-for-matching-strings). `parse.search("Author: {name} <{email}>", pep498)`
 
