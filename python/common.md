@@ -1,5 +1,5 @@
 ### Tips
-* sys.version
+* sys.version, sys.executable
 * module location: `m.__file__`
 * os.name == 'nt'  # Windows
 
