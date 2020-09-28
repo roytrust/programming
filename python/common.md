@@ -2,6 +2,7 @@
 * sys.version, sys.executable
 * module location: `m.__file__`
 * os.name == 'nt'  # Windows
+* `t=tempfile.TemporaryDirectory(); t.name; t.cleanup()`
 
 ### Environment variable
 ```
