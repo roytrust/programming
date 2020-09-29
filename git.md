@@ -1,5 +1,5 @@
 ### Tips
-* `; git config -l --show-origin; git config --get remote.origin.url`
+* `git config -l --show-origin; git config --get remote.origin.url`
 * Config for win/linux: `git config --global core.filemode false; core.autocrlf input`
 * Check remote repo: `git remote -v`
 * Branches: `git branch; git branch -a #list all; git branch --merge`
