@@ -1,5 +1,6 @@
 ### Tips
-* `git config -l; git config --get remote.origin.url`
+* `; git config -l --show-origin; git config --get remote.origin.url`
+* Config for win/linux: `git config --global core.filemode false; core.autocrlf input`
 * Check remote repo: `git remote -v`
 * Branches: `git branch; git branch -a #list all; git branch --merge`
 * Against remote repo: diff origin/master
@@ -38,7 +39,6 @@ git apply --check fix.patch
 # apply
 git am --signoff < fix.patch
 ```
-* git config --global -add core.filemode false; core.autocrlf
 
 ### The Git object database
 * Every object in the Git history is stored under a 40-digit hex name, which is the SHA-1 hash of the object’s contents.
