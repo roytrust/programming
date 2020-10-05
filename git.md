@@ -1,14 +1,18 @@
 ### Tips
 * `git config -l --show-origin; git config --get remote.origin.url`
 * Config for win/linux: `git config --global core.filemode false; core.autocrlf input`
+* Use rebase instead of merge: `git config --global branch.autosetuprebase always`
 * by default _git diff_ compares between working and the index file; _git diff_ can also show us the difference between the working directory and the last commit `git diff HEAD`, or between the index and the last commit `git diff --cached`.
 * A file is listed as "Changes to be committed", when is cached in the index file (_git add_). A file is marked "changed but not updated", if it isn’t reflected in the index.
-* Check remote repo: `git remote -v`
-* Branches: `git branch; git branch -a #list all; git branch --merge`
+* Branches and [merge conflicts](https://www.atlassian.com/git/tutorials/using-branches/merge-conflicts): `git branch; git branch -a #list all; git branch --merge`
 * Against remote repo: diff origin/master
 * rebase, branch, merge
 * Modify the most recent commit: `git commit --amend -m "msg"`
 * Clean up local for performance: `git gc; git gc --aggressive --auto`
+
+### Callaborating
+* Check remote repo: `git remote -v`
+* The refs for local branches are stored in: ./.git/refs/heads/, remote: ./.git/refs/remotes/. `git branch; git fetch <remote> <branch>`
 
 ### Typical workflow
 ```
@@ -129,6 +133,7 @@ git am *.patch
 
 ```
 ### References
+* https://www.atlassian.com/git/tutorials/syncing
 * https://backlog.com/git-tutorial/
 * Tutorial: https://git-scm.com/docs/gittutorial
 * User manual: https://git-scm.com/docs/user-manual.html
