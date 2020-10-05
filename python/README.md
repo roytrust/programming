@@ -40,7 +40,7 @@
 1. [Testing](test.md)
 1. Debug
 1. Code quality & style check: `# pylint: disable=`
-1. [Docstring](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/docstrings.html)
+1. [Docstring](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/docstrings.html). [Sphinx reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
 1. [Functional programming](functional.md)
 1. Profile: `profile, pyinstrument`
 1. PDF: https://realpython.com/creating-modifying-pdf/  https://realpython.com/pdf-python/
