@@ -1,6 +1,8 @@
 ### Tips
 * `git config -l --show-origin; git config --get remote.origin.url`
 * Config for win/linux: `git config --global core.filemode false; core.autocrlf input`
+* by default _git diff_ compares between working and the index file; _git diff_ can also show us the difference between the working directory and the last commit `git diff HEAD`, or between the index and the last commit `git diff --cached`.
+* A file is listed as "Changes to be committed", when is cached in the index file (_git add_). A file is marked "changed but not updated", if it isn’t reflected in the index.
 * Check remote repo: `git remote -v`
 * Branches: `git branch; git branch -a #list all; git branch --merge`
 * Against remote repo: diff origin/master
@@ -52,18 +54,13 @@ git cat-file blob 3b18
 
 cat .git/HEAD
 ```
-### The index file
-* Examine index file: git ls-files --stage
-* by default _git commit_ uses the index to create the commit
-* by default _git diff_ compares between working and the index file; _git diff_ can also show us the difference between the working directory and the last commit `git diff HEAD`, or between the index and the last commit `git diff --cached`.
-* A file is listed as "Changes to be committed", when is cached in the index file (_git add_). A file is marked "changed but not updated", if it isn’t reflected in the index.
 
 ### Other core concepts
-* the HEAD link is supposed to always point to the branch you are working on right now.
-* Objects are immutable.
-* .git/index file is the index that describes your current working tree.
 * keep in mind the difference between "working tree contents", "index file" and "committed tree"
-
+* the HEAD link is supposed to always point to the branch you are working on right now.
+* .git/index file is the index that describes your current working tree. Examine index file: `git ls-files --stage`
+* by default _git commit_ uses the index to create the commit
+* Objects are immutable.
 
 ### Commands
 ```
