@@ -1,6 +1,8 @@
 ## Linux/Unix
 ### Tips
 * ldd /bin/ls
+* memory: free
+* boot time: who -b; last reboot; last -x
 * [ -d tests ] && echo exists
 * last working dir: cd -; home dir: cd ~
 * only if success: cmd1 && cmd2
