@@ -12,3 +12,7 @@
 ### doctest
 * Directives. Handling output that varies using a wildcard: `#doctest +ELLIPSIS; 0x... `. Traceback: ` +IGNORE_EXCEPTION_DETAIL`. -o for global options and directives
 * Send random numbers: `random.seed(1234)`
+
+### Test doubles
+* mock. fake: StringIO. Spy, make sure interactive betweem 2 objects. Monkey patching
+* http://xunitpatterns.com
