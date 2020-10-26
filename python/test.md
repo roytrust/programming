@@ -3,7 +3,7 @@
 * pytest.ini: Prevent mistakes: ` addopts = --strict; markers = slow `
 * list markers: `pytest --markers`
 * html report: `pytest --html=report.html`
-* doctest: `pytest --doctest-modules`. -o doctest_optionflags=. Permanently has ELLIPSIS
+* doctest: `pytest --doctest-modules`. -o doctest_optionflags=. Permanently has ELLIPSIS. --doctest_glob=
 
 ### Unittest
 * python -m unittest test.py -k some -v
