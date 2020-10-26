@@ -4,6 +4,7 @@
 * list markers: `pytest --markers`
 * html report: `pytest --html=report.html`
 * doctest: `pytest --doctest-modules`. -o doctest_optionflags=. Permanently has ELLIPSIS. --doctest_glob=
+* Parameterized tests
 
 ### Unittest
 * python -m unittest test.py -k some -v
@@ -14,5 +15,10 @@
 * Send random numbers: `random.seed(1234)`
 
 ### Test doubles
-* mock. fake: StringIO. Spy, make sure interactive betweem 2 objects. Monkey patching
+* mock. stub. fake: StringIO. Spy, make sure interactive betweem 2 objects. Monkey patching
 * http://xunitpatterns.com
+
+### coverage
+* branch
+* trends
+
