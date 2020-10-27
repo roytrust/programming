@@ -28,6 +28,7 @@
 1. [Memory mapped file mmap](https://realpython.com/python-mmap/). `mmap.mmap(file_obj.fileno(), length=0, access=mmap.ACCESS_READ); mmap_obj[10:20] # as string; `
 1. Reflection: `dir(dir); a=getattr(dir, '__str__'); callable(a)`
 1. [from dataclasses import dataclass](https://realpython.com/python-data-classes/). `@dataclass(order=True); make_dataclass('Position', ['name', 'lat', 'lon']); typing.Any; cards: List[PlayingCard] = field(default_factory=make_french_deck)`
+1. Run script interactive: python -i
 
 ## Topics/Packages
 1. [Web](web.md)
@@ -45,12 +46,6 @@
 1. Profile: `profile, pyinstrument`
 1. PDF: https://realpython.com/creating-modifying-pdf/  https://realpython.com/pdf-python/
 1. [parse - Matching Strings](https://realpython.com/python-packages/#parse-for-matching-strings). `parse.search("Author: {name} <{email}>", pep498)`
-
-## Overview
-* Everything are objects.
-* callable: __call__
-
-
 
 ## Reference
 * [IPython Cookbook](https://ipython-books.github.io/)
