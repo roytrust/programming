@@ -29,6 +29,7 @@
 1. Reflection: `dir(dir); a=getattr(dir, '__str__'); callable(a)`
 1. [from dataclasses import dataclass](https://realpython.com/python-data-classes/). `@dataclass(order=True); make_dataclass('Position', ['name', 'lat', 'lon']); typing.Any; cards: List[PlayingCard] = field(default_factory=make_french_deck)`
 1. Run script interactive: python -i
+1. [Multiprocessing](http://zetcode.com/python/multiprocessing/)
 
 ## Topics/Packages
 1. [Web](web.md)
