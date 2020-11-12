@@ -1,6 +1,12 @@
 1. [ML hands-on](ml_handson.md)
 1. [Linear algebra](linear_algebra.md)
 
+## Concepts and Tips
+* Reinforcement Learning
+* Feedback loop
+* 
+* A common approach to finding the right hyperparameter values is to use grid search.
+
 ## 12 Key Factors
 * Data qualiy
 * Automation
@@ -8,10 +14,6 @@
 * Algorithm
 * Infra, cloud
 * libs: SciPy, scikit-learn, 
-
-## machine learning tips
-* A common approach to finding the right hyperparameter values is to use grid search.
-
 
 ## Further reading
 * [6 Python Libraries to Interpret Machine Learning Models and Build Trust](https://www.analyticsvidhya.com/blog/2020/03/6-python-libraries-interpret-machine-learning-models/)
