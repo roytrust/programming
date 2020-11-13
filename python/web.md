@@ -22,6 +22,7 @@ urllib.request.install_opener(opener)
 * `driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent":"python", "platform":"Windows"}); driver.execute_script("return navigator.userAgent") `
 * [Cookie: `driver.get_cookies(); delete_cookie(); add_cookie()`](https://www.selenium.dev/documentation/en/support_packages/working_with_cookies/)
 * `from selenium.webdriver.common.action_chains import ActionChains; action = ActionChains(driver); action.move_to_element(element).click().perform()`
+* [Action Chains](https://www.geeksforgeeks.org/action-chains-in-selenium-python/)
 
 ### requests
 * `import requests; r=requests.get("http://www.example.com"); r.content; r.text; r.status_code, r.headers['Content-Type']; r.request.headers`
