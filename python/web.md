@@ -33,6 +33,9 @@ urllib.request.install_opener(opener)
 
 ### Javascript
 * `console.dir(obj); methods only: console.dir(obj.__proto__); console.log(obj); Object.getOwnPropertyNames(obj) `
+* [DevTools](https://indepth.dev/useful-techniques-for-debugging-code-using-chrome-devtools)
+  * monitor/unmonitor; copy(var) - clipboard; 
+  * ctrl+shift+p - run cmd: capture
 
 
 ### Reference
