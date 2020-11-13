@@ -6,6 +6,7 @@
 ## pandas
 * DataFrame: A set of pandas Series that shares the same index.
 * `df = pd.DataFrame(np.random.rand(n, 3), columns=list('abc')); index = pd.date_range('1/1/2000', periods=8); df = pd.DataFrame(np.random.randn(8, 3), index=index, columns=['A', 'B', 'C'])` 
+* [Grouping and aggregating](https://pbpython.com/groupby-agg.html)
 * From text: `df = pd.read_csv(io.StringIO(text), header=0, index_col=0, sep='\s+')`
 * Underlying data: `.array; df.to_numpy()` preferrable over value
 * Histogramming: `value_count(), mode()`
