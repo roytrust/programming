@@ -4,6 +4,7 @@
 * MVP
 * Business outcome
 * User story & backlog, acceptance
+* [Defensive programming](https://en.m.wikipedia.org/wiki/Defensive_programming)
 
 ## Principles
 ### SRP: single responsibility principle
