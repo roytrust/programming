@@ -4,8 +4,8 @@
   children precede their parents and the order of appearance in __bases__ is respected.
 * super() returns a proxy object (temporary object of the superclass) that allows us to access methods of the base class.  
   can take two parameters: 1st is a subclass, 2nd is an instance of that subclass.
-* `**kwargs dictionary` to pass parameters  
-```
+* `**kwargs dictionary` to pass parameters 
+  * ```
 def __init__(self, name, **kwds):
         self.name = name
         super().__init__(**kwds)
