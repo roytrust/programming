@@ -62,6 +62,8 @@ def tag(tag_name, **attributes):
 * tuple unpacking. `f,*r,l=alist`
 * list literal. `{*iterable1,*iterable2}`
 * dictionary literals. Copy/merge `{**d1, k:v}`
+* Populate kwarg values with a dict: `f(**v)`
+* Using ** when calling a func: `def f(a, b, c); v={'c': 3, 'b': 2}; f(1, **v)`
 
 ### regex
 * `import re; re.sub(r'reg', '', s)`
