@@ -6,7 +6,6 @@
 ## pandas
 * DataFrame: A set of pandas Series that shares the same index.
 * `df = pd.DataFrame(np.random.rand(n, 3), columns=list('abc')); index = pd.date_range('1/1/2000', periods=8); df = pd.DataFrame(np.random.randn(8, 3), index=index, columns=['A', 'B', 'C'])` 
-* [Grouping and aggregating](https://pbpython.com/groupby-agg.html)
 * From text: `df = pd.read_csv(io.StringIO(text), header=0, index_col=0, sep='\s+')`
 * Underlying data: `.array; df.to_numpy()` preferrable over value
 * Histogramming: `value_count(), mode()`
@@ -54,6 +53,18 @@
 * Fill forward a reversed timeseries: `df.reindex(df.index[::-1]).ffill()`
 * [cumsum reset at NaN values](https://stackoverflow.com/questions/18196811/cumsum-reset-at-nan)
 * Using replace with backrefs: `df.replace({ 'A' : "http:.+\d\d\/(.*?)(;|\\?).*$"}, { 'A' : r'\1'} ,regex=True)`
+* Vectorized Lookup: `prices.lookup(orders.Date, orders.ticker)`
+* kdb like asof join: `pd.merge_asof(trades, quotes, on='time')`
+* [SQL like non-equal join](https://stackoverflow.com/questions/15581829/how-to-perform-an-inner-or-outer-join-of-dataframes-with-pandas-on-non-simplisti)
+* [merge with logic - searchsorted](https://stackoverflow.com/questions/25125626/pandas-merge-with-logic/2512764)
+* Add multiple new columns: `df = df.assign(c1='1', c2='2'); df[['c1', 'c2']] = pd.DataFrame([[np.nan, 3]], index=df.index)`
+
+### [Grouping and aggregating](https://pbpython.com/groupby-agg.html)
+* prefer to use dictionaries for aggregations
+* Multiple builtin agg: `df.groupby(['A']).agg({'B': ['describe']}).round(2)`
+* `count` will not include `NaN`, `size` will. `nunique` will exclude `NaN`
+* Any function can be used as long as it knows how to interpret the array of pandas values and returns a single value. `from scipy.stats import skew, mode; aggf = {'B': [skew, mode, pd.Series.mode]}; df.groupby(['A']).agg(aggf)`
+
 * Grouping: `grp=df.groupby([]); grp['a'].min().reset_index(); gb.get_group('cat'); s.expanding().apply(); c.add(1).cumprod(); gb.transform(replace)`
 * Select rows by max value in groups: `df.loc[df.groupby(['a'])['b'].idxmax()]; idxmin()`. sort then take first of each: `df.sort_values(by="b").groupby("a", as_index=False).first()`. 
   [Performance tuning](https://stackoverflow.com/questions/50381064/select-the-max-row-per-group-pandas-performance-issue)
@@ -65,11 +76,6 @@
   * [Alignment and to-date - group handler](https://stackoverflow.com/questions/15489011/python-time-series-alignment-and-to-date-functions). 
   * [Rolling Computation window based on values instead of counts](https://stackoverflow.com/questions/14300768/pandas-rolling-computation-with-window-based-on-values-instead-of-counts)
 * Splitting by edge: `dfs = list(zip(*df.groupby((1 * (df['Case'] == 'B')).cumsum().rolling(window=3, min_periods=1).median())))[-1]; list(df.groupby((df.a == "B").shift(1).fillna(0).cumsum()))`
-* Vectorized Lookup: `prices.lookup(orders.Date, orders.ticker)`
-* kdb like asof join: `pd.merge_asof(trades, quotes, on='time')`
-* [SQL like non-equal join](https://stackoverflow.com/questions/15581829/how-to-perform-an-inner-or-outer-join-of-dataframes-with-pandas-on-non-simplisti)
-* [merge with logic - searchsorted](https://stackoverflow.com/questions/25125626/pandas-merge-with-logic/2512764)
-* Add multiple new columns: `df = df.assign(c1='1', c2='2'); df[['c1', 'c2']] = pd.DataFrame([[np.nan, 3]], index=df.index)`
 
 ### Function application
 1. Tablewise Function Application: pipe()
