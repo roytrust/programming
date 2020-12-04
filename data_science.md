@@ -29,7 +29,6 @@
 * filter(), map()
 * read_csv(nrows=n)
 * Slice by mask: `df[mask]; isin([]); isin(dict)`
-* pivot_tables()
 * df[co].last_valid_index; first_valid_index
 * Series: s.rename(); s.to_frame()
 * Rows with missing: df[df.isnull().any(axis=1)]
@@ -78,6 +77,7 @@
   * [Rolling Computation window based on values instead of counts](https://stackoverflow.com/questions/14300768/pandas-rolling-computation-with-window-based-on-values-instead-of-counts)
 * Splitting by edge: `dfs = list(zip(*df.groupby((1 * (df['Case'] == 'B')).cumsum().rolling(window=3, min_periods=1).median())))[-1]; list(df.groupby((df.a == "B").shift(1).fillna(0).cumsum()))`
 * [Crosstab](https://pbpython.com/pandas-crosstab.html): `pd.crosstab(df.make, df.body_style, values=df.curb_weight, aggfunc='mean').round(0)`. normalize: True, columns, index. heatmap.
+* [pivot_tables](https://pbpython.com/pandas-pivot-table-explained.html): `pd.pivot_table(df,index=["Manager","Rep"],values=["Price"],aggfunc=[np.mean,len])`
 
 ### Function application
 1. Tablewise Function Application: pipe()
