@@ -77,6 +77,7 @@
   * [Alignment and to-date - group handler](https://stackoverflow.com/questions/15489011/python-time-series-alignment-and-to-date-functions). 
   * [Rolling Computation window based on values instead of counts](https://stackoverflow.com/questions/14300768/pandas-rolling-computation-with-window-based-on-values-instead-of-counts)
 * Splitting by edge: `dfs = list(zip(*df.groupby((1 * (df['Case'] == 'B')).cumsum().rolling(window=3, min_periods=1).median())))[-1]; list(df.groupby((df.a == "B").shift(1).fillna(0).cumsum()))`
+* [Crosstab](https://pbpython.com/pandas-crosstab.html): `pd.crosstab(df.make, df.body_style, values=df.curb_weight, aggfunc='mean').round(0)`. normalize: True, columns, index. heatmap.
 
 ### Function application
 1. Tablewise Function Application: pipe()
