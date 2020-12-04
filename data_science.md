@@ -68,6 +68,7 @@
 * Grouping: `grp=df.groupby([]); grp['a'].min().reset_index(); gb.get_group('cat'); s.expanding().apply(); c.add(1).cumprod(); gb.transform(replace)`
 * Select rows by max value in groups: `df.loc[df.groupby(['a'])['b'].idxmax()]; idxmin()`. sort then take first of each: `df.sort_values(by="b").groupby("a", as_index=False).first()`. 
   [Performance tuning](https://stackoverflow.com/questions/50381064/select-the-max-row-per-group-pandas-performance-issue)
+  * as_index: flattern frame
 * Unlike agg, apply’s callable is passed a sub-DataFrame which gives you access to all the columns: `df.groupby('animal').apply(lambda subf: subf['size'][subf['weight'].idxmax()])`
 * Sort groups by aggregated data: `ord = gb[['data']].transform(sum).sort_values(by='data'); df.loc[ord.index]`
 * Shift groups of the values in a column based on the index: `df.groupby(level=0)['beyer'].shift(1)`
