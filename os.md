@@ -14,6 +14,7 @@
 * `sed -n 's%.* GET /product/\([0-9]\{5\}\)/.*%\1%p'`
 * Count occurrence: `awk -v OFS=',' '{a[$1]++}END{for(i in a){print i, a[i]}}' `
 * Sort: `sort -t, -n -r -k2 -k1`
+* Show binary: `xxd -l 10 file`
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
