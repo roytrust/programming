@@ -15,11 +15,12 @@
 * blob — contents of a file.
 * tree — a directory listing (of blobs and trees).
 * commit — a snapshot of the working tree.
-* branch — a named reference to a commit. .git\refs\heads
+* branch — a named reference to a commit. .git/refs/heads
 * HEAD — a special pointer to denote active branch. Points to a branch, which in turns points to a commit. .git/HEAD
 * A repository (in short: repo) is a collection of commits, each of which is an archive of what the project’s **working tree** looked like at a past date, whether on our machine or someone else’s.
 * index == the staging area
 * When we `checkout` a branch, `git` populates the **index** with all the file contents that were last checked out into our **working directory** and what they looked like when they were originally checked out.
+* [git reset](https://www.freecodecamp.org/news/save-the-day-with-git-reset/)
 
 ### Callaborating
 * Check remote repo: `git remote -v`
