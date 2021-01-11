@@ -4,8 +4,9 @@
 ## Concepts and Tips
 * Reinforcement Learning
 * Feedback loop
-* 
+* Clustering: identify similar instances and assign them into clusters, or group of similar instances. 
 * A common approach to finding the right hyperparameter values is to use grid search.
+*
 
 ## 12 Key Factors
 * Data qualiy
