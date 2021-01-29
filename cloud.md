@@ -14,6 +14,7 @@
 * Inspector, Shield
 * Cost explorer, Trust advisor
 * Arch pillar: operational excellence. secure, reliability, performance efficiency, cost optimization
+* Container orchestrate: ECS - Elastic Container Service. EKS. Forgate.
 
 * Decouple (loosely coupled): fault tolerance, scalibility (scale up/down, in/out, auto scaling)
 * Load balancer: network(high perf, tcm), app (routing)
