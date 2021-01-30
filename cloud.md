@@ -19,7 +19,6 @@
 * Decouple (loosely coupled): fault tolerance, scalibility (scale up/down, in/out, auto scaling)
 * Load balancer: network(high perf, tcm), app (routing)
 * EFS: shared storage, multi available zone
-* Encryption (data at rest, data at transit). 
 * s3 access control: resource - object acl, bucket acl, bucket policy; usser - IAM policy
 * Cache. CloudFront: edge location. 
 * Operational excellence
@@ -43,6 +42,15 @@
 * Redshit: data warehouse service, big data analytics
 * DMS: migration
 * ElastiCache: db, memcached/redis.
+
+## Security
+* Shared responsibility: AWS - of the could. Customer - in the cloud.
+* Policy: allow or deny permissions to services and resources.
+* Compliance: Artifact
+* DDOS: Shield, WAF (Web app firewall).
+* Encryption (data at rest, data at transit). KMS 
+* Inspector, GuardDuty
+
 
 
 * http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Introduction.html
