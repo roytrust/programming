@@ -2,7 +2,7 @@
 ## Concepts
 * EC2: Elastic Compute Cloud. Auto scaling: metrics, condition/schedule, cloudwatch.
 * Cloud computing: on-demand delivery, pay-as-you-go pricing
-* Region, availability Zone, data center. Region: legal, service, cost. Highly available, fault tolent, scale
+* Region, availability Zone, data center. Region: legal, proximity, service, cost. Highly available, fault tolent, scale
 * Interactive: console, cmd, sdk
 * EBS: Elastic block store
 * S3: object store. bucket, glacier
@@ -10,7 +10,7 @@
 * security group. outbond allowed
 * Auto deployment: cloudFormation
 * direct connect. Route 53
-* serverless: lambda, SNS (Simple notification service), cloudFront, ElasticCache, BeanStalk
+* serverless: lambda, SNS (Simple notification service), cloudFront, ElasticCache, BeanStalk (conf infra)
 * Inspector, Shield
 * Cost explorer, Trust advisor
 * Arch pillar: operational excellence. secure, reliability, performance efficiency, cost optimization
@@ -21,7 +21,7 @@
 * EFS: shared storage, multi available zone
 * Encryption (data at rest, data at transit). 
 * s3 access control: resource - object acl, bucket acl, bucket policy; usser - IAM policy
-* Cache. CloudFront: edge location. ElastiCache: db, memcached/redis.
+* Cache. CloudFront: edge location. 
 * Operational excellence
 * IAM users/groups, roles, federated 
 * Network. security group, network ACL.
@@ -29,6 +29,22 @@
 * Introduction to Amazon S3 Lab
 * https://aws.amazon.com/architecture/well-architected/
 * Introduction to Amazon EC2 Auto Scaling lab
+
+## Networking
+* public/private subnet. Internet gateway - open to public. Virtual Private Gateway - VPN. DirectConnect.
+* Network ACL - check packet between subnet, stateless, sender/receiver. Security group - check between instance, stateful.
+
+## Storage & Databases
+* EBS
+* S3
+* EFS
+* RDS
+* DynamoDB
+* Redshit: data warehouse service, big data analytics
+* DMS: migration
+* ElastiCache: db, memcached/redis.
+
+
 * http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Introduction.html
 
 * Exam details: https://aws.amazon.com/certification/certified-solutions-architect-associate/
