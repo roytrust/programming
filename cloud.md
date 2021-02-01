@@ -12,9 +12,13 @@
 * direct connect. Route 53
 * serverless: lambda, SNS (Simple notification service), cloudFront, ElasticCache, BeanStalk (conf infra)
 * Inspector, Shield
-* Cost explorer, Trust advisor
+* Cost explorer
+* Trust advisor: cost optimization, performance, security, fault tolerance, service limits.
 * Arch pillar: operational excellence. secure, reliability, performance efficiency, cost optimization
 * Container orchestrate: ECS - Elastic Container Service. EKS. Forgate.
+* CAF (cloud adoption framework): business, people, governance, platform, security, operations
+* Migration strategies: rehost, replatform, refactor/re-architecture, repurchase, retain, retire
+
 
 * Decouple (loosely coupled): fault tolerance, scalibility (scale up/down, in/out, auto scaling)
 * Load balancer: network(high perf, tcm), app (routing)
