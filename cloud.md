@@ -2,6 +2,7 @@
 ## Concepts
 * EC2: Elastic Compute Cloud. Auto scaling: metrics, condition/schedule, cloudwatch.
 * Cloud computing: on-demand delivery, pay-as-you-go pricing
+* Well-Architectured framework. 5 pillars: operational excellence. secure, reliability, performance efficiency, cost optimization
 * Region, availability Zone, data center. Region: legal, proximity, service, cost. Highly available, fault tolent, scale
 * Interactive: console, cmd, sdk
 * EBS: Elastic block store
@@ -14,10 +15,10 @@
 * Inspector, Shield
 * Cost explorer
 * Trust advisor: cost optimization, performance, security, fault tolerance, service limits.
-* Arch pillar: operational excellence. secure, reliability, performance efficiency, cost optimization
 * Container orchestrate: ECS - Elastic Container Service. EKS. Forgate.
 * CAF (cloud adoption framework): business, people, governance, platform, security, operations
 * Migration strategies: rehost, replatform, refactor/re-architecture, repurchase, retain, retire
+* Benefits: trade upfront expense for variable expense, benefits from massive economies of scale, stop guessing capacity, stop spending money running and maintaining data centers, go global in minutes.
 
 
 * Decouple (loosely coupled): fault tolerance, scalibility (scale up/down, in/out, auto scaling)
