@@ -1,3 +1,14 @@
+* webnar: https://aws.amazon.com/training/events/
+* exam guide
+* lab: https://aws.amazon.com/training/self-paced-labs/
+* practice: https://aws.amazon.com/certification/certification-prep/
+* youtube: https://www.youtube.com/user/AmazonWebServices
+* lab: https://aws.amazon.com/training/self-paced-labs/
+
+* across acount auth: STS (Security token service)
+* user federation: AWS directory service. Active directory/LDAP
+* Cognito
+
 
 ## Concepts
 * EC2: Elastic Compute Cloud. Auto scaling: metrics, condition/schedule, cloudwatch.
