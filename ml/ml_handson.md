@@ -1,4 +1,9 @@
 
+## CH10. Introduction to Artificial Neural Networks with Keros
+* ANN: artificial neural netoworks
+* MLPs: Multilayer Perceptrons
+* TLU: threshold logic unit
+* DNN: deep neural network
 
 
 ## Fundamentals of machine learning
@@ -277,6 +282,7 @@ Each row in a confusion matrix represents an actual class, while each column rep
 * Active learning. _uncertainty sampling_, most uncertain (i.e., when its estimated probability is lowest) are given to the expert to be labeled. 
 
 ## References
+* [TensorFlow Playground](https://playground.tensorflow.org)
 * [hands on notebooks] (https://github.com/ageron/handson-ml2/blob/master/index.ipynb)
 * Artificial Intelligence: Foundations of Computational Agents, with Python resources. https://artint.info/index.html
 * Deep Learning: http://www.deeplearningbook.org/
