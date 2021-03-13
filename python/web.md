@@ -39,7 +39,7 @@ urllib.request.install_opener(opener)
   * monitor/unmonitor; copy(var) - clipboard; 
   * ctrl+shift+p - run cmd: capture
 * scroll: document.body.scrollHeight; arguments[0].scrollIntoView();
-
+* [css selector](https://www.w3schools.com/css/css_selectors.asp)
 
 ### Diagnose
 * Resolve circular referrence
