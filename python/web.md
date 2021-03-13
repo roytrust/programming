@@ -38,6 +38,8 @@ urllib.request.install_opener(opener)
 * [DevTools](https://indepth.dev/useful-techniques-for-debugging-code-using-chrome-devtools)
   * monitor/unmonitor; copy(var) - clipboard; 
   * ctrl+shift+p - run cmd: capture
+* scroll: document.body.scrollHeight; arguments[0].scrollIntoView();
+
 
 ### Diagnose
 * Resolve circular referrence
