@@ -73,5 +73,6 @@ const getCircularReplacer = () => {
 
 
 ### Reference
+* [The Guide To Ethical Scraping Of Dynamic Websites](https://www.smashingmagazine.com/2021/03/ethical-scraping-dynamic-websites-nodejs-puppeteer/)
 * [avoid getting blocked](https://www.codementor.io/@scrapingdog/10-tips-to-avoid-getting-blocked-while-scraping-websites-16papipe62)
 * Get header/test http: https://httpbin.org/headers
