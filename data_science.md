@@ -169,6 +169,7 @@
 * Cheatsheet: https://github.com/matplotlib/cheatsheets
 
 ## Reference
+* [Top 10 Libs](https://www.kdnuggets.com/2021/03/top-10-python-libraries-2021.html)
 * [NumPy notebook](https://github.com/ageron/handson-ml2/blob/master/tools_numpy.ipynb)
 * [Pandas notebook](https://github.com/ageron/handson-ml2/blob/master/tools_pandas.ipynb)
 * [Matplotlib notebook](https://github.com/ageron/handson-ml2/blob/master/tools_matplotlib.ipynb)
