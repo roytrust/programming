@@ -15,6 +15,7 @@
 * Count occurrence: `awk -v OFS=',' '{a[$1]++}END{for(i in a){print i, a[i]}}' `
 * Sort: `sort -t, -n -r -k2 -k1`
 * Show binary: `xxd -l 10 file`
+* Redirect: cmd > file 2>&1
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
