@@ -103,3 +103,5 @@ As an analogy,
 ## References
 * Style guide: http://google.github.io/styleguide/
 * http://manifesto.softwarecraftsmanship.org/
+* [Embracing Agile](https://hbr.org/2016/05/embracing-agile)
+* 
