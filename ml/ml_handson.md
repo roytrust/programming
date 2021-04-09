@@ -1,9 +1,4 @@
-
-## CH10. Introduction to Artificial Neural Networks with Keros
-* ANN: artificial neural netoworks
-* MLPs: Multilayer Perceptrons
-* TLU: threshold logic unit
-* DNN: deep neural network
+* Streaming metrics
 
 
 ## Fundamentals of machine learning
@@ -280,6 +275,14 @@ Each row in a confusion matrix represents an actual class, while each column rep
 * Using clustering for preprocessing.
 * Using clustering for Semi-Supervised learning. _label propagation_
 * Active learning. _uncertainty sampling_, most uncertain (i.e., when its estimated probability is lowest) are given to the expert to be labeled. 
+
+
+## CH10. Introduction to Artificial Neural Networks with Keros
+* ANN: artificial neural netoworks
+* MLPs: Multilayer Perceptrons
+* TLU: threshold logic unit
+* DNN: deep neural network
+
 
 ## References
 * [TensorFlow Playground](https://playground.tensorflow.org)
