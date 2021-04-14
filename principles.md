@@ -74,6 +74,14 @@ As an analogy,
 * Both of them defined API, which is used for programmers to use. To put those together, we can think of a library as a certain function of an application, a framework as the skeleton of the application, and an API is connector to put those together. A typical development process normally starts with a framework, and fill out functions defined in libraries through API.
 * **Toolkit** is a collocation of libraries.
 
+## Object Oriented
+### Advantages of OOP
+1. Modularity for easier troubleshooting. encapsulation, self-contained.
+2. Resue of code through inheritance.
+3. Flexibility through polymorphism.
+4. Effective problem solving. Divide-and-conquer.
+
+
 ## Agile
 * [Agile Manifesto](https://agilemanifesto.org/)
 
