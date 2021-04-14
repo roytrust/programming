@@ -30,6 +30,7 @@
 1. [from dataclasses import dataclass](https://realpython.com/python-data-classes/). `@dataclass(order=True); make_dataclass('Position', ['name', 'lat', 'lon']); typing.Any; cards: List[PlayingCard] = field(default_factory=make_french_deck)`
 1. Run script interactive: python -i
 1. [Multiprocessing](http://zetcode.com/python/multiprocessing/)
+2. [Encoding decoding](common.md#encoding-decoding)
 
 ## Topics/Packages
 1. [Web](web.md)
