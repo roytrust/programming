@@ -75,4 +75,7 @@ def tag(tag_name, **attributes):
 * Delete duplicate words: `str.replace(/\b(\w+)\s+\1\b/gi, '$1');`
 
 ### [Encoding decoding](https://realpython.com/python-encodings-guide/)
-* 
+* String in unicode: `s.encode("unicode-escape").decode()`
+* For requests: json.dumps(json, ensure_ascii=True)
+* charset detect: `import chardet; chardet.detect(b)`
+* [language detect](https://www.geeksforgeeks.org/detect-an-unknown-language-using-python/): `langdetect.detect(s)`
