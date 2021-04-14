@@ -27,11 +27,12 @@ urllib.request.install_opener(opener)
 * 
 
 ### requests
-* `import requests; r=requests.get("http://www.example.com"); r.content; r.text; r.status_code, r.headers['Content-Type']; r.request.headers`
+* `import requests; r=requests.get("https://httpbin.org/get"); r.content; r.text; r.status_code, r.headers['Content-Type']; r.request.headers`
 * Handle response: `if response: print('Success!'); response.raise_for_status(); except requests.exceptions.HTTPError as err: `
 * requests-html, requests-random-user-agent
 * [Guide](https://realpython.com/python-requests/). 
   [Brief intro](https://realpython.com/python-packages/#requests-for-interacting-with-the-web)
+* `requests.utils.get_encoding_from_headers(headers)`
 
 ### Javascript
 * `console.dir(obj); methods only: console.dir(obj.__proto__); console.log(obj); Object.getOwnPropertyNames(obj) `
