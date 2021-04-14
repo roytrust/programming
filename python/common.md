@@ -73,3 +73,6 @@ def tag(tag_name, **attributes):
 * Limit to alphanumeric chars: `/^[A-Z0-9]+$/i`
 * Turn URLs into links: `str.replace(/\b(https?|ftp|file):\/\/\S+/g, '<a href="$&">$&</a>');`
 * Delete duplicate words: `str.replace(/\b(\w+)\s+\1\b/gi, '$1');`
+
+### [Encoding decoding](https://realpython.com/python-encodings-guide/)
+* 
