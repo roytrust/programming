@@ -1,3 +1,7 @@
+
+## Rule of Thumb
+* **Encoding Categorical Features**: if # of categories < 10, then one-hot, if > 50 then embedding.
+
 * Streaming metrics
 
 
