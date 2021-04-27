@@ -1,5 +1,6 @@
 ### Pytest
 * Exclude: ` @pytest.mark.slow; pytest "not slow" `
+* Set up parameters: `@pytest.fixture(name="argv")`
 * pytest.ini: Prevent mistakes: ` addopts = --strict; markers = slow `
 * [list markers](https://docs.pytest.org/en/stable/mark.htm): `pytest --markers`
 * [@pytest.fixture](https://docs.pytest.org/en/stable/fixture.html). tmpdir. cleanup - yield
