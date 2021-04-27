@@ -43,11 +43,12 @@
 1. [Testing](test.md)
 1. Debug
 1. Code quality & style check: `# pylint: disable=`
-1. [Documenting Python](https://devguide.python.org/documenting/). [Sphinx reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
-1. [Functional programming](functional.md)
-1. Profile: `profile, pyinstrument`
-1. PDF: https://realpython.com/creating-modifying-pdf/  https://realpython.com/pdf-python/
-1. [parse - Matching Strings](https://realpython.com/python-packages/#parse-for-matching-strings). `parse.search("Author: {name} <{email}>", pep498)`
+   * [.pylintrc](https://github.com/kubeflow/examples/blob/master/.pylintrc)
+3. [Documenting Python](https://devguide.python.org/documenting/). [Sphinx reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
+4. [Functional programming](functional.md)
+5. Profile: `profile, pyinstrument`
+6. PDF: https://realpython.com/creating-modifying-pdf/  https://realpython.com/pdf-python/
+7. [parse - Matching Strings](https://realpython.com/python-packages/#parse-for-matching-strings). `parse.search("Author: {name} <{email}>", pep498)`
 
 ## Reference
 * [IPython Cookbook](https://ipython-books.github.io/)
