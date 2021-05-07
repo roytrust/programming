@@ -118,7 +118,7 @@
 
 ### Topics
 * Missing data: https://pandas.pydata.org/pandas-docs/stable/user_guide/missing_data.html
-* [Options](https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html). `with pd.option_context('display.max_rows', None): df; pd.options.display.max_rows; pd.set_option('display.max_rows', None), pd.reset_option('all')`
+* [Options](https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html). `with pd.option_context('display.max_rows', None): df; pd.options.display.max_rows; pd.set_option('display.max_rows', None), pd.reset_option('all'); pd.set_option('display.max_colwidth', 500)`
 
 
 
