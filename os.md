@@ -16,6 +16,7 @@
 * Sort: `sort -t, -n -r -k2 -k1`
 * Show binary: `xxd -l 10 file`
 * Redirect: cmd > file 2>&1
+* Epoch time: seconds `date +%s`, millisec `date +%s%3N`
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
