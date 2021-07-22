@@ -74,6 +74,10 @@ const getCircularReplacer = () => {
 
 
 ### Reference
+* [An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+* [FastAPI to Build Python Web APIs](https://realpython.com/fastapi-python-web-apis/)
+* [Async IO in Python](https://realpython.com/async-io-python/)
+* [Getting Started With Async Features](https://realpython.com/python-async-features/)
 * [The Guide To Ethical Scraping Of Dynamic Websites](https://www.smashingmagazine.com/2021/03/ethical-scraping-dynamic-websites-nodejs-puppeteer/)
 * [avoid getting blocked](https://www.codementor.io/@scrapingdog/10-tips-to-avoid-getting-blocked-while-scraping-websites-16papipe62)
 * Get header/test http: https://httpbin.org/headers
