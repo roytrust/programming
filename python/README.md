@@ -50,6 +50,9 @@
 5. Profile: `profile, pyinstrument`
 6. PDF: https://realpython.com/creating-modifying-pdf/  https://realpython.com/pdf-python/
 7. [parse - Matching Strings](https://realpython.com/python-packages/#parse-for-matching-strings). `parse.search("Author: {name} <{email}>", pep498)`
+8. deepdiff
+9. String similarity match: RapidFuzz
+10. 
 
 ## Reference
 * [IPython Cookbook](https://ipython-books.github.io/)
