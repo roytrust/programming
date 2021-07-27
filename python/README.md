@@ -32,6 +32,7 @@
 1. [Multiprocessing](http://zetcode.com/python/multiprocessing/)
 1. [Encoding decoding](common.md#encoding-decoding)
 1. Size: len(pickle.dumps(o))
+2. [collection, counter, ChainMap, defaultdict queues](https://realpython.com/python-collections-module/)
 
 ## Topics/Packages
 1. [Web](web.md)
