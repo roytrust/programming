@@ -79,3 +79,10 @@ def tag(tag_name, **attributes):
 * For requests: json.dumps(json, ensure_ascii=True)
 * charset detect: `import chardet; chardet.detect(b)`
 * [language detect](https://www.geeksforgeeks.org/detect-an-unknown-language-using-python/): `langdetect.detect(s)`
+
+### [Iteration](https://www.analyticsvidhya.com/blog/2021/07/everything-you-should-know-about-iterables-and-iterators-in-python-as-a-data-scientist/)
+* Iterables are objects that can be iterated in iterations. has __iter__()
+* An Iterator is an object representing a stream of data that produces a data value at a time using the __next__() method. An Iterator is an object representing a stream of data that produces a data value at a time using the __next__() method. StopIteration.
+* Iterables supports only iter() function. But iterators supports both iter() and next() function.
+* the iterator can be used just once.
+* 
