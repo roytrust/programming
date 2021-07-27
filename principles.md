@@ -6,6 +6,16 @@
 * User story & backlog, acceptance
 * [Defensive programming](https://en.m.wikipedia.org/wiki/Defensive_programming)
 
+## [12factor](https://12factor.net/)
+* A **codebase** is any single repo, or any set of repos who share a root commit.
+* A **deploy** is a running instance of the app.
+* A **backing service** is any service the app consumes over the network as part of its normal operation. The code for a twelve-factor app makes no distinction between local and third party services. To the app, both are attached resources, accessed via a URL or other locator/credentials stored in the config. 
+* Twelve-factor processes are stateless and share-nothing. Any data that needs to persist must be stored in a stateful backing service, typically a database.
+* Export services via port binding
+* Concurrency: Scale out via the process model. The process model truly shines when it comes time to scale out. The share-nothing, horizontally partitionable nature of twelve-factor app processes means that adding more concurrency is a simple and reliable operation.
+* The twelve-factor app’s processes are disposable, meaning they can be started or stopped at a moment’s notice. This facilitates fast elastic scaling, rapid deployment of code or config changes, and robustness of production deploys.
+* 
+
 ## Principles
 ### SRP: single responsibility principle
 A class should have only one reason to change. 
