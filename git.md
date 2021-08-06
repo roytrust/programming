@@ -1,6 +1,7 @@
 ### Tips
 * `git config -l --show-origin; git config --get remote.origin.url`
 * Config for win/linux: `git config --global core.filemode false; core.autocrlf input`
+* Executable bit: `git ls-files --stage`
 * Use rebase instead of merge: `git config --global branch.autosetuprebase always`
 * by default _git diff_ compares between working and the index file; _git diff_ can also show us the difference between the working directory and the last commit `git diff HEAD`, or between the index and the last commit `git diff --cached`.
 * A file is listed as "Changes to be committed", when is cached in the index file (_git add_). A file is marked "changed but not updated", if it isn’t reflected in the index.
