@@ -24,7 +24,8 @@ urllib.request.install_opener(opener)
 * `from selenium.webdriver.common.action_chains import ActionChains; action = ActionChains(driver); action.move_to_element(element).click().perform()`
 * [Action Chains](https://www.geeksforgeeks.org/action-chains-in-selenium-python/)
 * Disable security check: `chrome.exe --user-data-dir="C:\Users\user1\chomedev" --disable-web-security --disable-site-isolation-trials`
-* 
+* Switch tab: `driver.switch_to.window(driver.window_handles[-1])`
+* Open new tab or url: `driver.execute_script("window.open('');")`
 
 ### requests
 * `import requests; r=requests.get("https://httpbin.org/get"); r.content; r.text; r.status_code, r.headers['Content-Type']; r.request.headers`
