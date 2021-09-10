@@ -2,6 +2,7 @@
 * Use single main inheritance, plus Mixin for addon features 
 * MRO (Method Resolution Order): mro(), __mro__  
   children precede their parents and the order of appearance in __bases__ is respected.
+* the order of your inheritance is to make the highest to lowest from left to right.
 * [super()](https://rhettinger.wordpress.com/2011/05/26/super-considered-super/)
   * returns a proxy object (temporary object of the superclass) that allows us to access methods of the base class.  
   * can take two parameters: 1st is a subclass, 2nd is an instance of that subclass.
@@ -14,7 +15,19 @@
         self.name = name
         super().__init__(**kwds)
   ```
+### Mixin
+* Mixins are tools to create classes in compositional styles.
+* A mixin is meant to be “mixed in” to other pieces of code. It might run on its own, but it was not created with the intention to run on its own.
+* A mixin is a class that is implementing a small and specific set of features that is needed in many different classes.
+* You want to provide a lot of optional features for a class.
+* You want to use one particular feature in a lot of different classes.
 
+#### Mixin vs. decorator
+* Generally, decorators are most commonly used to modify the behavior of existing code while Mixins are used to add new behaviors.
+* Decorators wrap functionality around a piece of code.
+* Mixins add functionality to code using Inheritance.
+* Mixins only work with Object-Oriented Programming and Classes. You cannot use Mixins to modify a function or a method, only classes.
+* Decorators cannot add new methods or new pieces of code.
 
 ### Concepts
 * Polymorphism
