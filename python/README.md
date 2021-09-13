@@ -54,7 +54,8 @@
 7. [parse - Matching Strings](https://realpython.com/python-packages/#parse-for-matching-strings). `parse.search("Author: {name} <{email}>", pep498)`
 8. deepdiff
 9. String similarity match: RapidFuzz
-10. 
+10. WSGI Werkzeug
+11. 
 
 ## Reference
 * [IPython Cookbook](https://ipython-books.github.io/)
