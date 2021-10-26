@@ -43,8 +43,8 @@
 1. [Jupyter](jupyter.md)
 1. [decorator](decorator.md)
 1. [Object oriented programming](oop.md)
-1. [Testing](test.md)
-1. Debug
+1. [Testing](test_debug.md)
+1. [Debug](test_debug.md#debug)
 1. Code quality & style check: `# pylint: disable=`
    * [.pylintrc](https://github.com/kubeflow/examples/blob/master/.pylintrc)
 3. [Documenting Python](https://devguide.python.org/documenting/). [Sphinx reStructuredText Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html)
