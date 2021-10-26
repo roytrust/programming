@@ -25,3 +25,5 @@
 * branch
 * trends
 
+## Debug
+* `import pdb; pdb.pm()`. u - up. 
