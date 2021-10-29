@@ -7,3 +7,7 @@
 * Encoding refers to the manner in which characters are translated to integer values.
 * Concurrency and Parallelism  
   Concurrency means that two or more calculations happen within the same time frame. Parallelism means that two or more calculations happen at the same moment. Parallelism is therefore a specific case of concurrency. It requires multiple CPU units or cores.
+
+## Algorithm
+* Tail recursion (elimination)
+* 
