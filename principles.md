@@ -15,6 +15,37 @@
 * Concurrency: Scale out via the process model. The process model truly shines when it comes time to scale out. The share-nothing, horizontally partitionable nature of twelve-factor app processes means that adding more concurrency is a simple and reliable operation.
 * The twelve-factor app’s processes are disposable, meaning they can be started or stopped at a moment’s notice. This facilitates fast elastic scaling, rapid deployment of code or config changes, and robustness of production deploys.
 * 
+## [Six Myths of Product Development](https://hbr.org/2012/05/six-myths-of-product-development)
+1. Fallacy 1: High utilization of resources will improve performance. 
+   * They don’t take into full account the intrinsic variability of development work.
+   * They don’t understand how queues affect economic performance.
+   * In product development, work-in-process inventory is predominantly invisible.
+   * Change the management-control systems.
+   * Selectively increase capacity.
+   * Limit the number of active projects.
+   * Make the work-in-process inventory easier to see.
+1. Fallacy 2: Processing work in large batches improves the economics of the development process.  
+   * Small batches have even greater utility in product development
+   * In a well-managed process, the batch size will balance transaction and holding costs
+   * By shrinking batch sizes, one company improved the efficiency of its product testing by 220% and decreased defects by 33%.
+3. Fallacy 3: Our development plan is great; we just need to stick to it.
+   * Testing and experimentation reveal what does and doesn’t work, and initial assumptions about costs and value may be disproved.
+   * Defining customers’ needs can also be hard to do at the outset of a product-development project.
+   * the plan should be treated as an initial hypothesis that is constantly revised as the evidence unfolds, economic assumptions change, and the opportunity is reassessed.
+1. Fallacy 4: The sooner the project is started, the sooner it will be finished.
+   * That’s problematic because product-development work is highly perishable: Assumptions about technologies and the market can quickly become obsolete.
+   * The importance of reducing the amount of work in process is evident when we look at one of the classic formulas of queuing theory: Little’s Law.
+   * carefully manage the number of projects in process
+1. Fallacy 5: The more features we put into a product, the more customers will like it.
+   * less can be more is hard because it requires extra effort in two areas of product development:
+   * Defining the problem. The result is deep insights into customers that are tested, improved, or abandoned throughout the iterative development process.
+   * Determining what to hide or omit.  The really great person will keep on going, and find…the key underlying principle of the problem and come up with a beautiful, elegant solution that works.
+   * Determining which features to omit is just as important as—and perhaps more important than—figuring out which ones to include.
+   * Products get closer to perfection when no more features can be eliminated. As Leonardo da Vinci once said, “Simplicity is the ultimate sophistication.”
+1. Fallacy 6: We will be more successful if we get it right the first time.
+   * Experimenting with many diverse ideas is crucial to innovation projects.
+   * What we hope is becoming clear by now is that experiments resulting in failures are not necessarily failed experiments. They generate new information that an innovator was unable to foresee. The faster the experimentation cycle, the more feedback can be gathered and incorporated into new rounds of experiments with novel and potentially risky ideas. In such an environment employees tend to persevere when times get tough, engage in more-challenging work, and outperform their risk-averse peers.
+   * 
 
 ## Principles
 ### SRP: single responsibility principle
