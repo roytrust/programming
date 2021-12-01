@@ -1,5 +1,12 @@
 
-### Benefits
+### [Cloud benefits and considerations](https://docs.microsoft.com/en-us/learn/modules/fundamental-azure-concepts/benefits-of-cloud-computing)
+* High availability
+* Scalability
+* Elasticity
+* Agility
+* Geo-distribution
+* Disaster recovery
+
 * Lower operating cost
 * Run infra more efficiently
 * Scale as business needs change
