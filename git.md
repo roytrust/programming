@@ -1,4 +1,5 @@
 ### Tips
+* diff previous version: `git log -p -1 <path>`
 * `git config -l --show-origin; git config --get remote.origin.url`
 * Config for win/linux: `git config --global core.filemode false; core.autocrlf input`
 * Executable bit: `git ls-files --stage`
