@@ -13,6 +13,11 @@
 * Limitless pool of raw compute, storage and networking components
 * Cognitive services, Analytics services
 
+### Core architectural components
+* Management groups, subscriptions, resource groups, resources, resource manager, [management groups](https://docs.microsoft.com/en-us/learn/modules/azure-architecture-fundamentals/management-groups-subscriptions).
+* Regions, Availability zones, (Zonal services, Zone-redundant services, Non-regional services), region pairs.
+* Subscriptions: billing boundary, access control boundary. Environments, organizational structures, billing, 
+
 ### [Azure services](https://docs.microsoft.com/en-us/learn/modules/intro-to-azure-fundamentals/tour-of-azure-services)
 * Compute
 * Networking
