@@ -30,5 +30,10 @@
 * AI
 * DevOps
 
-
-
+### [Azure compute services](https://docs.microsoft.com/en-us/learn/modules/azure-compute-fundamentals/overview)
+* VMs, container instances, app services, functions (serverless computing)
+* VM scale sets: create and manage a group of identical, load-balanced VMs
+* Azure Batch: enables large-scale parallel and high-performance computing (HPC) batch jobs with the ability to scale to tens, hundreds, or thousands of VMs.
+* VM virtualize hardwares, contrainers virtualize OS. 
+* Serverless. Benefits: no infra management, scalability, only pay for what you use. Abstraction of servers, event-driven scale, micro-billing.
+* Azure functions (stateless, statefull-Durable functions); logic apps execute workflows that are designed to automate business scenarios and are built from predefined logic blocks.
