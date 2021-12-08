@@ -37,3 +37,14 @@
 * VM virtualize hardwares, contrainers virtualize OS. 
 * Serverless. Benefits: no infra management, scalability, only pay for what you use. Abstraction of servers, event-driven scale, micro-billing.
 * Azure functions (stateless, statefull-Durable functions); logic apps execute workflows that are designed to automate business scenarios and are built from predefined logic blocks.
+
+### [Azure networking services](https://docs.microsoft.com/en-us/learn/modules/azure-networking-fundamentals/azure-virtual-network-fundamentals)
+* Isolation and segmentation. Internet communications. 
+* Communicate between Azure resources: Virtual networks, service endpoint. 
+* Communicate with on-premises resources: Point-to-site / site-site virtual private networks, Azure ExpressRoute. 
+* Route network traffic: route tables, border gateway protocol - BGP.  
+* Filter network traffic: network security groups, network virtual appliances
+* Connect virtual networks: peering, UDR - user-defined routing.
+* vnet setting: address space (CIDR classless interdomain routing). 
+* VPN Gateway. IKE Internet Key Exchange, IPSec. Policy-based, Route-based. 
+
