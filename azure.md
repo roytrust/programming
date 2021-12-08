@@ -48,3 +48,8 @@
 * vnet setting: address space (CIDR classless interdomain routing). 
 * VPN Gateway. IKE Internet Key Exchange, IPSec. Policy-based, Route-based. 
 
+### Storage services
+* Blob, disk, file
+* SAS: Shared Access Signature
+* Access tier: hot, cool, archive
+
