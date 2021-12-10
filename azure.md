@@ -28,7 +28,7 @@
 * IoT (Internet of Things): Hub, Central, Sphere
 * Big data
 * AI: machine learning, cognitive, bot.
-* DevOps
+* DevOps services, GitHub (GitHub actions), DevTest Labs.
 
 ### [Azure compute services](https://docs.microsoft.com/en-us/learn/modules/azure-compute-fundamentals/overview)
 * VMs, container instances, app services, functions (serverless computing)
