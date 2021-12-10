@@ -25,7 +25,7 @@
 * Mobile
 * Databases
 * Web
-* IoT (Internet of Things)
+* IoT (Internet of Things): Hub, Central, Sphere
 * Big data
 * AI
 * DevOps
