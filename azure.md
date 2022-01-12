@@ -53,3 +53,10 @@
 * SAS: Shared Access Signature
 * Access tier: hot, cool, archive
 
+### [General security and network security features](https://docs.microsoft.com/en-us/learn/paths/az-900-describe-general-security-network-security-features/)
+* Azure Security Center provides visibility of your security posture across all of your services, both on Azure and on-premises.
+* Azure Sentinel aggregates security data from many different sources, and provides additional capabilities for threat detection and response.
+* Azure Key Vault stores your applications' secrets, such as passwords, encryption keys, and certificates, in a single, central location.
+* Azure Dedicated Host provides dedicated physical servers to host your Azure VMs for Windows and Linux.
+* 
+
