@@ -73,6 +73,17 @@ const getCircularReplacer = () => {
 }
 ```
 
+### [XPath](https://www.lambdatest.com/blog/complete-guide-for-using-xpath-in-selenium-with-examples/)
+* [Cheat sheet]9https://www.lambdatest.com/blog/most-exhaustive-xpath-locators-cheat-sheet/)
+* `XPath = //tagname[@Attribute='Value']`
+* using Contains: `//tagname[contains(@attribute,constantvalue)]`
+* OR & AND: `//tagname[@attribute1=value1 OR @attribute2=value1]`; `//tagname[@attribute1=value1 AND @attribute2=value1]`
+* using Text(): `//tagname[text()='Text of the Web Element']`
+* using Starts-With(): `//tagname[starts-with(@attribute,value)]`
+* using Index: `//tagname[@attribute='value'][Index Number]`; `(//div[@class='form-group']//select)[2]`
+* Chained XPath: `//tagname1[@attribute1=value1]//tagname2[@attribute2=value2]`
+* Xpath Axes: following, following-sibiling, preceding, preceding-sibling, child, parent, descendants, ancestors: `//tagname[@attribute='value']//following::tagname`
+
 
 ### Reference
 * [An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
