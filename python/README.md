@@ -34,6 +34,7 @@
 1. [Encoding decoding](common.md#encoding-decoding)
 1. Size: len(pickle.dumps(o))
 2. [collection, counter, ChainMap, defaultdict queues](https://realpython.com/python-collections-module/)
+3. Multiple constructor: @classmethod, @singledispatchmethod
 
 ## Topics/Packages
 1. [Web](web.md)
