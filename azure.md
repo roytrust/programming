@@ -61,4 +61,8 @@
 * Azure Key Vault stores your applications' secrets, such as passwords, encryption keys, and certificates, in a single, central location.
 * Azure Dedicated Host provides dedicated physical servers to host your Azure VMs for Windows and Linux.
 * 
-
+### Role based access control (RBAC)
+* Authorizes users based on their role
+* Four elements: security principal, role, scope, role assignments
+* Common built-in roles: owner, contributor, reader
+* 
