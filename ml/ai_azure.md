@@ -9,4 +9,7 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 * Computer vision - The capability of software to interpret the world visually through cameras, video, and images.
 * Natural language processing - The capability for a computer to interpret written or spoken language, and respond in kind.
 * Knowledge mining - The capability to extract information from large volumes of often unstructured data to create a searchable knowledge store.
+
+### How machine learning works
+* Data scientists can use all of that data to train machine learning models that can make predictions and inferences based on the relationships they find in the data.
 * 
