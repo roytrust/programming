@@ -1,5 +1,6 @@
 
 * [Master the basics of Azure: AI Fundamentals](https://docs.microsoft.com/en-us/users/23110622/collections/0kjyh8rn55yknr)
+* Responsible AI: fairness, reliability and safety, privacy and security, inclusiveness, transparency, accountability
 
 ### What is AI?
 Simply put, AI is the creation of software that imitates human behaviors and capabilities. Key workloads include:
