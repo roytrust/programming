@@ -3,11 +3,17 @@
 1. [Linear algebra](linear_algebra.md)
 
 ## Concepts and Tips
+* **Machine learning** is a technique that uses mathematics and statistics to create a model that can predict unknown values.
 * Reinforcement Learning
 * Feedback loop
 * Clustering: identify similar instances and assign them into clusters, or group of similar instances. 
 * A common approach to finding the right hyperparameter values is to use grid search.
 *
+### Models
+* **Regression** is a supervised machine learning technique used to predict numeric values. 
+* **Classification** is a supervised machine learning technique used to predict categories or classes.
+
+
 ### Evaluate a regression model
 * **Mean Absolute Error (MAE)**: The average difference between predicted values and true values. This value is based on the same units as the label, in this case dollars. The lower this value is, the better the model is predicting.
 * **Root Mean Squared Error (RMSE)**: The square root of the mean squared difference between predicted and true values. The result is a metric based on the same unit as the label (dollars). When compared to the MAE (above), a larger difference indicates greater variance in the individual errors (for example, with some errors being very small, while others are large).
