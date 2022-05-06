@@ -30,6 +30,12 @@ Coefficient of Determination (R2): This metric is more commonly referred to as R
 * **ROC** curve (receiver operating characteristic). **Threshold**. **True positive rate**. **False positive rate**
 * The larger the area under the curve (which can be any value from 0 to 1), the better the model is performing - this is the **AUC** metric listed with the other metrics below.
 
+### Evaluate a clustering model
+* **Average Distance to Other Center**: This indicates how close, on average, each point in the cluster is to the centroids of all other clusters.
+* **Average Distance to Cluster Center**: This indicates how close, on average, each point in the cluster is to the centroid of the cluster.
+* **Number of Points**: The number of points assigned to the cluster.
+* **Maximal Distance to Cluster Center**: The maximum of the distances between each point and the centroid of that point’s cluster. If this number is high, the cluster may be widely dispersed. This statistic in combination with the **Average Distance to Cluster Center** helps you determine the cluster’s spread.
+
 ## 12 Key Factors
 * Data qualiy
 * Automation
