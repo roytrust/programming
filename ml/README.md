@@ -6,12 +6,12 @@
 * **Machine learning** is a technique that uses mathematics and statistics to create a model that can predict unknown values.
 * Reinforcement Learning
 * Feedback loop
-* Clustering: identify similar instances and assign them into clusters, or group of similar instances. 
 * A common approach to finding the right hyperparameter values is to use grid search.
 *
 ### Models
 * **Regression** is a supervised machine learning technique used to predict numeric values. 
 * **Classification** is a supervised machine learning technique used to predict categories or classes.
+* **Clustering** is an unsupervised machine learning technique used to group similar entities based on their features.
 
 
 ### Evaluate a regression model
