@@ -18,7 +18,7 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 ### Computer Vision
 * Describing an image
 * Tagging visual features
-* Detecting objects
+* Detecting objects: identify and locate specific types of object in an image or camera feed.
 * Detecting brands
 * Detecting faces
 * Categorizing an image
