@@ -14,3 +14,15 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 ### How machine learning works
 * Data scientists can use all of that data to train machine learning models that can make predictions and inferences based on the relationships they find in the data.
 * 
+
+### Computer Vision
+* Describing an image
+* Tagging visual features
+* Detecting objects
+* Detecting brands
+* Detecting faces
+* Categorizing an image
+* Detecting domain-specific content
+* Optical character recognition
+* Detect image types. Detect image color schemes. Generate thumbnails. Moderate content.
+
