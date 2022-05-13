@@ -26,3 +26,9 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 * Optical character recognition
 * Detect image types. Detect image color schemes. Generate thumbnails. Moderate content.
 
+### NLP: Natural Language Processing
+* The Language service provides advanced natural language processing over raw text, and includes four main functions: sentiment analysis, key phrase extraction, language detection, and named entity recognition.
+* Speech cognitive: recognize and synthesize speech. Speech-to-Text, Text-to-Speech API. 
+  * Speech recognition: 1. An acoustic model that converts the audio signal into phonemes (representations of specific sounds). 2. A language model that maps phonemes to words, usually using a statistical algorithm that predicts the most probable sequence of words based on the phonemes.
+  * Speech synthesis: the system typically tokenizes the text to break it down into individual words, and assigns phonetic sounds to each word. It then breaks the phonetic transcription into prosodic units (such as phrases, clauses, or sentences) to create phonemes that will be converted to audio format. These phonemes are then synthesized as audio by applying a voice, which will determine parameters such as pitch and timbre; and generating an audio wave form that can be output to a speaker or written to a file.
+
