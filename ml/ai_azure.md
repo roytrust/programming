@@ -10,11 +10,13 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 * Computer vision - The capability of software to interpret the world visually through cameras, video, and images. For example: image classification, object detection, semantic segmentation, image analysis, face detection-analysis-recognition, OCR (optical character recognition)
 * Natural language processing - The capability for a computer to interpret written or spoken language, and respond in kind.
 * Knowledge mining - The capability to extract information from large volumes of often unstructured data to create a searchable knowledge store.
+* **How machine learning works**: Data scientists can use all of that data to train machine learning models that can make predictions and inferences based on the relationships they find in the data.
 
-### How machine learning works
-* Data scientists can use all of that data to train machine learning models that can make predictions and inferences based on the relationships they find in the data.
-* 
-
+### Automated machine learning
+* automatically tries multiple pre-processing techniques and model-training algorithms in parallel. Classification, Regression, Time series forecasting
+* **cross-validation**: after the model is trained using a portion of the data, the remaining portion is used to iteratively test, or cross-validate, the trained model. The metric is calculated by comparing the predicted value from the test with the actual known value, or label.
+* The difference between the predicted and actual value, known as the **residuals**, indicates the amount of error in the model. 
+ 
 ### Computer Vision
 * Describing an image
 * Tagging visual features
