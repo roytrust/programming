@@ -28,6 +28,8 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 * Optical character recognition
 * Detect image types. Detect image color schemes. Generate thumbnails. Moderate content.
 
+* Read text: OCR API (Regions, lines, words), Read API (Pages, lines, words)
+
 ### Custom Vision
 * Image classification: Product identification, Disaster investigation, Medical diagnosis
 * Object detection: Checking for building safety, Driving assistance, Detecting tumors. Return class, probability score, coordinates of a bounding box
@@ -41,6 +43,7 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 
 ### Others
 * [**Face service**](https://docs.microsoft.com/en-us/learn/modules/detect-analyze-faces/2-face-analysis-azure): Face Detection, Face Verification, Find Similar Faces, Group faces based on similarities, Identify people
+* **Form Recognizer service**: Matching field names to values, Processing tables of data, Identifying specific types of field, such as dates
 * **Anomaly Detector**: identifies anomalies that exist outside the scope of a boundary. The boundary is set using a sensitivity value. By default, the upper and lower boundaries for anomaly detection are calculated using concepts known as **expectedValue, upperMargin, and lowerMargin**. The upper and lower boundaries are calculated using these three values. If a value exceeds either boundary, it will be identified as an anomaly. You can adjust the boundaries by applying a marginScale to the upper and lower margins as demonstrated by the following formula. _upperBoundary = expectedValue + (100 - marginScale) * upperMargin_
 * **Cognitive Search**: data from any source, full text search and analysis, AI powered search, Multi-lingual, Geo-enabled, Congiurable user experience. 
   * Index, Indexer, Knowledge store (table projections, object projections, file projections), skillset 
