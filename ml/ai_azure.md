@@ -28,6 +28,10 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 * Optical character recognition
 * Detect image types. Detect image color schemes. Generate thumbnails. Moderate content.
 
+### Custom Vision
+* Image classification: Product identification, Disaster investigation, Medical diagnosis
+* Object detection: Checking for building safety, Driving assistance, Detecting tumors. Return class, probability score, coordinates of a bounding box
+
 ### NLP: Natural Language Processing
 * The Language service provides advanced natural language processing over raw text, and includes four main functions: sentiment analysis, key phrase extraction, language detection, and named entity recognition.
 * Speech cognitive: recognize and synthesize speech. Speech-to-Text, Text-to-Speech API. 
