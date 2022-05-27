@@ -40,6 +40,7 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
   * Speech recognition: 1. An acoustic model that converts the audio signal into phonemes (representations of specific sounds). 2. A language model that maps phonemes to words, usually using a statistical algorithm that predicts the most probable sequence of words based on the phonemes.
   * Speech synthesis: the system typically tokenizes the text to break it down into individual words, and assigns phonetic sounds to each word. It then breaks the phonetic transcription into prosodic units (such as phrases, clauses, or sentences) to create phonemes that will be converted to audio format. These phonemes are then synthesized as audio by applying a voice, which will determine parameters such as pitch and timbre; and generating an audio wave form that can be output to a speaker or written to a file.
 * Translation: The **Translator** service, which supports text-to-text translation. The **Speech** service, which enables speech-to-text and speech-to-speech translation.
+* **Conversational Language Understanding**: Utterances, Entities, Intents.  the **None** intent is created but left empty on purpose. The None intent is a required intent and can't be deleted or renamed. **Authoring**
 
 ### Others
 * [**Face service**](https://docs.microsoft.com/en-us/learn/modules/detect-analyze-faces/2-face-analysis-azure): Face Detection, Face Verification, Find Similar Faces, Group faces based on similarities, Identify people
