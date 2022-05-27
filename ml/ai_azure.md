@@ -1,6 +1,7 @@
 
 * [Master the basics of Azure: AI Fundamentals](https://docs.microsoft.com/en-us/users/23110622/collections/0kjyh8rn55yknr)
 * Responsible AI: fairness, reliability and safety, privacy and security, inclusiveness, transparency, accountability
+* [Sandbox][https://docs.microsoft.com/en-us/learn/modules/build-cosmos-db-app-with-vscode/2-setup-cosmosdb]
 
 ### What is AI?
 Simply put, AI is the creation of software that imitates human behaviors and capabilities. Key workloads include:
@@ -54,4 +55,4 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
   * Index, Indexer, Knowledge store (table projections, object projections, file projections), skillset 
   * **Natural language processing skills**: key phrase extraction, text translation skill.
   * **Image processing skills**: Image analysis skill, Optical character recognition skill.
-  * 
+  *  the index stores its name, the data type, and supported behaviors for the field such as, is the field searchable, can the field be sorted?
