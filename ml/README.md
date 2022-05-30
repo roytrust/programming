@@ -7,7 +7,20 @@
 * Reinforcement Learning
 * Feedback loop
 * A common approach to finding the right hyperparameter values is to use grid search.
-*
+
+### Rule-based vs machine learning based
+#### Rule based analysis
+* Problem statement is fairly simple
+* Rules are straightforward and can be easily codified
+* Rules can change frequently
+* Few problem instances to train ML model
+
+#### ML based analysis
+* Problem statement is readnably complex
+* Hard to find patterns using visualizations and other exporatory tools
+* Decision variables sensitive to data, need to change as new information is received
+* Large corpus available to train models
+
 ### Models
 * **Regression** is a supervised machine learning technique used to predict numeric values. 
 * **Classification** is a supervised machine learning technique used to predict categories or classes.
