@@ -7,6 +7,9 @@
 * Reinforcement Learning
 * Feedback loop
 * A common approach to finding the right hyperparameter values is to use grid search.
+* **Feature selection**: minimum redundancy and maximum relevance. Benefits: reduce overfitting, improve accuracy, reduces training time.
+* **Feature engineering**: creating new features from raw data to increase the predictive power of the ML model.
+* **Datasets**: training, validation, test
 
 ### Rule-based vs machine learning based
 #### Rule based analysis
