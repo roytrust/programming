@@ -20,6 +20,15 @@
 * Hard to find patterns using visualizations and other exporatory tools
 * Decision variables sensitive to data, need to change as new information is received
 * Large corpus available to train models
+* What algorithm works better on what dataset
+
+ML - based | Rule - based
+---|---|
+Dynamic - alter output based on patterns in data | Static - rules are applied independent of data
+Expert skill not needed, need an intuition for how models work | Experts vital for formulating rules, experts based on problem
+To update model, update corpus | To update model, need to update rules i.e. record model
+Large, high-quality data corpus (Lots data eng) | No corpus required (need logics)
+Can not operate on a single problem instance | Can operate on isolated problem instances
 
 ### Models
 * **Regression** is a supervised machine learning technique used to predict numeric values. 
