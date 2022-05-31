@@ -16,6 +16,7 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 
 ### Automated machine learning
 * automatically tries multiple pre-processing techniques and model-training algorithms in parallel. Classification, Regression, Time series forecasting
+* Input: dataset, target metric, time/cost constraint
 * **cross-validation**: after the model is trained using a portion of the data, the remaining portion is used to iteratively test, or cross-validate, the trained model. The metric is calculated by comparing the predicted value from the test with the actual known value, or label.
 * The difference between the predicted and actual value, known as the **residuals**, indicates the amount of error in the model. 
  
