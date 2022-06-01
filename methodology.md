@@ -5,4 +5,5 @@
 
 ## Coaching
 * Coochie is not about fixing people problems; it is about believing in people and helping them grow.
+* More open, powerful questions
 
