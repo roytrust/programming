@@ -10,3 +10,5 @@
 * open, stimulating, flowing, clear, rooted, non-judgmental
 * why, how, what, who/when/where, which/yes-no questions
 
+### Active Listening
+* yes, and
