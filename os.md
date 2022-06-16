@@ -43,7 +43,7 @@
 * Map network drive: `net use m: path /persistent:yes`
 * `runas /user:username explorer`
 * Check user: `net user username /domain 2>&1 | findstr changeable`
-
+* Timing: Measure-Command {script | Out-Default}
 
 ## Reference
 * [Linux shell scripting tutorial](https://bash.cyberciti.biz/guide/Main_Page)
