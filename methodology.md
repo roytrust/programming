@@ -12,3 +12,6 @@
 
 ### Active Listening
 * yes, and
+* tean build: conversational turn-taking, ostentatious listening -> psychological safety
+
+
