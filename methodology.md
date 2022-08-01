@@ -21,5 +21,6 @@
 * open, stimulating, flowing, clear, rooted, non-judgmental
 * how, what, why, who/when/where, which/yes-no questions
 
-
+## Team
+* Dysfunctions: lack of trust, fear of conflict (purpue truth), avoidance of accountability, 
 
