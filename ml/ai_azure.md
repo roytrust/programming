@@ -5,6 +5,7 @@
 * [Algorithm Cheat Sheet](https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-cheat-sheet)
 * [Sandbox](https://docs.microsoft.com/en-us/learn/modules/build-cosmos-db-app-with-vscode/2-setup-cosmosdb)
 
+## Fundations
 ### What is AI?
 Simply put, AI is the creation of software that imitates human behaviors and capabilities. Key workloads include:
 
@@ -14,6 +15,13 @@ Simply put, AI is the creation of software that imitates human behaviors and cap
 * Natural language processing - The capability for a computer to interpret written or spoken language, and respond in kind.
 * Knowledge mining - The capability to extract information from large volumes of often unstructured data to create a searchable knowledge store.
 * **How machine learning works**: Data scientists can use all of that data to train machine learning models that can make predictions and inferences based on the relationships they find in the data.
+
+###
+* The goal of training is to improve a model so that it can make high-quality estimations or predictions. Once trained, you can use a model in the real world like normal software.
+* Models don’t train themselves. They're trained using data plus two pieces of code, the __objective function__ and the __optimizer__. 
+* The **objective** is what we want to the model to be able to do. So that a computer can understand our objective, we need to provide our goal as code snippet called an **objective function** (also known as **cost function**). Objective functions judge whether the model is doing a good job.
+* During training, the model makes a prediction, and the objective function calculates how well it performed. The optimizer is code that then changes the model’s parameters so the model will do a better job next time.
+* It's important to keep in mind that the objective, data, and optimizer are simply a means to train the model. They are not needed once training is complete. It's also important to remember that training only changes the parameter values inside of a model; it doesn't change what kind of model is used. 
 
 ### Automated machine learning
 * automatically tries multiple pre-processing techniques and model-training algorithms in parallel. Classification, Regression, Time series forecasting
