@@ -7,6 +7,14 @@
 
 ## Fundations
 ### Machine learning
+* The goal of machine learning is to find patterns in data and use these patterns to make estimates.
+* Machine learning differs from normal software development in that we use special code, rather than our own intuition, to improve how well the software works.
+* The learning process conceptually uses four components:
+  * **Data** about the topic we're interested in.
+  * A **model**, which makes estimates.
+  * An **objective** the model is trying to achieve.
+  * An **optimizer**, which is the extra code that changes the model depending on its performance.
+* Data can be thought of as features, and labels. Features correspond to potential model inputs, while labels correspond to model outputs, or desired model outputs.
 * The goal of training is to improve a model so that it can make high-quality estimations or predictions. Once trained, you can use a model in the real world like normal software.
 * Models don’t train themselves. They're trained using data plus two pieces of code, the __objective function__ and the __optimizer__. 
 * The **objective** is what we want to the model to be able to do. So that a computer can understand our objective, we need to provide our goal as code snippet called an **objective function** (also known as **cost function**). Objective functions judge whether the model is doing a good job.
