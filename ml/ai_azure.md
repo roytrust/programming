@@ -20,6 +20,7 @@
 * The **objective** is what we want to the model to be able to do. So that a computer can understand our objective, we need to provide our goal as code snippet called an **objective function** (also known as **cost function**). Objective functions judge whether the model is doing a good job.
 * During training, the model makes a prediction, and the objective function calculates how well it performed. The optimizer is code that then changes the model’s parameters so the model will do a better job next time.
 * It's important to keep in mind that the objective, data, and optimizer are simply a means to train the model. They are not needed once training is complete. It's also important to remember that training only changes the parameter values inside of a model; it doesn't change what kind of model is used. 
+* Error, cost, and loss - loosely interchangeable
 
 ### What is AI?
 Simply put, AI is the creation of software that imitates human behaviors and capabilities. Key workloads include:
