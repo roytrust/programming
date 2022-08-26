@@ -21,6 +21,9 @@
 * During training, the model makes a prediction, and the objective function calculates how well it performed. The optimizer is code that then changes the model’s parameters so the model will do a better job next time.
 * It's important to keep in mind that the objective, data, and optimizer are simply a means to train the model. They are not needed once training is complete. It's also important to remember that training only changes the parameter values inside of a model; it doesn't change what kind of model is used. 
 * Error, cost, and loss - loosely interchangeable
+* **Gradient descent** is an optimization algorithm. It's way of calculating how to improve a model, given a cost function and some data.
+* **Step size (learning rate)** changes how quickly and how well gradient descent performs.
+
 
 ### What is AI?
 Simply put, AI is the creation of software that imitates human behaviors and capabilities. Key workloads include:
