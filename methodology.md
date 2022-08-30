@@ -23,6 +23,12 @@
 
 ## Team
 * Dysfunctions: lack of trust, fear of conflict (purpue truth), avoidance of accountability, 
+* [Eisenhower Matrix](https://todoist.com/productivity-methods/eisenhower-matrix) 
+* Managers lead by example when it comes to working hours.
+* However, managers need to ensure even allocation of work.
+* Effective managers maintain large internal networks across their company.
+* One-on-ones remain vital
+* Lastly, managers are engaged at work, too.
 
 ## Delegation framework
 * What: what are you delegating?
