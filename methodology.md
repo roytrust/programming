@@ -24,3 +24,9 @@
 ## Team
 * Dysfunctions: lack of trust, fear of conflict (purpue truth), avoidance of accountability, 
 
+## Delegation framework
+* What: what are you delegating?
+* Why: to big picture and why them?
+* How: any specific requirements? mode of communication?
+* What if: any anticipated issues or obstacles?
+* What next: how will you follow up and monitor progress?
