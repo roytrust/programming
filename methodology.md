@@ -21,7 +21,7 @@
 * open, stimulating, flowing, clear, rooted, non-judgmental
 * how, what, why, who/when/where, which/yes-no questions
 
-## Team
+## Team, soft skills 
 * Dysfunctions: lack of trust, fear of conflict (purpue truth), avoidance of accountability, 
 * [Eisenhower Matrix](https://todoist.com/productivity-methods/eisenhower-matrix) 
 * Managers lead by example when it comes to working hours.
@@ -30,9 +30,15 @@
 * One-on-ones remain vital
 * Lastly, managers are engaged at work, too.
 
-## Delegation framework
+### Delegation framework
 * What: what are you delegating?
 * Why: to big picture and why them?
 * How: any specific requirements? mode of communication?
 * What if: any anticipated issues or obstacles?
 * What next: how will you follow up and monitor progress?
+
+### Habits
+* Be proactive: taking responsibility, responsible, we have the freedom to choose our response. One of the most important things we choose is what we say. On circle of influence.
+  * Reactive: blame external sources, reactive language, in the circle of concern. 
+* Begin with the end in mind. Mental, physical
+* 
