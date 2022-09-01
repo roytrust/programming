@@ -38,10 +38,15 @@
 * What next: how will you follow up and monitor progress?
 
 ### Habits 
+[7 habits of highly effective people](https://franklincovey.ca/the-7-habits/)
 * Be proactive: taking responsibility, responsible, we have the freedom to choose our response. One of the most important things we choose is what we say. On circle of influence.
   * Reactive: blame external sources, reactive language, in the circle of concern. 
 * Begin with the end in mind. Mental, physical
 * Prioritize, first things first, important things
 * Think win-win. Mutual benefit.
 * Seek first to understand, then to be understood. Empathetic communication.
-* 
+* Creative cooperation
+* Daily selfhrenewal
+
+
+
