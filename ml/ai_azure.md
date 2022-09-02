@@ -24,6 +24,7 @@
 * **Gradient descent** is an optimization algorithm. It's way of calculating how to improve a model, given a cost function and some data.
 * **Step size (learning rate)** changes how quickly and how well gradient descent performs.
 
+* **About data**: Aren't just large, but representative, Don't contain errors, Aren't missing key information
 * **One-hot encoding** is a way to encode categorical data ... each available category gets its own single column, and a given row only contains a single 1 in the category it belongs to.
 * **Statistical power** refers to a model’s ability to reliably identify real relationships between features and labels.
 * A **population** is all possible data we care about. A **sample** is the subset of that data which we actually have on hand.
