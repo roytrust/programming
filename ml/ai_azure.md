@@ -24,6 +24,8 @@
 * **Gradient descent** is an optimization algorithm. It's way of calculating how to improve a model, given a cost function and some data.
 * **Step size (learning rate)** changes how quickly and how well gradient descent performs.
 
+* **One-hot encoding** is a way to encode categorical data ... each available category gets its own single column, and a given row only contains a single 1 in the category it belongs to.
+* **Statistical power** refers to a model’s ability to reliably identify real relationships between features and labels.
 
 ### What is AI?
 Simply put, AI is the creation of software that imitates human behaviors and capabilities. Key workloads include:
