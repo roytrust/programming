@@ -26,6 +26,8 @@
 
 * **One-hot encoding** is a way to encode categorical data ... each available category gets its own single column, and a given row only contains a single 1 in the category it belongs to.
 * **Statistical power** refers to a model’s ability to reliably identify real relationships between features and labels.
+* A **population** is all possible data we care about. A **sample** is the subset of that data which we actually have on hand.
+* What makes a **good dataset**? contains relevant information, is complete, is a good representation of the population (real-world).
 
 ### What is AI?
 Simply put, AI is the creation of software that imitates human behaviors and capabilities. Key workloads include:
