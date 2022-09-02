@@ -1,4 +1,10 @@
-### Pytest
+### [Pytest](https://realpython.com/pytest-python-testing/)
+* **Fixtures** for handling test dependencies, state, and reusable functionality
+* **Marks** for categorizing tests and limiting access to external resources
+* **Parametrization** for reducing duplicated code between tests
+* **Durations** to identify your slowest tests
+* **Plugins** for integrating with other frameworks and testing tools
+
 * Exclude: ` @pytest.mark.slow; pytest "not slow" `
 * Set up parameters: `@pytest.fixture(name="argv")`
 * pytest.ini: Prevent mistakes: ` addopts = --strict; markers = slow `
@@ -8,6 +14,7 @@
 * doctest: `pytest --doctest-modules`. -o doctest_optionflags=. Permanently has ELLIPSIS. --doctest_glob=
 * Parameterized tests
 * [Assertions about expected exceptions](https://docs.pytest.org/en/stable/assert.html#assertions-about-expected-exceptions)
+* [Tutorial](https://www.tutorialspoint.com/pytest/index.htm)
 
 ### Unittest
 * python -m unittest test.py -k some -v
