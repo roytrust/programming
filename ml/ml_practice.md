@@ -63,3 +63,7 @@ model.summary()
   predicted = model.predict(test['weight_last_year'])
   MSE = mse(correct_labels, predicted)
   ```
+* The **hold-out approach** is like train-and-test, but instead of splitting a dataset into two, it's split into three: training, test—also known as validation—and hold-out.
+* **Statistical approaches**: Simpler models that have originated in statistics often don't need test datasets. Instead, what degree the model is overfit can be calculated directly as statistical significance: a ‘p-value’.
+* When building models, it's important to test them using different train/test splits. Simply assigning more data to the train set doesn't always guarantee the best results.
+* 
