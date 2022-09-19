@@ -67,3 +67,110 @@ model.summary()
 * **Statistical approaches**: Simpler models that have originated in statistics often don't need test datasets. Instead, what degree the model is overfit can be calculated directly as statistical significance: a ‘p-value’.
 * When building models, it's important to test them using different train/test splits. Simply assigning more data to the train set doesn't always guarantee the best results.
 * 
+
+### [Train and evaluate regression models](https://learn.microsoft.com/en-us/training/modules/train-evaluate-regression-models/3-exercise-model)
+```Python
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error, r2_score
+
+# Split data 70%-30% into training set and test set
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
+
+# Fit a linear regression model on the training set
+model = LinearRegression().fit(X_train, y_train)
+print (model)
+
+# Evaluate the model using the test data
+predictions = model.predict(X_test)
+mse = mean_squared_error(y_test, predictions)
+print("MSE:", mse)
+rmse = np.sqrt(mse)
+print("RMSE:", rmse)
+r2 = r2_score(y_test, predictions)
+print("R2:", r2)
+
+from sklearn.linear_model import Lasso
+# Fit a lasso model on the training set
+model = Lasso().fit(X_train, y_train)
+
+from sklearn.ensemble import RandomForestRegressor
+model = RandomForestRegressor().fit(X_train, y_train)
+
+from sklearn.ensemble import GradientBoostingRegressor
+model = GradientBoostingRegressor().fit(X_train, y_train)
+```
+
+### Optimize Hyperparameters
+```Python
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import make_scorer, r2_score
+
+# Use a Gradient Boosting algorithm
+alg = GradientBoostingRegressor()
+
+# Try these hyperparameter values
+params = {
+ 'learning_rate': [0.1, 0.5, 1.0],
+ 'n_estimators' : [50, 100, 150]
+ }
+
+# Find the best hyperparameter combination to optimize the R2 metric
+score = make_scorer(r2_score)
+gridsearch = GridSearchCV(alg, params, scoring=score, cv=3, return_train_score=True)
+gridsearch.fit(X_train, y_train)
+print("Best parameter combination:", gridsearch.best_params_, "\n")
+
+# Get the best model
+model=gridsearch.best_estimator_
+print(model, "\n")
+```
+
+### Pipeline
+```Python
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.linear_model import LinearRegression
+import numpy as np
+
+# Define preprocessing for numeric columns (scale them)
+numeric_features = [6,7,8,9]
+numeric_transformer = Pipeline(steps=[
+    ('scaler', StandardScaler())])
+
+# Define preprocessing for categorical features (encode them)
+categorical_features = [0,1,2,3,4,5]
+categorical_transformer = Pipeline(steps=[
+    ('onehot', OneHotEncoder(handle_unknown='ignore'))])
+
+# Combine preprocessing steps
+preprocessor = ColumnTransformer(
+    transformers=[
+        ('num', numeric_transformer, numeric_features),
+        ('cat', categorical_transformer, categorical_features)])
+
+# Create preprocessing and training pipeline
+pipeline = Pipeline(steps=[('preprocessor', preprocessor),
+                           ('regressor', GradientBoostingRegressor())])
+
+
+# fit the pipeline to train a linear regression model on the training set
+model = pipeline.fit(X_train, (y_train))
+```
+
+### Use the Trained Model
+```Python
+import joblib
+# Save the model as a pickle file
+filename = 'model.pkl'
+joblib.dump(model, filename)
+
+loaded_model = joblib.load(filename)
+# Use the model to predict
+result = loaded_model.predict(X_new)
+```
+
+## Reference
+
