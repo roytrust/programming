@@ -61,7 +61,16 @@ Can not operate on a single problem instance | Can operate on isolated problem i
 * **Number of Points**: The number of points assigned to the cluster.
 * **Maximal Distance to Cluster Center**: The maximum of the distances between each point and the centroid of that point’s cluster. If this number is high, the cluster may be widely dispersed. This statistic in combination with the **Average Distance to Cluster Center** helps you determine the cluster’s spread.
 
-## 12 Key Factors
+## Regression model
+* **Linear regression** is the simplest form of regression, with no limit to the number of features used. Linear regression comes in many forms - often named by the number of features used and the shape of the curve that fits.
+* **Decision trees** take a step-by-step approach to predicting a variable. 
+* **Ensemble algorithms** construct not just one decision tree, but a large number of trees - allowing better predictions on more complex data. Ensemble algorithms, such as Random Forest, are widely used in machine learning and science due to their strong prediction abilities.
+
+## Reference
+* [Scikit-Learn estimator cheat sheet](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
+* 
+
+### 12 Key Factors
 * Data qualiy
 * Automation
 * Monitor, keep up-to-date
