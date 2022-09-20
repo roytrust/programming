@@ -173,4 +173,4 @@ result = loaded_model.predict(X_new)
 ```
 
 ## Reference
-
+* [Interpreting Linear Regression Through statsmodels .summary()](https://medium.com/swlh/interpreting-linear-regression-through-statsmodels-summary-4796d359035a)
