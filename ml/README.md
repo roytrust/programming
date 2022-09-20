@@ -66,6 +66,14 @@ Can not operate on a single problem instance | Can operate on isolated problem i
 * **Decision trees** take a step-by-step approach to predicting a variable. 
 * **Ensemble algorithms** construct not just one decision tree, but a large number of trees - allowing better predictions on more complex data. Ensemble algorithms, such as Random Forest, are widely used in machine learning and science due to their strong prediction abilities.
 
+## Tips and tricks
+### [Decision tree](https://learn.microsoft.com/en-us/training/modules/machine-learning-architectures-and-hyperparameters/3-exercise-decision-trees)
+* decision trees are notoriously prone to overfitting.
+* **Pruning** is the process of simplifying a decision tree so that it gives the best classification results while simultaneously reducing overfitting. There are two types:
+  * *Pre-pruning* involves restricting the model during training, so that it does not grow larger than is useful. 
+  * *Post-pruning* is when we simplify the tree after training it. It does not involve the making of any design decision ahead of time, but simply optimizing the exisiting model. This is a valid technique but is quite involved.
+
+
 ## Reference
 * [Scikit-Learn estimator cheat sheet](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
 * 
