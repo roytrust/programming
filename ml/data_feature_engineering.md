@@ -38,3 +38,11 @@ Data exploration and analysis is typically an iterative process, in which the da
 ### Feature engineering
 * One-hot encode categorical features: `dataset = pandas.get_dummies(dataset, columns=[], drop_first=False)`
 * 
+
+### Imbalanced data
+* *Imbalanced datasets*, where features or classes can be represented by a disproportionate number of samples.
+* Avoiding the consequences of imbalanced data
+  * Avoid it through better data selection.
+  * *Resample* your data so that it contains duplicates of the minority label class.
+  * Make changes to the cost function so that it prioritizes less-common labels. For example if the wrong response is given to Tree, the cost function might return 1, while if the wrong response is made to Hiker it might return 10.
+  * 
