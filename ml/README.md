@@ -47,13 +47,16 @@ Can not operate on a single problem instance | Can operate on isolated problem i
 * **Coefficient of Determination (R2)**: This metric is more commonly referred to as **R-Squared**, and summarizes how much of the variance between predicted and true values is explained by the model. The closer to 1 this value is, the better the model is performing.
 
 ### [Evaluate a classification model](https://docs.microsoft.com/en-us/learn/modules/create-classification-model-azure-machine-learning-designer/evaluate-model)
-* **confusion matrix**: a tabulation of the predicted and actual value counts for each possible class.
-* **Accuracy**: The ratio of correct predictions (true positives + true negatives) to the total number of predictions. In other words, what proportion of diabetes predictions did the model get right?
-* **Precision**: The fraction of positive cases correctly identified (the number of true positives divided by the number of true positives plus false positives). In other words, out of all the patients that the model predicted as having diabetes, how many are actually diabetic?
-* **Recall**: The fraction of the cases classified as positive that are actually positive (the number of true positives divided by the number of true positives plus false negatives). In other words, out of all the patients who actually have diabetes, how many did the model identify?
+* **confusion matrix**: a tabulation of the predicted and actual value counts for each possible class. `from sklearn.metrics import confusion_matrix; cm = confusion_matrix(actual, predictions, normalize=None)`
+* [Resolving biases in a classification model](https://learn.microsoft.com/en-us/training/modules/machine-learning-confusion-matrix/5-exercise-resolve-bias) `weighted_model = RandomForestClassifier(n_estimators=1, random_state=1, verbose=False, class_weight="balanced")`
+* **Accuracy**: The ratio of correct predictions (true positives + true negatives) to the total number of predictions. In other words, what proportion of diabetes predictions did the model get right? `accuracy = (TP+TN) / number of samples`
+* **Precision**: The fraction of positive cases correctly identified (the number of true positives divided by the number of true positives plus false positives). In other words, out of all the patients that the model predicted as having diabetes, how many are actually diabetic? `precision = TP / (TP + FP)`
+* **Recall**: The fraction of the cases classified as positive that are actually positive (the number of true positives divided by the number of true positives plus false negatives). In other words, out of all the patients who actually have diabetes, how many did the model identify? `sensitivity = recall = TP / (TP + FN)`
+* **Specificity** expresses the fraction of negative labels correctly predicted over the total number of existing negative samples. `specificity = TN / (TN + FP)`
 * **F1 Score**: An overall metric that essentially combines precision and recall.
 * **ROC** curve (receiver operating characteristic). **Threshold**. **True positive rate**. **False positive rate**
 * The larger the area under the curve (which can be any value from 0 to 1), the better the model is performing - this is the **AUC** metric listed with the other metrics below.
+* *cost functions* – which teach the model – and *evaluation metrics* – which is how we assess the model ourselves.
 
 ### Evaluate a clustering model
 * **Average Distance to Other Center**: This indicates how close, on average, each point in the cluster is to the centroids of all other clusters.
