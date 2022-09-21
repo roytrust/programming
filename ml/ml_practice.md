@@ -191,5 +191,56 @@ print(f"The random forest model's accuracy on the test set is {acc:.4f}.")
 print(f"It correctly predicted {acc_norm} labels in {len(test.label)} predictions.")
 ```
 
+## [Train and evaluate classification models](https://learn.microsoft.com/en-us/training/modules/train-evaluate-classification-models/)
+
+```Python
+from sklearn.linear_model import LogisticRegression
+
+# Set regularization rate
+reg = 0.01
+
+# train a logistic regression model on the training set
+model = LogisticRegression(C=1/reg, solver="liblinear").fit(X_train, y_train)
+
+from sklearn.metrics import accuracy_score
+print('Accuracy: ', accuracy_score(y_test, predictions))
+
+from sklearn. metrics import classification_report
+print(classification_report(y_test, predictions))
+
+from sklearn.metrics import precision_score, recall_score
+print("Overall Precision:",precision_score(y_test, predictions))
+print("Overall Recall:",recall_score(y_test, predictions))
+
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, predictions)
+
+# the probability pairs for each case
+y_scores = model.predict_proba(X_test)
+print(y_scores)
+
+# calculate ROC curve
+from sklearn.metrics import roc_curve
+fpr, tpr, thresholds = roc_curve(y_test, y_scores[:,1])
+
+from sklearn.metrics import roc_auc_score
+auc = roc_auc_score(y_test,y_scores[:,1])
+print('AUC: ' + str(auc))
+
+from sklearn.ensemble import RandomForestClassifier
+# Create preprocessing and training pipeline
+pipeline = Pipeline(steps=[('preprocessor', preprocessor),
+                           ('logregressor', RandomForestClassifier(n_estimators=100))])
+model = pipeline.fit(X_train, (y_train))
+```
+* **Support Vector Machine algorithms**: Algorithms that define a hyperplane that separates classes.
+* **Tree-based algorithms**: Algorithms that build a decision tree to reach a prediction
+* **Ensemble algorithms**: Algorithms that combine the outputs of multiple base algorithms to improve generalizability.
+
+### [Multiclass classification models](https://learn.microsoft.com/en-us/training/modules/train-evaluate-classification-models/7-exercise-multiclass-classification)
+* **One vs Rest (OVR)**, in which a classifier is created for each possible class value, with a positive outcome for cases where the prediction is this class, and negative predictions for cases where the prediction is any other class.
+* **One vs One (OVO)**, in which a classifier for each possible pair of classes is created. 
+* 
+
 ## Reference
 * [Interpreting Linear Regression Through statsmodels .summary()](https://medium.com/swlh/interpreting-linear-regression-through-statsmodels-summary-4796d359035a)
