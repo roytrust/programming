@@ -172,5 +172,24 @@ loaded_model = joblib.load(filename)
 result = loaded_model.predict(X_new)
 ```
 
+## Assessing models
+* Model Accuracy = Correct Predictions / Total Predictions
+```Python
+from sklearn.metrics import accuracy_score
+
+# Calculate the model's accuracy on the TEST set
+actual = test.label
+predictions = model.predict(test[features])
+
+# Return accuracy as a fraction
+acc = accuracy_score(actual, predictions)
+
+# Return accuracy as a number of correct predictions
+acc_norm = accuracy_score(actual, predictions, normalize=False)
+
+print(f"The random forest model's accuracy on the test set is {acc:.4f}.")
+print(f"It correctly predicted {acc_norm} labels in {len(test.label)} predictions.")
+```
+
 ## Reference
 * [Interpreting Linear Regression Through statsmodels .summary()](https://medium.com/swlh/interpreting-linear-regression-through-statsmodels-summary-4796d359035a)
