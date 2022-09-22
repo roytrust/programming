@@ -240,7 +240,10 @@ model = pipeline.fit(X_train, (y_train))
 ### [Multiclass classification models](https://learn.microsoft.com/en-us/training/modules/train-evaluate-classification-models/7-exercise-multiclass-classification)
 * **One vs Rest (OVR)**, in which a classifier is created for each possible class value, with a positive outcome for cases where the prediction is this class, and negative predictions for cases where the prediction is any other class.
 * **One vs One (OVO)**, in which a classifier for each possible pair of classes is created. 
-* 
+
+## Train and evaluate clustering models
+* *Clustering* is a form of unsupervised machine learning in which observations are grouped into clusters based on similarities in their data values, or features.
+* *Principal Component Analysis (PCA)* to analyze the relationships between the features and summarize each observation as coordinates for two principal components - in other words, we'll translate the six-dimensional feature values into two-dimensional coordinates.
 
 ## Reference
 * [Interpreting Linear Regression Through statsmodels .summary()](https://medium.com/swlh/interpreting-linear-regression-through-statsmodels-summary-4796d359035a)
