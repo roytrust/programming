@@ -244,6 +244,34 @@ model = pipeline.fit(X_train, (y_train))
 ## Train and evaluate clustering models
 * *Clustering* is a form of unsupervised machine learning in which observations are grouped into clusters based on similarities in their data values, or features.
 * *Principal Component Analysis (PCA)* to analyze the relationships between the features and summarize each observation as coordinates for two principal components - in other words, we'll translate the six-dimensional feature values into two-dimensional coordinates.
+```Python
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.decomposition import PCA
+
+# Normalize the numeric features so they're on the same scale
+scaled_features = MinMaxScaler().fit_transform(features[data.columns[0:6]])
+
+# Get two principal components
+pca = PCA(n_components=2).fit(scaled_features)
+features_2d = pca.transform(scaled_features)
+features_2d[0:10]
+
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+plt.scatter(features_2d[:,0],features_2d[:,1])
+plt.xlabel('Dimension 1')
+plt.ylabel('Dimension 2')
+plt.title('Data')
+plt.show()
+```
+* [how do you know how many clusters to separate your data into?](https://learn.microsoft.com/en-us/training/modules/train-evaluate-cluster-models/3-exercise-model)  
+ One way we can try to find out is to use a data sample to create a series of clustering models with an incrementing number of clusters, and measure how tightly the data points are grouped within each cluster. A metric often used to measure this tightness is the *within cluster sum of squares (WCSS)*, with lower values meaning that the data points are closer. You can then plot the WCSS for each model.
+* Clustering: K-Means, Hierachial (divisive, agglomerative)
+
 
 ## Reference
 * [Interpreting Linear Regression Through statsmodels .summary()](https://medium.com/swlh/interpreting-linear-regression-through-statsmodels-summary-4796d359035a)
+* [StatQuest: Principal Component Analysis (PCA), Step-by-Step](https://youtu.be/FgakZw6K1QQ)
+* [A Step-by-Step Explanation of Principal Component Analysis (PCA)](https://builtin.com/data-science/step-step-explanation-principal-component-analysis)
+* 
