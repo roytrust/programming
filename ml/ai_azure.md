@@ -8,6 +8,11 @@
 * [Sandbox](https://docs.microsoft.com/en-us/learn/modules/build-cosmos-db-app-with-vscode/2-setup-cosmosdb)
 * [Python Statistics Fundamentals](https://realpython.com/python-statistics/)
 
+## Azure Machine Learning
+* datastores: Azure Storage (blob and file containers), Azure Data Lake stores, Azure SQL Database, Azure Databricks file system (DBFS)
+* dataset: tabular, file
+
+
 ## Fundations
 ### Machine learning
 * The goal of machine learning is to find patterns in data and use these patterns to make estimates.
