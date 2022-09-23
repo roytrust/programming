@@ -1,6 +1,8 @@
 
 * [Master the basics of Azure: AI Fundamentals](https://docs.microsoft.com/en-us/users/23110622/collections/0kjyh8rn55yknr)
 * [Foundations of data science for machine learning](https://docs.microsoft.com/en-us/learn/paths/machine-learning-foundations-using-data-science/)
+* [Azure Data Scientist Associate dp-100](https://learn.microsoft.com/en-us/certifications/azure-data-scientist/)
+* [ML Exercises](https://microsoftlearning.github.io/mslearn-dp100/)
 * Responsible AI: fairness, reliability and safety, privacy and security, inclusiveness, transparency, accountability
 * [Algorithm Cheat Sheet](https://docs.microsoft.com/en-us/azure/machine-learning/algorithm-cheat-sheet)
 * [Sandbox](https://docs.microsoft.com/en-us/learn/modules/build-cosmos-db-app-with-vscode/2-setup-cosmosdb)
