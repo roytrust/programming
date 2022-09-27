@@ -25,6 +25,7 @@
   * (Running a hyperparameter tuning experiment) HyperDriveConfig  
     a training script for hyperparameter tuning: Include an argument for each hyperparameter you want to vary; Log the target performance metric.
   * `best_run = run.get_best_run_by_primary_metric(); best_run_metrics = best_run.get_metrics(); script_arguments = best_run.get_details() ['runDefinition']['arguments']`
+* Differential Privacy. opendp.smartnoise: Upper and lower bounds, Sample size, Epsilon
 
 ## Fundations
 ### Machine learning
