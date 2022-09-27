@@ -12,7 +12,8 @@
 * datastores: Azure Storage (blob and file containers), Azure Data Lake stores, Azure SQL Database, Azure Databricks file system (DBFS)
 * dataset: tabular, file
 * Pipeline steps: PythonScriptStep, DataTransferStep, DatabricksStep, AdlaStep, ParallelRunStep. OutputFileDatasetConfig. ScheduleRecurrence, Schedule
-* [Tune hyperparameters](https://learn.microsoft.com/en-us/training/modules/tune-hyperparameters-with-azure-machine-learning/)
+
+### [Tune hyperparameters](https://learn.microsoft.com/en-us/training/modules/tune-hyperparameters-with-azure-machine-learning/)
   * *search space*: the set of hyperparameter values tried during hyperparameter tuning
   * *Discrete hyperparameters*: qnormal, quniform, qlognormal, qloguniform
   * *Continuous hyperparameters*: normal, uniform, lognormal, loguniform
@@ -26,6 +27,16 @@
     a training script for hyperparameter tuning: Include an argument for each hyperparameter you want to vary; Log the target performance metric.
   * `best_run = run.get_best_run_by_primary_metric(); best_run_metrics = best_run.get_metrics(); script_arguments = best_run.get_details() ['runDefinition']['arguments']`
 * Differential Privacy. opendp.smartnoise: Upper and lower bounds, Sample size, Epsilon
+
+### [Explain machine learning models](https://learn.microsoft.com/en-us/training/modules/explain-machine-learning-models-with-azure-machine-learning/)
+* Model explainers use statistical techniques to calculate **feature importance**. This enables you to quantify the relative influence each feature in the training dataset has on label prediction. Explainers work by evaluating a test data set of feature cases and the labels the model predicts for them.
+* *Global feature importance* quantifies the relative importance of each feature in the test dataset as a whole. It provides a general comparison of the extent to which each feature in the dataset influences prediction.
+* *Local feature importance* measures the influence of each feature value for a specific individual prediction.  
+  For a multi-class classification model, a local importance values for each possible class is calculated for every feature, with the total across all classes always being 0. 
+* **MimicExplainer** - An explainer that creates a global surrogate model that approximates your trained model and can be used to generate explanations. This explainable model must have the same kind of architecture as your trained model (for example, linear or tree-based).
+* **TabularExplainer** - An explainer that acts as a wrapper around various SHAP explainer algorithms, automatically choosing the one that is most appropriate for your model architecture.
+* **PFIExplainer** - a Permutation Feature Importance explainer that analyzes feature importance by shuffling feature values and measuring the impact on prediction performance.
+
 
 ## Fundations
 ### Machine learning
