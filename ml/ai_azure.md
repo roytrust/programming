@@ -11,7 +11,19 @@
 ## Azure Machine Learning
 * datastores: Azure Storage (blob and file containers), Azure Data Lake stores, Azure SQL Database, Azure Databricks file system (DBFS)
 * dataset: tabular, file
-* Pipeline steps: PythonScriptStep, DataTransferStep, DatabricksStep, AdlaStep, ParallelRunStep
+* Pipeline steps: PythonScriptStep, DataTransferStep, DatabricksStep, AdlaStep, ParallelRunStep. OutputFileDatasetConfig. ScheduleRecurrence, Schedule
+* [Tune hyperparameters](https://learn.microsoft.com/en-us/training/modules/tune-hyperparameters-with-azure-machine-learning/)
+  * *search space*: the set of hyperparameter values tried during hyperparameter tuning
+  * *Discrete hyperparameters*: qnormal, quniform, qlognormal, qloguniform
+  * *Continuous hyperparameters*: normal, uniform, lognormal, loguniform
+  * *Grid sampling*: can only be employed when all hyperparameters are discrete, and is used to try every possible combination of parameters in the search space.
+  * *Random sampling* is used to randomly select a value for each hyperparameter, which can be a mix of discrete and continuous values.
+  * *Bayesian sampling* chooses hyperparameter values based on the Bayesian optimization algorithm, which tries to select parameter combinations that will result in improved performance from the previous selection.
+  * (Configuring early termination) *bandit policy* to stop a run if the target performance metric underperforms the best run so far by a specified margin.
+  * *median stopping policy* abandons runs where the target performance metric is worse than the median of the running averages for all runs.
+  * *truncation selection policy* cancels the lowest performing X% of runs at each evaluation interval based on the truncation_percentage value you specify for X.
+  * (Running a hyperparameter tuning experiment) HyperDriveConfig  
+    a training script for hyperparameter tuning: Include an argument for each hyperparameter you want to vary; Log the target performance metric.
 
 ## Fundations
 ### Machine learning
