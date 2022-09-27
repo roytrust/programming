@@ -24,6 +24,7 @@
   * *truncation selection policy* cancels the lowest performing X% of runs at each evaluation interval based on the truncation_percentage value you specify for X.
   * (Running a hyperparameter tuning experiment) HyperDriveConfig  
     a training script for hyperparameter tuning: Include an argument for each hyperparameter you want to vary; Log the target performance metric.
+  * `best_run = run.get_best_run_by_primary_metric(); best_run_metrics = best_run.get_metrics(); script_arguments = best_run.get_details() ['runDefinition']['arguments']`
 
 ## Fundations
 ### Machine learning
