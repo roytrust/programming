@@ -11,7 +11,7 @@
 ## Azure Machine Learning
 * datastores: Azure Storage (blob and file containers), Azure Data Lake stores, Azure SQL Database, Azure Databricks file system (DBFS)
 * dataset: tabular, file
-
+* Pipeline steps: PythonScriptStep, DataTransferStep, DatabricksStep, AdlaStep, ParallelRunStep
 
 ## Fundations
 ### Machine learning
