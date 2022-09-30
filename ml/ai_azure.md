@@ -37,6 +37,21 @@
 * **TabularExplainer** - An explainer that acts as a wrapper around various SHAP explainer algorithms, automatically choosing the one that is most appropriate for your model architecture.
 * **PFIExplainer** - a Permutation Feature Importance explainer that analyzes feature importance by shuffling feature values and measuring the impact on prediction performance.
 
+### [Detect and mitigate unfairness in models](https://learn.microsoft.com/en-us/training/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/)
+* Measuring disparity in predictions: compare *predictions* for each group within a *sensitive feature*.
+* Measuring disparity in prediction performance: measure the disparity in those metrics across the subgroups.
+* Potential causes of disparity
+  * Data imbalance. Some groups may be overrepresented in the training data, or the data may be skewed so that cases within a specific group aren't representative of the overall population.
+  * Indirect correlation. The sensitive feature itself may not be predictive of the label, but there may be a hidden correlation between the sensitive feature and some other feature that influences the prediction. 
+  * Societal biases. Subconscious biases in the data collection, preparation, or modeling process may have influenced feature selection or other aspects of model design.
+* Mitigating bias
+  * Balance training and validation data. You can apply over-sampling or under-sampling techniques to balance data and use stratified splitting algorithms to maintain representative proportions for training and validation.
+  * Perform extensive feature selection and engineering analysis. Make sure you fully explore the interconnected correlations in your data to try to differentiate features that are directly predictive from features that encapsulate more complex, nuanced relationships.
+  * Evaluate models for disparity based on significant features. You can't easily address the bias in a model if you can't quantify it.
+  * Trade-off overall predictive performance for the lower disparity in predictive performance between sensitive feature groups.
+* **Fairlearn**: analyze models and evaluate disparity between predictions and prediction performance for one or more sensitive features.
+* Mitigation algorithms: Exponentiated Gradient, Grid Search, Threshold Optimizer
+* parity constraints: 
 
 ## Fundations
 ### Machine learning
