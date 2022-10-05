@@ -13,6 +13,7 @@
 * dataset: tabular, file
 * Pipeline steps: PythonScriptStep, DataTransferStep, DatabricksStep, AdlaStep, ParallelRunStep. OutputFileDatasetConfig. ScheduleRecurrence, Schedule
 * Enable Application Insights monitoring for an Azure Machine Learning web service.
+* Monitor data drift: baseline dataset, target dataset. DataDriftDetector, AlertConfiguration, drift_threshold
 
 ### [Tune hyperparameters](https://learn.microsoft.com/en-us/training/modules/tune-hyperparameters-with-azure-machine-learning/)
   * *search space*: the set of hyperparameter values tried during hyperparameter tuning
