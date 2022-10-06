@@ -49,7 +49,12 @@
 * Filter network traffic: network security groups, network virtual appliances
 * Connect virtual networks: peering, UDR - user-defined routing.
 * vnet setting: address space (CIDR classless interdomain routing). 
-* VPN Gateway. IKE Internet Key Exchange, IPSec. Policy-based, Route-based. 
+* VPN Gateway. IKE Internet Key Exchange, IPSec. Policy-based, Route-based.
+* **Network security groups (NSG)** can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source and destination IP address, port, and protocol.
+* **Private endpoint** – a network interface connected to your virtual network, assigned with a private IP address.
+* **Private Link Service** – your own service, powered by Azure Private Link that runs behind an Azure Standard Load Balancer, enabled for Private Link access.
+* A **service tag** represents a group of IP address prefixes from a given Azure service.
+* **Azure Bastion** - VM inside the VNet, sometimes called a jump box.
 
 ### Storage services
 * Blob, disk, file
@@ -66,4 +71,5 @@
 * Authorizes users based on their role
 * Four elements: security principal, role, scope, role assignments
 * Common built-in roles: owner, contributor, reader
-* 
+* **Azure Active Directory (Azure AD)** for authentication and/or communication between other Azure cloud resources. cloud-based identity and access management service. Authentication: Interactive, Service principal, Azure CLI session, Managed identity
+* **Managed Identities**: System-assigned, User-assigned
