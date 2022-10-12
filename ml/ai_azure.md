@@ -31,6 +31,16 @@
     a training script for hyperparameter tuning: Include an argument for each hyperparameter you want to vary; Log the target performance metric.
   * `best_run = run.get_best_run_by_primary_metric(); best_run_metrics = best_run.get_metrics(); script_arguments = best_run.get_details() ['runDefinition']['arguments']`
 * Differential Privacy. opendp.smartnoise: Upper and lower bounds, Sample size, Epsilon
+* To solve overfitting when using hyperparameters, you can use k subsets of your training set to train the model, a process called **k-fold cross-validation**.
+* [Automated MLflow for model tuning](https://learn.microsoft.com/en-us/training/modules/tune-hyperparameters-azure-databricks/3-automated-mlflow-for-model-tuning)
+  * List the available hyperparameters for a specific algorithm: `lr.explainParams()`
+  * Set up the search space and sampling method. `ParamGridBuilder()`. **grid sampling** method tries all possible combinations of values for the hyperparameters listed. `TrainValidationSplit` - same training and validating sets; CrossValidator - different sets.
+  * `cvModel.bestModel`
+* [Hyperparameter tuning with Hyperopt](https://learn.microsoft.com/en-us/training/modules/tune-hyperparameters-azure-databricks/4-hyperparameter-tuning-hyperopt)
+  * Define an objective function to minimize: minimize training or validation loss.
+  * Define the hyperparameter search space. `hyperopt.tpe.suggest`: Tree of Parzen Estimators (TPE), a Bayesian approach, which iteratively and adaptively selects new hyperparameter settings to explore based on past results. `hyperopt.rand.suggest`: Random search, a non-adaptive approach that samples over the search space.
+  * Specify the search algorithm.
+  * Run the Hyperopt function fmin(). `SparkTrials` is used for single-machine algorithms such as scikit-learn. `Trials` is used for distributed training algorithms such as MLlib methods or Horovod.
 
 ### [Explain machine learning models](https://learn.microsoft.com/en-us/training/modules/explain-machine-learning-models-with-azure-machine-learning/)
 * Model explainers use statistical techniques to calculate **feature importance**. This enables you to quantify the relative influence each feature in the training dataset has on label prediction. Explainers work by evaluating a test data set of feature cases and the labels the model predicts for them.
