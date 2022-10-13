@@ -89,6 +89,11 @@ Can not operate on a single problem instance | Can operate on isolated problem i
   * Maximum number of features `max_features`
 * Seeding: `random_state=seed`
 
+## [Transformer](https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04)
+* Seq2Seq, Encoder, Decoder
+* **Attention**: The attention-mechanism looks at an input sequence and decides at each step which other parts of the sequence are important.
+* 
+
 ## Reference
 * [Scikit-Learn estimator cheat sheet](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
 * MLflow: tracking, projects, models, registry
