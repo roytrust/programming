@@ -1,6 +1,7 @@
 ## Linux/Unix
 ### Tips
 * ldd /bin/ls
+* ps aux; ps ef
 * memory: free
 * boot time: who -b; last reboot; last -x
 * [ -d tests ] && echo exists
@@ -17,6 +18,7 @@
 * Show binary: `xxd -l 10 file`
 * Redirect: cmd > file 2>&1
 * Epoch time: seconds `date +%s`, millisec `date +%s%3N`
+* Network: netstat -tulpn | grep LISTEN. lsof -i -P -n | grep LISTEN
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
