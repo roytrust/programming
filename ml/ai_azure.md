@@ -16,6 +16,7 @@
 * Monitor data drift: baseline dataset, target dataset. DataDriftDetector, AlertConfiguration, drift_threshold
 * `InferenceConfig(entry_script='score.py', source_directory='.', environment=myenv)`
 *  `Model.deploy(workspace=ws, name = 'service-name', models = [model], inference_config = inference_config, deployment_config = deploy_config, deployment_target = production_cluster)`
+*  Studio: designer, pipelines, components (asset lib), datasets, jobs: 
 
 ### [Tune hyperparameters](https://learn.microsoft.com/en-us/training/modules/tune-hyperparameters-with-azure-machine-learning/)
   * *search space*: the set of hyperparameter values tried during hyperparameter tuning
