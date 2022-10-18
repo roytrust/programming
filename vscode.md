@@ -13,3 +13,6 @@
 * Check logs: goto Help | Toggle Developer tools, click on the console tab
 * winpty solved up/down arrow not working.
 
+### Popular extensions
+* [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* 
