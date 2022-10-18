@@ -6,6 +6,7 @@
 1. [os - Linux ](os.md)
 1. [git](git.md)
 1. [vscode](vscode.md)
+1. [Data visualization web](visual_web.md)
 1. [Clean code](clean_code.md)
 1. [Design Pattern](design_pattern.md)
 1. [Principles & Paradigm](principles.md)
