@@ -94,6 +94,10 @@ Can not operate on a single problem instance | Can operate on isolated problem i
 * **Attention**: The attention-mechanism looks at an input sequence and decides at each step which other parts of the sequence are important.
 * 
 
+## Statistics
+* **Descriptive** statistics: identify important elements in a dataset. **Inferential** statistics: explain those elements via relationship with other elements.
+* Hypothesis testing. **T-test** for differences between categories. **ANOVA** for multiple groups.
+
 ## Reference
 * [Scikit-Learn estimator cheat sheet](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
 * MLflow: tracking, projects, models, registry
