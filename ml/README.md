@@ -4,12 +4,18 @@
 
 ## Concepts and Tips
 * **Machine learning** is a technique that uses mathematics and statistics to create a model that can predict unknown values.
-* Reinforcement Learning
-* Feedback loop
 * In machine learning, the term **parameters** refers to values that can be determined from data; values that you specify to affect the behavior of a training algorithm are more correctly referred to as **hyperparameters**. A common approach to finding the right hyperparameter values is to use grid search.
 * **Feature selection**: minimum redundancy and maximum relevance. Benefits: reduce overfitting, improve accuracy, reduces training time.
 * **Feature engineering**: creating new features from raw data to increase the predictive power of the ML model.
 * **Datasets**: training, validation, test
+* Prevent overfitting: 
+  * **Regularization**: penalize complex models, add penalty to objective function, force optimizer to keep it simple.
+  * **Cross-validation**: distinct training and validation phases; Train different models, select model that does best on validation data; hyperparameter tuning.
+  * **Ensumble learning**: construct several models and then combine their outputs; weak learners -> strong learner.
+  * **Dropout**: intentionally turn off some neurons at random in deep learning.
+
+* Reinforcement Learning
+* Feedback loop
 
 ### Rule-based vs machine learning based
 #### Rule based analysis
