@@ -4,3 +4,5 @@
 
 ## React
 * props.children, 
+* const [var, setVar] = useState(var)
+* 
