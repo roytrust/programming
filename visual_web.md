@@ -3,6 +3,7 @@
 * onClick, onChange, event.target.value
 * Spread operator {...userInput} 
 * `event.preventDefault()`
+* template literal: ``` `${}` ```
 
 ## React
 * Pass state data via props. Lifting state up
