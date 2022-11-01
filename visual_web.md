@@ -4,6 +4,8 @@
 * Spread operator {...userInput} 
 * `event.preventDefault()`
 * template literal: ``` `${}` ```
+* `'use strict'`
+* 
 
 ## React
 * Pass state data via props. Lifting state up
