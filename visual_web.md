@@ -12,6 +12,7 @@
 * states depend on the previous states: `setUser((prevState) => {return {...prevState, title: event.target.value}})`
 * Two-way binding (gather, change): `value={var}`
 * Alway have a key when mapping array
+* React DevTools
 * 
 
 ## CSS
