@@ -2,7 +2,7 @@
 * Tryout: http://jsbin.com/
 * onClick, onChange, event.target.value
 * Spread operator {...userInput} 
-* `event.preventDefault()`
+* Prevent default submit: `event.preventDefault()`
 * template literal: ``` `${}` ```
 * `'use strict'`
 * 
