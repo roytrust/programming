@@ -18,3 +18,7 @@
 ## CSS
 * `@media`
 * 
+
+## VScode
+* Extensions: ESLint, Prettier
+* 
