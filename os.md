@@ -4,10 +4,10 @@
 * ps aux; ps ef
 * memory: free
 * boot time: who -b; last reboot; last -x
-* [ -d tests ] && echo exists
-* last working dir: cd -; home dir: cd ~
-* only if success: cmd1 && cmd2
-* last arg: alt+.
+* [conditionals](https://www.cyberciti.biz/faq/ksh-if-command-examples/): `[ -d tests ] && echo exists`
+* last working dir: `cd -`; home dir: `cd ~`
+* only if success: `cmd1 && cmd2`; Return on error: `cmd || return $?`
+* last arg: `alt+.`
 * set up default group for creating file: newgrp grp
 * Get file size: `find . -type f -exec du -b {} + | awk '{sum+=$1} END{print sum}'` (The difference between ; and + is that with ; a single command for each file is executed whereas with + as many files as possible are given as parameters at once).
 * Find by size: `find . -type f -size +30M -size -40M -exec ls -l {} +`
@@ -19,6 +19,9 @@
 * Redirect: cmd > file 2>&1
 * Epoch time: seconds `date +%s`, millisec `date +%s%3N`
 * Network: netstat -tulpn | grep LISTEN. lsof -i -P -n | grep LISTEN
+* Unzip into a different dir: `STEM=$(basename "${f}" .gz); gunzip -c "${f}" > $THERE/"$STEM"
+* Change loop delimiter: `IFS=,; for f in $files; do ech $f; done; unset IFS`
+*  
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
