@@ -8,6 +8,7 @@
 * 
 
 ## React
+* [Example](https://github.com/roytrust/React/tree/main/Section%208/code/08-finished)
 * Pass state data via props. Lifting state up
 * props.children, 
 * sate: `const [var, setVar] = useState(var)`
