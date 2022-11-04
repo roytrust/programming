@@ -21,7 +21,7 @@
 * Network: netstat -tulpn | grep LISTEN. lsof -i -P -n | grep LISTEN
 * Unzip into a different dir: `STEM=$(basename "${f}" .gz); gunzip -c "${f}" > $THERE/"$STEM"
 * Change loop delimiter: `IFS=,; for f in $files; do ech $f; done; unset IFS`
-*  
+* Add a string after each line in a file: `sed -e 's/$/sting/' -i file`
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
