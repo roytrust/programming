@@ -16,7 +16,7 @@
 * Two-way binding (gather, change): `value={var}`
 * Alway have a key when mapping array
 * React DevTools
-* 
+* React.Fragment or <>.
 
 ## CSS
 * `@media`
