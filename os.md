@@ -31,6 +31,8 @@
 * Double quotes suppress word-splitting
 * Single Quotes suppress all expansions.
 * Backslash to escape
+* Set default variable: `VAR=${2-text}`. 
+* [[ $# -eq ]] && { echo "Usage: $0 format"; exit 1; }
 * http://linuxcommand.org/lc3_lts0080.php
 
 
