@@ -22,6 +22,9 @@
 * Unzip into a different dir: `STEM=$(basename "${f}" .gz); gunzip -c "${f}" > $THERE/"$STEM"
 * Change loop delimiter: `IFS=,; for f in $files; do ech $f; done; unset IFS`
 * Add a string after each line in a file: `sed -e 's/$/sting/' -i file`
+* Get first column: `cut -f1`
+* Unzip tar file and skip existing files: `tar --skip-old-files -xv -f file.tar.gz -C dir/`
+* 
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
@@ -32,7 +35,8 @@
 * Single Quotes suppress all expansions.
 * Backslash to escape
 * Set default variable: `VAR=${2-text}`. 
-* [[ $# -eq ]] && { echo "Usage: $0 format"; exit 1; }
+* `[[ $# -eq ]] && { echo "Usage: $0 format"; exit 1; }`
+* Numberic comparison: `[[ $a -lt $b ]] && echo ok`. alphabetic comparison: `[[ $a < $b ]] && echo ok`
 * http://linuxcommand.org/lc3_lts0080.php
 
 
