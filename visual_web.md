@@ -18,6 +18,8 @@
 * React DevTools
 * React.Fragment or <>.
 * Render backdrop/modal/overlay: `{ReactDOM.createPortal(<Backdrop onConfirm={props.onConfirm} />, document.getElementById('backdrop-root'))}`
+* Refs: `useRef(); ref.current; createRef()`
+* 
 
 ## CSS
 * `@media`
