@@ -5,7 +5,8 @@
 * Prevent default submit: `event.preventDefault()`
 * template literal: ``` `${}` ```
 * `'use strict'`
-* 
+* `localStorage.setItem('key', 'value'); localStorage.getItem('key'); removeItem()`
+* `id=setTimeout((), 500) // milliseconds; clearTimeout(id)`
 
 ## React
 * [Example](https://github.com/roytrust/React/tree/main/Section%208/code/08-finished)
@@ -19,7 +20,7 @@
 * React.Fragment or <>.
 * Render backdrop/modal/overlay: `{ReactDOM.createPortal(<Backdrop onConfirm={props.onConfirm} />, document.getElementById('backdrop-root'))}`
 * Refs: `useRef(); ref.current; createRef()`
-* Side effects: `useEffect(() => {...}, [ dependencies ]);`
+* Side effects: when dependencies change, response to sth: `useEffect(() => {...}, [ dependencies ]);`. Cleanup function: before next run or remove: return ().
 * 
 
 ## CSS
