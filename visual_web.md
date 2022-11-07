@@ -23,7 +23,9 @@
 * Refs: `useRef(); ref.current; createRef()`
 * Side effects: when dependencies change, response to sth: `useEffect(() => {...}, [ dependencies ]);`. Cleanup function: before next run or remove: return ().
 * Update-state depdends on other states: `const [state, dispatchFn] = userReducer(reducerFn, initialState, initFn);`. reducerFn: (prevState, action)=>newState
-* Context. `React.createContext({}); ctx=useContext(); <Provider value={}; <Consumer>{(ctx)=>{return ()}}`; 
+* [Context](https://github.com/roytrust/React/tree/main/Section%2010/code/13-finished). `React.createContext({}); ctx=useContext(); <Provider value={}; <Consumer>{(ctx)=>{return ()}}`; 
+
+
 ## CSS
 * `@media`
 * 
