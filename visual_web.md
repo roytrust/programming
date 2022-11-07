@@ -7,6 +7,7 @@
 * `'use strict'`
 * `localStorage.setItem('key', 'value'); localStorage.getItem('key'); removeItem()`
 * `id=setTimeout((), 500) // milliseconds; clearTimeout(id)`
+* [Destructing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment): `const {a: aa, b: bb} = obj`
 
 ## React
 * [Example](https://github.com/roytrust/React/tree/main/Section%208/code/08-finished)
@@ -22,8 +23,7 @@
 * Refs: `useRef(); ref.current; createRef()`
 * Side effects: when dependencies change, response to sth: `useEffect(() => {...}, [ dependencies ]);`. Cleanup function: before next run or remove: return ().
 * Update-state depdends on other states: `const [state, dispatchFn] = userReducer(reducerFn, initialState, initFn);`. reducerFn: (prevState, action)=>newState
-* [Destructing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment): `const {a: aa, b: bb} = obj`
-
+* Context. `React.createContext({}); ctx=useContext(); <Provider value={}; <Consumer>{(ctx)=>{return ()}}`; 
 ## CSS
 * `@media`
 * 
