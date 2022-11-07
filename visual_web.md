@@ -13,7 +13,7 @@
 * Pass state data via props. Lifting state up
 * props.children, 
 * sate: `const [var, setVar] = useState(var)`
-* states depend on the previous states: `setUser((prevState) => {return {...prevState, title: event.target.value}})`
+* states depend on the previous states, use function: `setUser((prevState) => {return {...prevState, title: event.target.value}})`
 * Two-way binding (gather, change): `value={var}`
 * Alway have a key when mapping array
 * React DevTools
@@ -21,7 +21,8 @@
 * Render backdrop/modal/overlay: `{ReactDOM.createPortal(<Backdrop onConfirm={props.onConfirm} />, document.getElementById('backdrop-root'))}`
 * Refs: `useRef(); ref.current; createRef()`
 * Side effects: when dependencies change, response to sth: `useEffect(() => {...}, [ dependencies ]);`. Cleanup function: before next run or remove: return ().
-* 
+* Update-state depdends on other states: `const [state, dispatchFn] = userReducer(reducerFn, initialState, initFn);`. reducerFn: (prevState, action)=>newState
+* [Destructing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment): `const {a: aa, b: bb} = obj`
 
 ## CSS
 * `@media`
