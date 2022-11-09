@@ -13,7 +13,7 @@
 * [Example](https://github.com/roytrust/React/tree/main/Section%208/code/08-finished)
 * Pass state data via props. Lifting state up
 * props.children, 
-* sate: `const [var, setVar] = useState(var)`
+* sate: `const [var, setVar] = useState(var)`. state scheduling and batching.
 * states depend on the previous states, use function: `setUser((prevState) => {return {...prevState, title: event.target.value}})`
 * Two-way binding (gather, change): `value={var}`
 * Alway have a key when mapping array
@@ -26,7 +26,7 @@
 * [Context](https://github.com/roytrust/React/tree/main/Section%2010/code/13-finished). `React.createContext({}); ctx=useContext(); <Provider value={}; <Consumer>{(ctx)=>{return ()}}`; 
 * Forward refs (rare, focus input): `useImperativeHandle(, ()); React.forwardRef()`
 * handler bind ()
-* Component re-evaluate/re-execute, virtual comparison. Prevent unnecessary re-eval: `export default React.memo(funcComp); useCallback(func, [deps])`
+* Component re-evaluate/re-execute, virtual comparison. Prevent unnecessary re-eval: `export default React.memo(funcComp); useCallback(func, [deps]); useMemo(func, [deps] // memo data`
 * 
 
 
