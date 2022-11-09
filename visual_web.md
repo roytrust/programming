@@ -26,6 +26,8 @@
 * [Context](https://github.com/roytrust/React/tree/main/Section%2010/code/13-finished). `React.createContext({}); ctx=useContext(); <Provider value={}; <Consumer>{(ctx)=>{return ()}}`; 
 * Forward refs (rare, focus input): `useImperativeHandle(, ()); React.forwardRef()`
 * handler bind ()
+* Component re-evaluate/re-execute, virtual comparison. Prevent unnecessary re-eval: `export default React.memo(funcComp); useCallback(func, [deps])`
+* 
 
 
 ## CSS
