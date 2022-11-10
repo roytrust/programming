@@ -11,6 +11,8 @@
 * fetch returns promise: `fetch('https://swapi.dev/api/people/1/').then((response) => response.json()).then((data) => console.log(data));`. `method: 'POST', body: JSON.stringify({}), headers: {'Content-Type': 'application/json'}`
 * async, await
 * `for (const key in data) {}`
+* check if set: `obj.a ? 'set': 'not-set'`
+* 
 
 ## React
 * [Example](https://github.com/roytrust/React/tree/main/Section%208/code/08-finished)
@@ -30,6 +32,7 @@
 * Forward refs (rare, focus input): `useImperativeHandle(, ()); React.forwardRef()`
 * handler bind ()
 * Component re-evaluate/re-execute, virtual comparison. Prevent unnecessary re-eval: `export default React.memo(funcComp); useCallback(func, [deps]); useMemo(func, [deps] // memo data`
+* Custom hooks: useName(). 
 
 
 * Class-based component: `constructor() {this.state={};}; this.setState({}) // will merge; `. componentDidMount(), componentDidUpdate(), componentWillUnmount(). `static contextType=usersContext; this.context.users`. 
