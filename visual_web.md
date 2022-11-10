@@ -8,6 +8,9 @@
 * `localStorage.setItem('key', 'value'); localStorage.getItem('key'); removeItem()`
 * `id=setTimeout((), 500) // milliseconds; clearTimeout(id)`
 * [Destructing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment): `const {a: aa, b: bb} = obj`
+* fetch returns promise: `fetch('https://swapi.dev/api/people/1/').then((response) => response.json()).then((data) => console.log(data));`
+* async, await
+* 
 
 ## React
 * [Example](https://github.com/roytrust/React/tree/main/Section%208/code/08-finished)
