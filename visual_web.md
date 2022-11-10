@@ -11,6 +11,7 @@
 * fetch returns promise: `fetch('https://swapi.dev/api/people/1/').then((response) => response.json()).then((data) => console.log(data));`. `headers: {'Content-Type': 'application/json'}`
 * async, await
 * `JSON.stringify({})`
+* `for (const key in data) {}`
 
 ## React
 * [Example](https://github.com/roytrust/React/tree/main/Section%208/code/08-finished)
