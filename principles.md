@@ -2,6 +2,7 @@
 * DRY: Don't repeat yourself
 * Testable
 * MVP
+* Separate concerns
 * Business outcome
 * User story & backlog, acceptance
 * [Defensive programming](https://en.m.wikipedia.org/wiki/Defensive_programming)
