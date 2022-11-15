@@ -38,6 +38,11 @@
 * Class-based component: `constructor() {this.state={};}; this.setState({}) // will merge; `. componentDidMount(), componentDidUpdate(), componentWillUnmount(). `static contextType=usersContext; this.context.users`. 
 * [Error boundary](https://github.com/roytrust/React/blob/main/Section%2013/code/08-finished/src/components/ErrorBoundary.js): `componentDidCatch(); return this.props.children`
 
+### Tips
+* Reducer must be pure, side-effect free, synchronous functions.
+* Never mutate Redux state directly.
+* UseEffect can't be async, but it can create an async func inside.
+
 ### [Redux](https://github.com/roytrust/React/tree/main/Section%2018/code/12-finished/src/store)
 * redux, react-redux, `import { useSelector, useDispatch } from 'react-redux'`
 * [Class based component](https://github.com/roytrust/React/blob/main/Section%2018/code/05-redux-with-class-based-cmp/src/components/Counter.js): `export default connect(mapStateToProps, mapDispatchToProps)(class-component)`
