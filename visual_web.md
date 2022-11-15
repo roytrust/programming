@@ -34,9 +34,6 @@
 * Component re-evaluate/re-execute, virtual comparison. Prevent unnecessary re-eval: `export default React.memo(funcComp); useCallback(func, [deps]); useMemo(func, [deps] // memo data`
 * Custom hooks: useName(). 
 
-* react-router-dom, Route, Link, NavLink, Switch exact, Redirect
-* `<NavLink activeClassName={classes.active} to='/welcome'>Welcome</NavLink>`
-* 
 
 * Class-based component: `constructor() {this.state={};}; this.setState({}) // will merge; `. componentDidMount(), componentDidUpdate(), componentWillUnmount(). `static contextType=usersContext; this.context.users`. 
 * [Error boundary](https://github.com/roytrust/React/blob/main/Section%2013/code/08-finished/src/components/ErrorBoundary.js): `componentDidCatch(); return this.props.children`
@@ -50,6 +47,11 @@
 * redux, react-redux, `import { useSelector, useDispatch } from 'react-redux'`
 * [Class based component](https://github.com/roytrust/React/blob/main/Section%2018/code/05-redux-with-class-based-cmp/src/components/Counter.js): `export default connect(mapStateToProps, mapDispatchToProps)(class-component)`
 * [Side effect, async tasks, Redux](https://github.com/roytrust/React/tree/main/Section%2019):`import { createSlice, configureStore } from '@reduxjs/toolkit';`
+* 
+
+### [React router](https://github.com/roytrust/React/tree/main/Section%2020)
+* react-router-dom, Route, BrowserRouter, Link, NavLink, Switch exact, Redirect, useParams
+* `<NavLink activeClassName={classes.active} to='/welcome'>Welcome</NavLink>`
 * 
 
 ## CSS
