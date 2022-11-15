@@ -46,7 +46,8 @@
 ### [Redux](https://github.com/roytrust/React/tree/main/Section%2018/code/12-finished/src/store)
 * redux, react-redux, `import { useSelector, useDispatch } from 'react-redux'`
 * [Class based component](https://github.com/roytrust/React/blob/main/Section%2018/code/05-redux-with-class-based-cmp/src/components/Counter.js): `export default connect(mapStateToProps, mapDispatchToProps)(class-component)`
-* `import { createSlice, configureStore } from '@reduxjs/toolkit';`
+* [Side effect, async tasks, Redux](https://github.com/roytrust/React/tree/main/Section%2019):`import { createSlice, configureStore } from '@reduxjs/toolkit';`
+* 
 
 ## CSS
 * `@media`
