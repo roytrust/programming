@@ -33,6 +33,7 @@
 * handler bind ()
 * Component re-evaluate/re-execute, virtual comparison. Prevent unnecessary re-eval: `export default React.memo(funcComp); useCallback(func, [deps]); useMemo(func, [deps] // memo data`
 * Custom hooks: useName(). 
+* [Send http request, api, hook](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/hooks/use-http.js)
 
 
 * Class-based component: `constructor() {this.state={};}; this.setState({}) // will merge; `. componentDidMount(), componentDidUpdate(), componentWillUnmount(). `static contextType=usersContext; this.context.users`. 
@@ -50,11 +51,12 @@
 * 
 
 ### [React router](https://github.com/roytrust/React/tree/main/Section%2020)
-* react-router-dom, Route, BrowserRouter, Link, NavLink, Switch exact, Redirect, useParams
+* react-router-dom, Route, BrowserRouter, Link, NavLink, Switch exact, Redirect, useParams, useRouteMatch 
 * `<NavLink activeClassName={classes.active} to='/welcome'>Welcome</NavLink>`. 
 * Programmatic navigation: `history=useHistory(); history.push('/')`
 * [Prompt unwanted route or lost form data](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/quotes/QuoteForm.js#L35)
 * [Working with query parameters](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/quotes/QuoteList.js): ```location = useLocation(); queryParams = new URLSearchParams(location.search); queryParams.get('sort'); history.push({pathname: location.pathname, search: `sort=${(isSortingAscending ? 'desc' : 'asc')}`});```
+* [Nested routes feature to conditionally render differrent content based on the URL](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/pages/QuoteDetail.js): `<Route path={match.path} exact>; ` 
 
 ## CSS
 * `@media`
