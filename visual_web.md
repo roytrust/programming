@@ -57,6 +57,9 @@
 * [Prompt unwanted route or lost form data](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/quotes/QuoteForm.js#L35)
 * [Working with query parameters](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/quotes/QuoteList.js): ```location = useLocation(); queryParams = new URLSearchParams(location.search); queryParams.get('sort'); history.push({pathname: location.pathname, search: `sort=${(isSortingAscending ? 'desc' : 'asc')}`});```
 * [Nested routes feature to conditionally render differrent content based on the URL](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/pages/QuoteDetail.js): `<Route path={match.path} exact>; ` 
+* V6: Switch->Routes, element, best path, Nest route (wrap, relative, Outlet), useHistory->useNavigate  
+  * activeClassName: `className={navData => navData.isActive ? classes.active : '' }`
+  * Redirect->Navigate: `<Route path='/' element={<Navigate replace to='/quotes' />} />`
 
 ## CSS
 * `@media`
