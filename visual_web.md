@@ -51,8 +51,10 @@
 
 ### [React router](https://github.com/roytrust/React/tree/main/Section%2020)
 * react-router-dom, Route, BrowserRouter, Link, NavLink, Switch exact, Redirect, useParams
-* `<NavLink activeClassName={classes.active} to='/welcome'>Welcome</NavLink>`
-* 
+* `<NavLink activeClassName={classes.active} to='/welcome'>Welcome</NavLink>`. 
+* Programmatic navigation: `history=useHistory(); history.push('/')`
+* [Prompt unwanted route or lost form data](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/quotes/QuoteForm.js#L35)
+* [Working with query parameters](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/quotes/QuoteList.js): ```location = useLocation(); queryParams = new URLSearchParams(location.search); queryParams.get('sort'); history.push({pathname: location.pathname, search: `sort=${(isSortingAscending ? 'desc' : 'asc')}`});```
 
 ## CSS
 * `@media`
