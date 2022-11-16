@@ -60,6 +60,8 @@
 * V6: Switch->Routes, element, best path, Nest route (wrap, relative, Outlet), useHistory->useNavigate  
   * activeClassName: `className={navData => navData.isActive ? classes.active : '' }`
   * Redirect->Navigate: `<Route path='/' element={<Navigate replace to='/quotes' />} />`
+* V6.4 (data load/fetch): loader, useLoaderData, RouterProvider, createBrowserRouter, createRoutesFromElements, userActionData, useNavigation().state, defer
+
 
 ## CSS
 * `@media`
