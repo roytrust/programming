@@ -60,7 +60,8 @@
 * V6: Switch->Routes, element, best path, Nest route (wrap, relative, Outlet), useHistory->useNavigate  
   * activeClassName: `className={navData => navData.isActive ? classes.active : '' }`
   * Redirect->Navigate: `<Route path='/' element={<Navigate replace to='/quotes' />} />`
-* V6.4 (data load/fetch): loader, useLoaderData, RouterProvider, createBrowserRouter, createRoutesFromElements, userActionData, useNavigation().state, defer
+* V6.4 (data load/fetch): loader, useLoaderData, RouterProvider, createBrowserRouter, createRoutesFromElements, userActionData, useNavigation().state
+  * [Better fetching, defer, wait](https://github.com/roytrust/React/blob/main/Section%2020/react-router-6.4-intro-react-router-6.4-adv/src/pages/DeferredBlogPosts.jsx) 
 
 
 ## CSS
