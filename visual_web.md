@@ -35,6 +35,8 @@
 * Custom hooks: useName(). 
 * [Send http request, api, hook](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/hooks/use-http.js)
 * [Lazy loading, optimize, Suspense](https://github.com/roytrust/React/tree/main/Section%2021): `NewQuote = React.lazy(() => import('./pages/NewQuote'));`
+* [Authentication](https://github.com/roytrust/React/tree/main/Section%2022)
+* 
 
 
 * Class-based component: `constructor() {this.state={};}; this.setState({}) // will merge; `. componentDidMount(), componentDidUpdate(), componentWillUnmount(). `static contextType=usersContext; this.context.users`. 
@@ -65,9 +67,12 @@
   * [Better fetching, defer, wait](https://github.com/roytrust/React/blob/main/Section%2020/react-router-6.4-intro-react-router-6.4-adv/src/pages/DeferredBlogPosts.jsx)
   * [useFetcher](https://github.com/roytrust/React/blob/main/Section%2020/react-router-6.4-intro-react-router-6.4-adv/src/components/NewsletterSignup.jsx)
 
+### [Next.js](https://github.com/roytrust/React/tree/main/Section%2023)
+
 
 ## CSS
 * `@media`
+* [Spinner](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/UI/LoadingSpinner.module.css)
 * 
 
 ## VScode
