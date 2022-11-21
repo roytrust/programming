@@ -85,10 +85,13 @@
 * Extensions: ESLint, Prettier
 * 
 
-## TypeScript
+## [TypeScript](https://github.com/roytrust/React/tree/main/Section%2027)
 * type aliases, type union, inference, 
 * Generics: `func<T>(array: T[], value: T){}`
-* React comp: `const func: React.FC<{items: string[]}> = (props) => {}`
+* React comp: `const func: React.FC<{items: string[]}> = (props) => {}`. `React.FormEvent; useRef<HTMLInputElement>(null); ref.current?.value; ref.current!.value`
+* `React.FC<{onAdd: (text: string) => void}>; useState<ToDo[]>([])`
+* [Create react typescript](https://create-react-app.dev/docs/adding-typescript/)
+* tsconfig.json
 
 ## References
 * [Modal](https://github.com/roytrust/React/blob/main/Section%2011/code/12-finished/src/components/UI/Modal.js)
