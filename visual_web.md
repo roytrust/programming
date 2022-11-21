@@ -12,7 +12,7 @@
 * async, await
 * `for (const key in data) {}`
 * check if set: `obj.a ? 'set': 'not-set'`
-* 
+* [Jest - JavaScript test](https://jestjs.io/)
 
 ## React
 * [Basic Example](https://github.com/roytrust/React/tree/main/Section%208/code/08-finished). [Redux, Context, Custom hooks](https://github.com/roytrust/React/tree/main/Section%2025)
@@ -72,7 +72,9 @@
 
 ### [Test](https://github.com/roytrust/React/tree/main/Section%2026)
 * Arrange, act, assert: `test(desc, func); screen.getByText(); expect(Elem).toBeInTheDocument(); screen.queryByText(); expect().toBeNull()`. Test Suites: `describe()`
-* 
+* Test Asynchronous: `async, await; expect().not.toHaveLength(0)`
+* Mocks: `windows.fetch = jest.fn(); window.fetch.mockResolvedValueOnce({json: async ()=> []})`
+* [React testing libs](https://testing-library.com/docs/react-testing-library/intro/)
 
 ## CSS
 * `@media`
