@@ -85,6 +85,11 @@
 * Extensions: ESLint, Prettier
 * 
 
+## TypeScript
+* type aliases, type union, inference, 
+* Generics: `func<T>(array: T[], value: T){}`
+* React comp: `const func: React.FC<{items: string[]}> = (props) => {}`
+
 ## References
 * [Modal](https://github.com/roytrust/React/blob/main/Section%2011/code/12-finished/src/components/UI/Modal.js)
 * Form lib: formik
