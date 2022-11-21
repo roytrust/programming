@@ -87,4 +87,5 @@
 * [Modal](https://github.com/roytrust/React/blob/main/Section%2011/code/12-finished/src/components/UI/Modal.js)
 * Form lib: formik
 * Experiment: firebase - google
+* [{JSON} Placeholder: Free fake API for testing and prototyping](https://jsonplaceholder.typicode.com/)
 * 
