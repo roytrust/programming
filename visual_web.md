@@ -81,7 +81,14 @@
 * [Spinner](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/UI/LoadingSpinner.module.css)
 * 
 
-## VScode
+### Tools
+### yarn
+* Check installed package version: `yarn why pkg`
+* Check the latest version of a package: `yarn outdated pkg`
+* Check a package (even not installed): `yarn info pkg`
+
+
+### VScode
 * Extensions: ESLint, Prettier
 * 
 
