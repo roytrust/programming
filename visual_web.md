@@ -74,9 +74,11 @@
 * Arrange, act, assert: `test(desc, func); screen.getByText(); expect(Elem).toBeInTheDocument(); screen.queryByText(); expect().toBeNull()`. Test Suites: `describe()`
 * Test Asynchronous: `async, await; expect().not.toHaveLength(0)`
 * Mocks: `windows.fetch = jest.fn(); window.fetch.mockResolvedValueOnce({json: async ()=> []})`
+* https://jestjs.io/
 * [React testing libs](https://testing-library.com/docs/react-testing-library/intro/)
 
 ## CSS
+* [CSS CheatSheet](https://htmlcheatsheet.com/css/)
 * `@media`
 * [Spinner](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/UI/LoadingSpinner.module.css)
 * 
