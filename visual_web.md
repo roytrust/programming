@@ -107,4 +107,4 @@
 * Form lib: formik
 * Experiment: firebase - google
 * [{JSON} Placeholder: Free fake API for testing and prototyping](https://jsonplaceholder.typicode.com/)
-* 
+* [React with TypeScript: Best Practices](https://www.sitepoint.com/react-with-typescript-best-practices/)
