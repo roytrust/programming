@@ -83,6 +83,7 @@
 * [Spinner](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/UI/LoadingSpinner.module.css)
 * `import classes from "./ex.module.css"; <div className={classes.div}>`
 * React inline: `<div style={{margin: "10px"}}>`
+* [classnames for React](https://www.npmjs.com/package/classnames)
 * 
 
 ### Tools
