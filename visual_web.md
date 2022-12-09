@@ -84,7 +84,11 @@
 * `import classes from "./ex.module.css"; <div className={classes.div}>`
 * React inline: `<div style={{margin: "10px"}}>`
 * [classnames for React](https://www.npmjs.com/package/classnames)
-* 
+* Make shape: `border-radius:10px`
+* Display: block, inline, inline-block: `display: inline`
+* Box shadows (x y blur inset color): `box-shadow: 2px 2px 15px red`. Inside: `ox-shadow: 2px 2px 15px inset red`
+* Padding - inside (top right bottom left)
+* Margin - outside. To center: `margin: auto` 
 
 ### Tools
 ### yarn
