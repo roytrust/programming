@@ -95,11 +95,14 @@
 * max-width - work with inline
 * Opacity: `opacity: 0.5`. `rgba(0, 0, 0, 0.5)`
 * External css: `<link rel="stylesheet" href=""/>
-* Float elements
+* Make wrap around: `float: left`
 * Box model: `box-sizing: border-box`. content-box. 
 * Outlines: `outline: 6px solid black`; outline-offset: 10px`
 * Text Shadows (x y blur color): `text-shadow: 2px 2px 5px red` 
 * Move back/forth: `z-index: -1`
+* Smooth transitions: `transition: background-color 2s, color 5s, padding 1s`
+* __linear gradient__ goes from side to side: `background-image: linear-gradient(to right, black, yellow)`. 45deg. [gradient generator](https://cssgradient.io/) 
+* [Web fonts](https://fonts.google.com/)
 
 ### Position: relative, absolute, fixed, sticky
 * Relative - move off from usual position
