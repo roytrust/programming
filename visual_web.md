@@ -89,6 +89,9 @@
 * Box shadows (x y blur inset color): `box-shadow: 2px 2px 15px red`. Inside: `ox-shadow: 2px 2px 15px inset red`
 * Padding - inside (top right bottom left)
 * Margin - outside. To center: `margin: auto` 
+* max-width - work with inline
+* `opacity: 0.5`. `rgba(0, 0, 0, 0.5)`
+* External css: `<link rel="stylesheet" href=""/>
 
 ### Tools
 ### yarn
