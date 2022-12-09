@@ -90,10 +90,21 @@
 * Padding - inside (top right bottom left)
 * Margin - outside. To center: `margin: auto` 
 * max-width - work with inline
-* `opacity: 0.5`. `rgba(0, 0, 0, 0.5)`
+* Opacity: `opacity: 0.5`. `rgba(0, 0, 0, 0.5)`
 * External css: `<link rel="stylesheet" href=""/>
+* Float elements
+* Box model: `box-sizing: border-box`. content-box. 
+* Outlines: `outline: 6px solid black`; outline-offset: 10px`
+* Text Shadows (x y blur color): `text-shadow: 2px 2px 5px red` 
 
-### Tools
+### Position: relative, absolute, fixed, sticky
+* Relative - move off from usual position
+* Absolute - relative position to the parent
+* Fixed - position to viewpoint, stays when page scrolling
+* Sticky - as fixed but position to parent, needs top e.g. to tell where to position.
+* top, right, bottom, left 
+
+## Tools
 ### yarn
 * Check installed package version: `yarn why pkg`
 * Check the latest version of a package: `yarn outdated pkg`
