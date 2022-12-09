@@ -79,6 +79,9 @@
 
 ## CSS
 * [CSS CheatSheet](https://htmlcheatsheet.com/css/)
+* [Selectors](https://www.w3schools.com/cssref/css_selectors.php)
+* [Pseudo classes/selectors](https://www.w3schools.com/css/css_pseudo_classes.asp)
+* [Pseudo elements](https://www.w3schools.com/css/css_pseudo_elements.asp)
 * `@media`
 * [Spinner](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/UI/LoadingSpinner.module.css)
 * `import classes from "./ex.module.css"; <div className={classes.div}>`
@@ -96,6 +99,7 @@
 * Box model: `box-sizing: border-box`. content-box. 
 * Outlines: `outline: 6px solid black`; outline-offset: 10px`
 * Text Shadows (x y blur color): `text-shadow: 2px 2px 5px red` 
+* Move back/forth: `z-index: -1`
 
 ### Position: relative, absolute, fixed, sticky
 * Relative - move off from usual position
@@ -103,6 +107,8 @@
 * Fixed - position to viewpoint, stays when page scrolling
 * Sticky - as fixed but position to parent, needs top e.g. to tell where to position.
 * top, right, bottom, left 
+* Overflowing - hidden, visible, auto: `overflow: auto` 
+* Centering block elements: `margin-left: auto; margin-right: auto`
 
 ## Tools
 ### yarn
