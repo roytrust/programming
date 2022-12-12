@@ -119,7 +119,9 @@
 ### [Responsive Web Design](https://www.w3schools.com/css/css_rwd_intro.asp)
 * `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 * Media query: `@media (max-width: 640px) {}`
-* 
+* [Aspect Ratio Boxes](https://css-tricks.com/aspect-ratio-boxes/)
+
+
 ## Tools
 ### yarn
 * Check installed package version: `yarn why pkg`
