@@ -100,11 +100,13 @@
 * Outlines: `outline: 6px solid black`; outline-offset: 10px`
 * Text Shadows (x y blur color): `text-shadow: 2px 2px 5px red` 
 * Move back/forth: `z-index: -1`
-* Smooth transitions: `transition: background-color 2s, color 5s, padding 1s`
+* [Transition triggered by events](https://www.w3schools.com/css/css3_transitions.asp) - Smooth transitions: `transition: background-color 2s, color 5s, padding 1s`
 * __linear gradient__ goes from side to side: `background-image: linear-gradient(to right, black, yellow)`. 45deg. [gradient generator](https://cssgradient.io/) 
 * [Web fonts](https://fonts.google.com/)
+* [Animations - move without event](https://www.w3schools.com/css/css3_animations.asp): `position: absolute; animation-name: slideMe; animation-duration: 4s; animation-iteration-count: infinite; animation-direction: alternate;`. `@keyframes slideMe {from {top: 0; left: 0;} to {left: 100%;}}`
+* 
 
-### Position: relative, absolute, fixed, sticky
+### [Position: relative, absolute, fixed, sticky](https://www.w3schools.com/css/css_positioning.asp)
 * Relative - move off from usual position
 * Absolute - relative position to the parent
 * Fixed - position to viewpoint, stays when page scrolling
@@ -112,6 +114,10 @@
 * top, right, bottom, left 
 * Overflowing - hidden, visible, auto: `overflow: auto` 
 * Centering block elements: `margin-left: auto; margin-right: auto`
+
+### [Transformations](https://www.w3schools.com/cssref/css3_pr_transform.php)
+* Move: `transform: translate(100px, 100px)`
+* `transform: roteate(20deg); transform: sacle(2); transform: skew(20deg, 20deg)`
 
 ## Tools
 ### yarn
