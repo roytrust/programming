@@ -104,7 +104,8 @@
 * __linear gradient__ goes from side to side: `background-image: linear-gradient(to right, black, yellow)`. 45deg. [gradient generator](https://cssgradient.io/) 
 * [Web fonts](https://fonts.google.com/)
 * [Animations - move without event](https://www.w3schools.com/css/css3_animations.asp): `position: absolute; animation-name: slideMe; animation-duration: 4s; animation-iteration-count: infinite; animation-direction: alternate;`. `@keyframes slideMe {from {top: 0; left: 0;} to {left: 100%;}}`
-* 
+* [Layout Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) - flex-wrap, flex-grow, flex-shrink: `display: flex; flex-basis: 50%`
+* [Layout grid](https://www.w3schools.com/css/css_grid.asp) - row, column, gutter/gap: `display: grid; grid-template-columns: auto auto auto;
 
 ### [Position: relative, absolute, fixed, sticky](https://www.w3schools.com/css/css_positioning.asp)
 * Relative - move off from usual position
