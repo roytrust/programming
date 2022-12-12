@@ -82,7 +82,6 @@
 * [Selectors](https://www.w3schools.com/cssref/css_selectors.php)
 * [Pseudo classes/selectors](https://www.w3schools.com/css/css_pseudo_classes.asp)
 * [Pseudo elements](https://www.w3schools.com/css/css_pseudo_elements.asp)
-* `@media`
 * [Spinner](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/UI/LoadingSpinner.module.css)
 * `import classes from "./ex.module.css"; <div className={classes.div}>`
 * React inline: `<div style={{margin: "10px"}}>`
@@ -103,6 +102,7 @@
 * [Transition triggered by events](https://www.w3schools.com/css/css3_transitions.asp) - Smooth transitions: `transition: background-color 2s, color 5s, padding 1s`
 * __linear gradient__ goes from side to side: `background-image: linear-gradient(to right, black, yellow)`. 45deg. [gradient generator](https://cssgradient.io/) 
 * [Web fonts](https://fonts.google.com/)
+* [Transformations](https://www.w3schools.com/cssref/css3_pr_transform.php). Move: `transform: translate(100px, 100px)`. `transform: roteate(20deg); transform: sacle(2); transform: skew(20deg, 20deg)`
 * [Animations - move without event](https://www.w3schools.com/css/css3_animations.asp): `position: absolute; animation-name: slideMe; animation-duration: 4s; animation-iteration-count: infinite; animation-direction: alternate;`. `@keyframes slideMe {from {top: 0; left: 0;} to {left: 100%;}}`
 * [Layout Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) - flex-wrap, flex-grow, flex-shrink: `display: flex; flex-basis: 50%`
 * [Layout grid](https://www.w3schools.com/css/css_grid.asp) - row, column, gutter/gap: `display: grid; grid-template-columns: auto auto auto;
@@ -116,10 +116,10 @@
 * Overflowing - hidden, visible, auto: `overflow: auto` 
 * Centering block elements: `margin-left: auto; margin-right: auto`
 
-### [Transformations](https://www.w3schools.com/cssref/css3_pr_transform.php)
-* Move: `transform: translate(100px, 100px)`
-* `transform: roteate(20deg); transform: sacle(2); transform: skew(20deg, 20deg)`
-
+### [Responsive Web Design](https://www.w3schools.com/css/css_rwd_intro.asp)
+* `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+* Media query: `@media (max-width: 640px) {}`
+* 
 ## Tools
 ### yarn
 * Check installed package version: `yarn why pkg`
