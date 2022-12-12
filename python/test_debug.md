@@ -33,4 +33,5 @@
 * trends
 
 ## Debug
-* `import pdb; pdb.pm()`. u - up. 
+* [most recently raised exception](https://wil.yegelwel.com/pdb-pm/): `import pdb; pdb.pm()`. u - up. 
+* 
