@@ -24,7 +24,7 @@
 * Add a string after each line in a file: `sed -e 's/$/sting/' -i file`
 * Get first column: `cut -f1`
 * Unzip tar file and skip existing files: `tar --skip-old-files -xv -f file.tar.gz -C dir/`
-* 
+* Remove/cut first n chars: `${var:1}`. Exclude by pattern: `${var#p}`
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
