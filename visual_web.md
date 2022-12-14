@@ -33,6 +33,7 @@
 * [Send http request, api, hook](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/hooks/use-http.js)
 * [Lazy loading, optimize, Suspense](https://github.com/roytrust/React/tree/main/Section%2021): `NewQuote = React.lazy(() => import('./pages/NewQuote'));`
 * [Authentication](https://github.com/roytrust/React/tree/main/Section%2022)
+* [Error Model](https://github.com/roytrust/React/blob/main/Section%2028/code/14-finished/src/components/UI/ErrorModal.js)
 
 
 * Class-based component: `constructor() {this.state={};}; this.setState({}) // will merge; `. componentDidMount(), componentDidUpdate(), componentWillUnmount(). `static contextType=usersContext; this.context.users`. 
