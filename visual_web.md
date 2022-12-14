@@ -24,7 +24,8 @@
 * React.Fragment or <>.
 * Render backdrop/modal/overlay: `{ReactDOM.createPortal(<Backdrop onConfirm={props.onConfirm} />, document.getElementById('backdrop-root'))}`
 * Get the value/state: `useRef(); ref.current; createRef()`
-* Update-state depdends on other states: `const [state, dispatchFn] = userReducer(reducerFn, initialState, initFn);`. reducerFn: (prevState, action)=>newState
+* [Update-state depdends on other states](https://github.com/roytrust/React/blob/main/Section%2028/code/14-finished/src/components/Ingredients/Ingredients.js): `const [state, dispatchFn] = userReducer(reducerFn, initialState, initFn);`. reducerFn: (prevState, action)=>newState
+  * React will re-render the component whenever your reducer returns the new state.
 * [Context](https://github.com/roytrust/React/tree/main/Section%2010/code/13-finished). `React.createContext({}); ctx=useContext(); <Provider value={}; <Consumer>{(ctx)=>{return ()}}`; 
 * Forward refs (rare, focus input): `useImperativeHandle(, ()); React.forwardRef()`
 * handler bind ()
