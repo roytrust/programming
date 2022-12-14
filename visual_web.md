@@ -28,7 +28,7 @@
 * [Context](https://github.com/roytrust/React/tree/main/Section%2010/code/13-finished). `React.createContext({}); ctx=useContext(); <Provider value={}; <Consumer>{(ctx)=>{return ()}}`; 
 * Forward refs (rare, focus input): `useImperativeHandle(, ()); React.forwardRef()`
 * handler bind ()
-* Component re-evaluate/re-execute, virtual comparison. Prevent unnecessary re-eval: `export default React.memo(funcComp); useCallback(func, [deps]); useMemo(func, [deps] // memo data`
+*[Component re-evaluate/re-execute, virtual comparison](https://dmitripavlutin.com/use-react-memo-wisely/). Prevent unnecessary re-eval: `export default React.memo(funcComp); useCallback(func, [deps]); useMemo(func, [deps] // memo data`
 * Custom hooks: useName(). 
 * [Send http request, api, hook](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/hooks/use-http.js)
 * [Lazy loading, optimize, Suspense](https://github.com/roytrust/React/tree/main/Section%2021): `NewQuote = React.lazy(() => import('./pages/NewQuote'));`
