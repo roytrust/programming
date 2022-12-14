@@ -48,7 +48,9 @@
 * useEffect: Manage anything besides render flow, executed after each render cycle. 
   * useEffect() acts like componentDidUpdate: It runs the function AFTER EVERY component update (re-render). 
   * with [] as a second argument, useEffect() acts like componentDidMount: It runs ONLY ONCE (after the first render).
-  * [Side effects](https://github.com/roytrust/React/blob/main/Section%2011/code/12-finished/src/components/Layout/HeaderCartButton.js): when dependencies change, response to sth: `useEffect(() => {...}, [ dependencies ]);`. Cleanup function: before next run or remove: return ().
+  * [Side effects](https://github.com/roytrust/React/blob/main/Section%2011/code/12-finished/src/components/Layout/HeaderCartButton.js): when dependencies change, response to sth: `useEffect(() => {...}, [ dependencies ]);`. 
+  * Cleanup function: before next run or remove: return (). If you have [] as dependencies (i.e. the effect only runs once), the cleanup function runs when the component gets unmounted.
+  * [setTimer example](https://github.com/roytrust/React/blob/main/Section%2028/code/14-finished/src/components/Ingredients/Search.js)
 
 
 ### Tips
