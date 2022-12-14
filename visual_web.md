@@ -30,8 +30,6 @@
 * Forward refs (rare, focus input): `useImperativeHandle(, ()); React.forwardRef()`
 * handler bind ()
 *[Component re-evaluate/re-execute, virtual comparison](https://dmitripavlutin.com/use-react-memo-wisely/). Prevent unnecessary re-eval: `export default React.memo(funcComp); useCallback(func, [deps]); useMemo(func, [deps] // memo data`
-* Custom hooks: useName(). 
-* [Send http request, api, hook](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/hooks/use-http.js)
 * [Lazy loading, optimize, Suspense](https://github.com/roytrust/React/tree/main/Section%2021): `NewQuote = React.lazy(() => import('./pages/NewQuote'));`
 * [Authentication](https://github.com/roytrust/React/tree/main/Section%2022)
 * [Error Model](https://github.com/roytrust/React/blob/main/Section%2028/code/14-finished/src/components/UI/ErrorModal.js)
@@ -53,6 +51,8 @@
   * [Side effects](https://github.com/roytrust/React/blob/main/Section%2011/code/12-finished/src/components/Layout/HeaderCartButton.js): when dependencies change, response to sth: `useEffect(() => {...}, [ dependencies ]);`. 
   * Cleanup function: before next run or remove: return (). If you have [] as dependencies (i.e. the effect only runs once), the cleanup function runs when the component gets unmounted.
   * [setTimer example](https://github.com/roytrust/React/blob/main/Section%2028/code/14-finished/src/components/Ingredients/Search.js)
+* [Custom hooks](https://github.com/roytrust/React/blob/main/Section%2028/code/14-finished/src/hooks/http.js) - re-run in reder cycle - change component states: useName(). 
+* [Send http request, api, hook](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/hooks/use-http.js)
 
 
 ### Tips
