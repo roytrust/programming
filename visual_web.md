@@ -92,7 +92,7 @@
 * [Selectors](https://www.w3schools.com/cssref/css_selectors.php)
 * [Pseudo classes/selectors](https://www.w3schools.com/css/css_pseudo_classes.asp)
 * [Pseudo elements](https://www.w3schools.com/css/css_pseudo_elements.asp)
-* [Spinner](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/UI/LoadingSpinner.module.css)
+* [Spinner](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/components/UI/LoadingSpinner.module.css). [React example](https://github.com/roytrust/React/blob/main/Section%2028/code/14-finished/src/components/UI/LoadingIndicator.js)
 * `import classes from "./ex.module.css"; <div className={classes.div}>`
 * React inline: `<div style={{margin: "10px"}}>`
 * [classnames for React](https://www.npmjs.com/package/classnames)
