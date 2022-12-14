@@ -18,15 +18,12 @@
 * [Basic Example](https://github.com/roytrust/React/tree/main/Section%208/code/08-finished). [Redux, Context, Custom hooks](https://github.com/roytrust/React/tree/main/Section%2025)
 * Pass state data via props. Lifting state up
 * props.children, 
-* sate: `const [var, setVar] = useState(var)`. state scheduling and batching.
-* states depend on the previous states, use function: `setUser((prevState) => {return {...prevState, title: event.target.value}})`
 * Two-way binding (gather, change): `value={var}`
 * Alway have a key when mapping array
 * React DevTools
 * React.Fragment or <>.
 * Render backdrop/modal/overlay: `{ReactDOM.createPortal(<Backdrop onConfirm={props.onConfirm} />, document.getElementById('backdrop-root'))}`
 * Refs: `useRef(); ref.current; createRef()`
-* [Side effects](https://github.com/roytrust/React/blob/main/Section%2011/code/12-finished/src/components/Layout/HeaderCartButton.js): when dependencies change, response to sth: `useEffect(() => {...}, [ dependencies ]);`. Cleanup function: before next run or remove: return ().
 * Update-state depdends on other states: `const [state, dispatchFn] = userReducer(reducerFn, initialState, initFn);`. reducerFn: (prevState, action)=>newState
 * [Context](https://github.com/roytrust/React/tree/main/Section%2010/code/13-finished). `React.createContext({}); ctx=useContext(); <Provider value={}; <Consumer>{(ctx)=>{return ()}}`; 
 * Forward refs (rare, focus input): `useImperativeHandle(, ()); React.forwardRef()`
@@ -36,12 +33,23 @@
 * [Send http request, api, hook](https://github.com/roytrust/React/blob/main/Section%2020/code/21-finished/src/hooks/use-http.js)
 * [Lazy loading, optimize, Suspense](https://github.com/roytrust/React/tree/main/Section%2021): `NewQuote = React.lazy(() => import('./pages/NewQuote'));`
 * [Authentication](https://github.com/roytrust/React/tree/main/Section%2022)
-* 
 
 
 * Class-based component: `constructor() {this.state={};}; this.setState({}) // will merge; `. componentDidMount(), componentDidUpdate(), componentWillUnmount(). `static contextType=usersContext; this.context.users`. 
 * [Error boundary](https://github.com/roytrust/React/blob/main/Section%2013/code/08-finished/src/components/ErrorBoundary.js): `componentDidCatch(); return this.props.children`
 * [Animation: react-transition-group](https://github.com/roytrust/React/tree/main/Section%2024). React motion
+
+### Hooks
+* Hooks are special functions that can only be used in functional components (and custom hooks).
+
+* State: `const [var, setVar] = useState(var)`. state scheduling and batching.
+* states depend on the previous states, use function: `setUser((prevState) => {return {...prevState, title: event.target.value}})`
+
+* useEffect: Manage anything besides render flow, executed after each render cycle. 
+  * useEffect() acts like componentDidUpdate: It runs the function AFTER EVERY component update (re-render). 
+  * with [] as a second argument, useEffect() acts like componentDidMount: It runs ONLY ONCE (after the first render).
+  * [Side effects](https://github.com/roytrust/React/blob/main/Section%2011/code/12-finished/src/components/Layout/HeaderCartButton.js): when dependencies change, response to sth: `useEffect(() => {...}, [ dependencies ]);`. Cleanup function: before next run or remove: return ().
+
 
 ### Tips
 * Reducer must be pure, side-effect free, synchronous functions.
