@@ -5,6 +5,7 @@
 * memory: free
 * boot time: who -b; last reboot; last -x
 * [conditionals](https://www.cyberciti.biz/faq/ksh-if-command-examples/): `[ -d tests ] && echo exists`
+* set var on condition: `V=$([ -n "$V1"] && echo "some val" || echo "")`
 * last working dir: `cd -`; home dir: `cd ~`
 * only if success: `cmd1 && cmd2`; Return on error: `cmd || return $?`
 * last arg: `alt+.`
