@@ -1,5 +1,8 @@
 ## Snowflake
 * [Architecture](https://docs.snowflake.com/en/user-guide/intro-key-concepts.html)
+* Zero-copy cloning
+* Time travel
+* Caches: query result, virtual warehouse, metadata
 * 
 
 ## Concepts
