@@ -3,7 +3,7 @@
 * Zero-copy cloning
 * Time travel
 * Caches: query result, virtual warehouse, metadata
-* Tables: permanent, transient, hybrid, temporary, external
+* Tables: permanent, transient, hybrid, temporary, external, dynamic/materialized
 * 
 
 ## Concepts
