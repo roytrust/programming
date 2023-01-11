@@ -4,6 +4,7 @@
 * Time travel
 * Caches: query result, virtual warehouse, metadata
 * Tables: permanent, transient, hybrid, temporary, external, dynamic/materialized
+* Stages: Internal (named, user, table), external
 * 
 
 ## Concepts
