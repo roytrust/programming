@@ -26,6 +26,7 @@
 * Get first column: `cut -f1`
 * Unzip tar file and skip existing files: `tar --skip-old-files -xv -f file.tar.gz -C dir/`
 * Remove/cut first n chars: `${var:1}`. Exclude by pattern: `${var#p}`
+* [How to detect if a script is being sourced](https://stackoverflow.com/questions/2683279/how-to-detect-if-a-script-is-being-sourced): `case ${0##*/} in dash|-dash|bash|-bash|ksh|-ksh|sh|-sh) IS_SOURCED=1;; esac`
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
