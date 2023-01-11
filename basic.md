@@ -1,4 +1,8 @@
+## Snowflake
+* [Architecture](https://docs.snowflake.com/en/user-guide/intro-key-concepts.html)
+* 
 
+## Concepts
 * Memory: physical, virtual, shared (allows multiple programs to access the same data simultaneously).
 * kernel space
 * user space
