@@ -4,8 +4,9 @@
 * Time travel
 * Caches: query result, virtual warehouse, metadata
 * Tables: permanent, transient, hybrid, temporary, external, dynamic/materialized
-* Stages: Internal (named, user, table), external
+* Stages: Internal (named, user, table), external. Access: file URLs, scoped URLs, presigned URLs (GET_PRESIGNED_URL).
 * Stream, task
+* `show variables`
 
 ## Concepts
 * Memory: physical, virtual, shared (allows multiple programs to access the same data simultaneously).
