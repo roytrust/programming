@@ -1,15 +1,16 @@
 ## Snowflake
 * [Architecture](https://docs.snowflake.com/en/user-guide/intro-key-concepts.html)
 * Zero-copy cloning
-* Time travel, fail safe
+* Time travel, fail safe, data masking, ACCOUNT_USAGE
 * Caches: query result, virtual warehouse, metadata
 * Tables: permanent, transient, hybrid, temporary, external, dynamic/materialized
 * Stages: Internal (named, user, table), external. Access: file URLs, scoped URLs, presigned URLs (GET_PRESIGNED_URL).
 * Stream, task
 * `show variables`
-* Democratizing data with data governance controls: INFORMATION_SCHEMA, object tagging
+* Democratizing data with data governance controls: INFORMATION_SCHEMA, object tagging, OBJECT_DEPENDENCIES, external tokenization, secure views and UDFs
   * Classification. category types: semantic, privacy(Identifier, quasi-identifier, sensitive information), EXTRACT_SEMANTIC_CATEGORIES, ASSOCIATE_SEMANTIC_CATEGORY_TAGS
   * Data masking. dynamic, conditional, static
+  * Row access policies and row-level security
   * 
 
 ## Concepts
