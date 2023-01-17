@@ -11,7 +11,8 @@
   * Classification. category types: semantic, privacy(Identifier, quasi-identifier, sensitive information), EXTRACT_SEMANTIC_CATEGORIES, ASSOCIATE_SEMANTIC_CATEGORY_TAGS
   * Data masking. dynamic, conditional, static
   * Row access policies and row-level security
-  * 
+* Query performance: QUERY_HISTORY, micro-partition, cluster, search optimization service
+* 
 
 ## Concepts
 * Memory: physical, virtual, shared (allows multiple programs to access the same data simultaneously).
