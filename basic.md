@@ -12,7 +12,7 @@
   * Data masking. dynamic, conditional, static
   * Row access policies and row-level security
 * Query performance: QUERY_HISTORY, micro-partition, cluster, search optimization service
-* 
+* `ALTER SESSION SET simulated_data_sharing_consumer='acct'; UNSET; SHOW GRANTS TO SHARE shared_name; SHOW GRANTS OF SHARE shared_name;`
 
 ## Concepts
 * Memory: physical, virtual, shared (allows multiple programs to access the same data simultaneously).
