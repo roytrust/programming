@@ -10,9 +10,10 @@ display(HTML(df.to_html()))
 * %load_ext memory_profiler; %memit
 
 * To install: `pip install jupyter`
-* Start: `python -m jupyter --notebook-dir=dir`
+* Start: `python -m jupyter notebook --notebook-dir=dir`
 * Enable remote connection: `--ip 0.0.0.0`
-* 
+* Clean output: `jupyter nbconvert --to notebook --ClearOutputPreprocessor.enabled=True note.ipynb --output note2.ipynb`
+* Jupyterlab: `pip install jupyterlab; python -m jupyter lab`
 
 
 ### Nbextensions
