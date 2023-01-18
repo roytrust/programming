@@ -9,6 +9,11 @@ display(HTML(df.to_html()))
 * startup file: ~/.ipython/profile_default/ipython_config.py
 * %load_ext memory_profiler; %memit
 
+* To install: `pip install jupyter`
+* Start: `python -m jupyter --notebook-dir=dir`
+* Enable remote connection: `--ip 0.0.0.0`
+* 
+
 
 ### Nbextensions
 * ExecuteTime: Display when each cell has been executed and how long it took.
