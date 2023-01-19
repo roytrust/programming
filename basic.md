@@ -14,6 +14,7 @@
 * Query performance: QUERY_HISTORY, micro-partition, cluster, search optimization service
 * Secure data sharing: direct, private exchange, public exchange, data clean room.  
   `ALTER SESSION SET simulated_data_sharing_consumer='acct'; UNSET; SHOW GRANTS TO SHARE shared_name; SHOW GRANTS OF SHARE shared_name;`
+* Snowsight: `SAMPLE (100 ROWS); TABLESAMPLE SYSTEM (0.1);
 
 ## Concepts
 * Memory: physical, virtual, shared (allows multiple programs to access the same data simultaneously).
