@@ -1,4 +1,5 @@
-## Snowflake
+## Data
+### Snowflake
 * [Architecture](https://docs.snowflake.com/en/user-guide/intro-key-concepts.html)
 * Zero-copy cloning
 * Time travel, fail safe, data masking, ACCOUNT_USAGE
@@ -15,6 +16,19 @@
 * Secure data sharing: direct, private exchange, public exchange, data clean room.  
   `ALTER SESSION SET simulated_data_sharing_consumer='acct'; UNSET; SHOW GRANTS TO SHARE shared_name; SHOW GRANTS OF SHARE shared_name;`
 * Snowsight: `SAMPLE (100 ROWS); TABLESAMPLE SYSTEM (0.1);
+
+### Data Monetize
+* Pricing strategies: cost pricing and value pricing
+* Value pricing: value of the data from a customer's perspective: 
+  * uniqueness
+  * the level of difficulty required to obtain the data
+  * How many competitors already offer the same data
+  * How frequently the data is updated and the amount of historical data
+  * Scope: global rather than local
+  * Sell as a set or as a subscription
+  * Charge based on usage
+* Freemium pricing structure: limited amount for free, basic charge for standard access, premium charge for additional service features
+* 
 
 ## Concepts
 * Memory: physical, virtual, shared (allows multiple programs to access the same data simultaneously).
