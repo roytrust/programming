@@ -73,8 +73,10 @@ const getCircularReplacer = () => {
 ```
 
 ### xml, html, xslt
+* [lxml: parse xml, html, transform](https://lxml.de/parsing.html)
 * [XSLT example with Pandas lxml](https://python.astrotech.io/pandas/import-export/read-xml.html)
-
+* [XSLT tutorial](https://www.w3schools.com/xml/xsl_intro.asp)
+* [A Roadmap to XML Parsers in Python](https://realpython.com/python-xml-parser/)
 
 
 ### [XPath](https://www.lambdatest.com/blog/complete-guide-for-using-xpath-in-selenium-with-examples/)
