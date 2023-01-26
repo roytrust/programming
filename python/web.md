@@ -1,4 +1,3 @@
-
 ### Proxy setup
 * env variable: 
 os.environ['HTTPS_PROXY'] = ''
@@ -73,6 +72,11 @@ const getCircularReplacer = () => {
 }
 ```
 
+### xml, html, xslt
+* [XSLT example with Pandas lxml](https://python.astrotech.io/pandas/import-export/read-xml.html)
+
+
+
 ### [XPath](https://www.lambdatest.com/blog/complete-guide-for-using-xpath-in-selenium-with-examples/)
 * [Cheat sheet]9https://www.lambdatest.com/blog/most-exhaustive-xpath-locators-cheat-sheet/)
 * `XPath = //tagname[@Attribute='Value']`
@@ -86,6 +90,7 @@ const getCircularReplacer = () => {
 
 
 ### Reference
+* [Python: From None to Machine Learning](https://python.astrotech.io/)
 * [An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
 * [FastAPI to Build Python Web APIs](https://realpython.com/fastapi-python-web-apis/)
 * [Async IO in Python](https://realpython.com/async-io-python/)
