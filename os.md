@@ -19,6 +19,7 @@
 * Sort: `sort -t, -n -r -k2 -k1`
 * Show binary: `xxd -l 10 file`
 * Redirect: cmd > file 2>&1
+* gmt date in iso format: `date -u -d "now + 5mins" +"%Y-%m-%dT%H:%M"`
 * Epoch time: seconds `date +%s`, millisec `date +%s%3N`
 * Network: netstat -tulpn | grep LISTEN. lsof -i -P -n | grep LISTEN
 * Unzip into a different dir: `STEM=$(basename "${f}" .gz); gunzip -c "${f}" > $THERE/"$STEM"
