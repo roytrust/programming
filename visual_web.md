@@ -61,6 +61,7 @@
 * Reducer must be pure, side-effect free, synchronous functions.
 * Never mutate Redux state directly.
 * UseEffect can't be async, but it can create an async func inside.
+* Custom components must start with upper case to distinguish with build-in elements.
 
 ### [Redux](https://github.com/roytrust/React/tree/main/Section%2018/code/12-finished/src/store)
 * redux, react-redux, `import { useSelector, useDispatch } from 'react-redux'`
