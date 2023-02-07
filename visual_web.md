@@ -15,6 +15,8 @@
 * [Jest - JavaScript test](https://jestjs.io/)
 
 ## React
+* Start: create react app.
+* VS code: Prettier, 
 * [Basic Example](https://github.com/roytrust/React/tree/main/Section%208/code/08-finished). [Redux, Context, Custom hooks](https://github.com/roytrust/React/tree/main/Section%2025)
 * Pass state data via props. Lifting state up
 * props.children, 
