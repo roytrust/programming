@@ -56,7 +56,8 @@
 8. deepdiff
 9. String similarity match: RapidFuzz
 10. WSGI Werkzeug
-11. 
+11. [backoff](https://pypi.org/project/backoff/): retry until some condition is met.
+1. [cachetools](https://pypi.org/project/cachetools/)
 
 ## Reference
 * [IPython Cookbook](https://ipython-books.github.io/)
