@@ -36,6 +36,11 @@
 2. [collection, counter, ChainMap, defaultdict queues](https://realpython.com/python-collections-module/)
 3. Multiple constructor: @classmethod, @singledispatchmethod
 
+### [Decorators](https://realpython.com/primer-on-python-decorators/)
+* [@lru_cache, @total_ordering, @contextmanager, @property, @cached_property, @classmethod, @staticmethod, @dataclass, @atexit.register](https://medium.com/techtofreedom/9-python-built-in-decorators-that-optimize-your-code-significantly-bc3f661e9017). 
+* [@logger, @wraps, @repeat, @timeit, @retry, @countcall, @rate_limited,  @singledispatch](https://towardsdatascience.com/12-python-decorators-to-take-your-code-to-the-next-level-a910a1ab3e99)
+* 
+
 ## Topics/Packages
 1. [Web](web.md)
    * [Proxy setup](web.md#proxy-setup)
