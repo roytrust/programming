@@ -15,6 +15,11 @@
 * Client/application - An application which needs to access resources at the resouce server, on the resource owner's behalf or on its own behalf.
 * Authorization Server - A service trusted by the resource server to authorize applications to call the resource server. It authenticates the application or resource owner and requests consent from the resource owner's behalf. With OAuth 2, the resouce server (API) is a relying party to the authorization server. The authorization server and resouce server may be operated by the same entity.
 
+#### Best practices
+* **Scope** should typically be used to model the coarse-grained privileges that an application can request of an API on a user's behalf, rather than granular privileges involving specific resources.
+* Application should request access tokens restricted to a particular resource server via a "resource" or "audience" parameter.
+* 
+
 ### OpenID Connect (OIDC)
 * A layer on top of the OAuth2 to provide information in a standard format to applications about the idenity of an authenticated user. This provided a solution for applications for user authentication as well as API authorization.
 
