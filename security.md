@@ -1,5 +1,11 @@
-# OAuth2, OpenID Connect
-* 
+## Overview
+### Security Principles
+1. least privilege
+2. 
+
+## OAuth2, OpenID Connect
+
+
 ### OAuth2
 * Allows a user to authorize one application (a client), to send a request to an API (resource server), on the user's behalf to retrieve data at the resource server owned by the user. The application interacts with an authorization server which authenticates a user as part of obtaining their consent for the application to access their resources.
 
