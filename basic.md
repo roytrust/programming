@@ -10,6 +10,7 @@
 * **Streams** - aka CDC (change data capture), keep track of certain changes made to a table including inserts, updates, and deletes. Update another table.
 * **Tasks** - on schedule or triggered by predecessor task.
 * `show variables`
+* Unstructured data - stage file URLs, scoped URLs, presigned URLs. 
 * Democratizing data with data governance controls: INFORMATION_SCHEMA, object tagging, OBJECT_DEPENDENCIES, external tokenization, secure views and UDFs
   * Classification. category types: semantic, privacy(Identifier, quasi-identifier, sensitive information), EXTRACT_SEMANTIC_CATEGORIES, ASSOCIATE_SEMANTIC_CATEGORY_TAGS
   * Data masking. dynamic, conditional, static
