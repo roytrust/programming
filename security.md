@@ -8,6 +8,9 @@
 
 ### OAuth2
 * Allows a user to authorize one application (a client), to send a request to an API (resource server), on the user's behalf to retrieve data at the resource server owned by the user. The application interacts with an authorization server which authenticates a user as part of obtaining their consent for the application to access their resources.
+* Eliminates the requirement for users to share their credentials with the application.
+* The **client credentials grant type** is for API calls where the application owns the requested resource.
+* The **Device Authorization Grant type** is an extension defined to enable flows involving client devices that lack the capability needed for user interaction to authenticate and authorize requests.
 
 #### Roles
 * Resource Server - A service (with an API) storing protected resources to be accessed by an application.
