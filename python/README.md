@@ -63,6 +63,7 @@
 10. WSGI Werkzeug
 11. [backoff](https://pypi.org/project/backoff/): retry until some condition is met.
 1. [cachetools](https://pypi.org/project/cachetools/)
+1. [ipyaggrid - Display pandas dataframes as dynamic HTML5 grids](https://dgothrek.gitlab.io/ipyaggrid/)
 
 ## Reference
 * [IPython Cookbook](https://ipython-books.github.io/)
