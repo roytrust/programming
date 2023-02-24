@@ -47,4 +47,5 @@
 
 
 ### SAML2 - Federated Identity - Security Assertion Markup Language
+* Fetures: Cross-demain single sign-on (SSO), identity federation.
 * IdP (identity provider), identity federation
