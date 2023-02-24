@@ -3,9 +3,6 @@
 1. least privilege
 2. 
 
-## OAuth2, OpenID Connect
-
-
 ### OAuth2
 * Allows a user to authorize one application (a client), to send a request to an API (resource server), on the user's behalf to retrieve data at the resource server owned by the user. The application interacts with an authorization server which authenticates a user as part of obtaining their consent for the application to access their resources.
 * Eliminates the requirement for users to share their credentials with the application.
@@ -35,6 +32,14 @@
 
 ### OpenID Connect (OIDC)
 * A layer on top of the OAuth2 to provide information in a standard format to applications about the idenity of an authenticated user. This provided a solution for applications for user authentication as well as API authorization.
+* **ID Token** - A token used to convey claims about an authentication event and an authenticated user to a relying party.
+* **UserInfo Endpoint** - Returns claims about an authenticated user. Calling the endpoint requires an access token, and the claims returned are governed by the access token.
+
+#### Roles
+* **End User** - A subject to be authenticated.
+* **OpenID Provider (OP)** - An OAuth 2 authorization server that implements OIDC and can authenticate a user and return claims about the anthenticated user and the authentication event to a relying party (application).
+* **Relying Party (RP)** - An OAuth 2 client which delegates user authentication to an OpenID Provider and requests claims about the user from the OpenID Provider. Generally application.
+
 
 
 
