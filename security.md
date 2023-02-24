@@ -32,8 +32,11 @@
 
 ### OpenID Connect (OIDC)
 * A layer on top of the OAuth2 to provide information in a standard format to applications about the idenity of an authenticated user. This provided a solution for applications for user authentication as well as API authorization.
+* Enable SSO, obtain user profile info, claims
 * **ID Token** - A token used to convey claims about an authentication event and an authenticated user to a relying party.
 * **UserInfo Endpoint** - Returns claims about an authenticated user. Calling the endpoint requires an access token, and the claims returned are governed by the access token.
+* **OIDC Flows**: Authorization, implicit, hybrid
+* **CIBA** flow allows an application used by a third party to send a request to an OpenID Provider to authenticate a user via a device in the user's possession such as their cellphone.
 
 #### Roles
 * **End User** - A subject to be authenticated.
