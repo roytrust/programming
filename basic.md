@@ -31,7 +31,13 @@
   * Sell as a set or as a subscription
   * Charge based on usage
 * Freemium pricing structure: limited amount for free, basic charge for standard access, premium charge for additional service features
-* 
+
+### Access Controls
+* System-defined roles: sysadmin, `show roles`
+* Functional-level business and IT Roles
+* System-level service account and object access roles 
+* User management, role management, Multi-Account strategy, SCIM 2.0 (System for Cross-domain Identity management spec).
+* RBAC (role-based access control), DAC (discretionary access control). 
 
 ## Concepts
 * Memory: physical, virtual, shared (allows multiple programs to access the same data simultaneously).
