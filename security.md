@@ -49,3 +49,14 @@
 ### SAML2 - Federated Identity - Security Assertion Markup Language
 * Fetures: Cross-demain single sign-on (SSO), identity federation.
 * IdP (identity provider), identity federation
+
+#### SAML terms
+* **Subject** - An entity about which security information will be exchanged. Usually a person, can be any entity.
+* **SAML Assertion** - An XML-based message that contains security information about a subject.
+* **SAML Profile** - A specification that defines how to use SAML messages for a business use case such as cross-domain single sign-on.
+* **Identity Provider** - A fole defined for the SAML cross-domain single sign-on profile. An identity provider is a server which issues SAML assertions about an authenticated subject, in the context of cross-domain single sign-on.
+* **Service Provider** - Delegates authentication to an IdP and relies on information about an authenticated subject in a SAML assertion issued by an IdP in the context of corss-domain single sign-on.
+* **Trust Relationship** - An agreement between a SAML service provider and a SAML IdP whereby the service provider trusts assertions issued by the IdP.
+* **SAML Protocol Binding** - A description of how SAML message elements are mapped on to standard communication protocols, such as HTTP, for transmission between service providers and identity providers. In practice, SAML request and response messages are typically sent over HTTPS using either HTTP-Redirect or HTTP-POST, using HTTP-Redirect and HTTP-POST bindings, respectively.
+
+
