@@ -44,11 +44,11 @@
 * **Relying Party (RP)** - An OAuth 2 client which delegates user authentication to an OpenID Provider and requests claims about the user from the OpenID Provider. Generally application.
 
 
-
-
 ### SAML2 - Federated Identity - Security Assertion Markup Language
 * Fetures: Cross-demain single sign-on (SSO), identity federation.
 * IdP (identity provider), identity federation
+* SP-Initiated SSO, IdP-Initiated Flow. 
+* Authentication brokers.
 
 #### SAML terms
 * **Subject** - An entity about which security information will be exchanged. Usually a person, can be any entity.
