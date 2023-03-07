@@ -12,6 +12,7 @@
 * rebase, branch, merge
 * Modify the most recent commit: `git commit --amend -m "msg"`
 * Clean up local for performance: `git gc; git gc --aggressive --auto`
+* Retrieve a file of specific version: `git show REV:path/to/file`. Support commit range: commitA...commitD 
 
 ### [Core Concepts](https://www.freecodecamp.org/news/git-internals-objects-branches-create-repo/)
 * blob — contents of a file.
