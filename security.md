@@ -3,6 +3,7 @@
 1. least privilege
 2. 
 
+## Identity Management
 ### OAuth2
 * Allows a user to authorize one application (a client), to send a request to an API (resource server), on the user's behalf to retrieve data at the resource server owned by the user. The application interacts with an authorization server which authenticates a user as part of obtaining their consent for the application to access their resources.
 * Eliminates the requirement for users to share their credentials with the application.
@@ -58,5 +59,25 @@
 * **Service Provider** - Delegates authentication to an IdP and relies on information about an authenticated subject in a SAML assertion issued by an IdP in the context of corss-domain single sign-on.
 * **Trust Relationship** - An agreement between a SAML service provider and a SAML IdP whereby the service provider trusts assertions issued by the IdP.
 * **SAML Protocol Binding** - A description of how SAML message elements are mapped on to standard communication protocols, such as HTTP, for transmission between service providers and identity providers. In practice, SAML request and response messages are typically sent over HTTPS using either HTTP-Redirect or HTTP-POST, using HTTP-Redirect and HTTP-POST bindings, respectively.
+
+### Authorization and Policy Enforcement
+* **Authorization** - granting of privileges to access protected resources. 
+* **Policy enforcement** - done when a request is made and checks if a requestor has been granted sufficient authorization for the request.
+* Levels:
+  * Level 1 - Whether an entity can access an application or API at all
+  * Level 2 - What functions an entity can use in an application or API
+  * Level 3 - What data an entity can access or operate on
+* Steps commonly involved in controlling access
+  * Authorization and the specification of access policy
+  * Delivery of authorization information to the enforcement point (if needed)
+  * Enforment of the access policy by the enforcement point
+* Authorization schmes: **ACL** Access Control List. **RBAC** Role-Based Access Control. group. **ABAC** Attribute-Based access control.
+* Transactional user attributes: location, time
+* Validate token:
+  * Validate the ID token is a correctly formatted
+  * Validate the signature on the ID token
+  * Check that the token has not expired
+  * Check the issuer is the correct OpenID Provider
+  * Check the intended audience for the toten is the application.
 
 
