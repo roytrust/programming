@@ -42,6 +42,7 @@
 * 
 
 ## Topics/Packages
+1. [Python Packaging](https://itnext.io/python-packaging-12ef040c4ea0)
 1. [Web](web.md)
    * [Proxy setup](web.md#proxy-setup)
    * [selenium](web.md#selenium)
