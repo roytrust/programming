@@ -17,6 +17,9 @@ shutil.which()
 * module path: PYTHONPATH; sys.path.append()
 * sys.modules[]
 * from importlib import reload; reload()
+* **Packages**: __path__, __init__.py
+* List contents of a namespace: `dir(); dir(ns)`
+
 
 ### logging
 * Reset log level: logging.getLogger().setLevel(logging.DEBUG)
