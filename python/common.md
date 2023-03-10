@@ -15,7 +15,7 @@ shutil.which()
 
 ### <a id="modules">[Modules, import](https://realpython.com/python-import)
 * module path: PYTHONPATH; sys.path.append()
-* sys.modules[]
+* `sys.modules[], sys.meta_path`
 * from importlib import reload; reload()
 * **Packages**: __path__, __init__.py
 * List contents of a namespace: `dir(); dir(ns)`
