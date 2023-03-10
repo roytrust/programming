@@ -1,6 +1,6 @@
 ## Tips
+1. [venv, module, reload, import](common.md#modules)
 1. [Environment variable](common.md)
-1. [Module path, reload, import](common.md#modules)
 1. [logging](common.md#logging)
 1. [exception](common.md#exception)
 1. [Date time](common.md#datetime)
