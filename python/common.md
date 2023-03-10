@@ -3,15 +3,7 @@
 * module location: `m.__file__`
 * os.name == 'nt'  # Windows
 * `t=tempfile.TemporaryDirectory(); t.name; t.cleanup()`
-
-### Environment variable
-```
-pprint(dict(os.environ))
-os.environ.get('')
-os.environ[''] = ''
-
-shutil.which()
-```
+* Environment variable: `os.environ; shutil.which()`
 
 ### <a id="modules">[Modules, import](https://realpython.com/python-import)
 * module path: PYTHONPATH; sys.path.append()
@@ -19,7 +11,7 @@ shutil.which()
 * from importlib import reload; reload()
 * **Packages**: __path__, __init__.py
 * List contents of a namespace: `dir(); dir(ns)`
-
+* [Virtual environments: venv](https://realpython.com/python-virtual-environments-a-primer)
 
 ### logging
 * Reset log level: logging.getLogger().setLevel(logging.DEBUG)
