@@ -13,7 +13,7 @@ os.environ[''] = ''
 shutil.which()
 ```
 
-### <a id="modules">Modules, import
+### <a id="modules">[Modules, import](https://realpython.com/python-import)
 * module path: PYTHONPATH; sys.path.append()
 * sys.modules[]
 * from importlib import reload; reload()
