@@ -1,4 +1,5 @@
 ### [Pytest](https://realpython.com/pytest-python-testing/)
+* log config: `-v -o log_cli=true --log-cli-level=DEBUG --capture=tee-sys`
 * **Fixtures** for handling test dependencies, state, and reusable functionality
 * **Marks** for categorizing tests and limiting access to external resources
 * **Parametrization** for reducing duplicated code between tests
