@@ -1,7 +1,8 @@
 ## Overview
 ### Security Principles
 1. least privilege
-2. 
+2. [OWASP Top Ten](https://owasp.org/www-project-top-ten/)
+
 
 ## Identity Management
 ### OAuth2
