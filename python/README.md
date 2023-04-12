@@ -65,8 +65,13 @@
 11. [backoff](https://pypi.org/project/backoff/): retry until some condition is met.
 1. [cachetools](https://pypi.org/project/cachetools/)
 1. [ipyaggrid - Display pandas dataframes as dynamic HTML5 grids](https://dgothrek.gitlab.io/ipyaggrid/)
+1. [Working with Excel](https://automatetheboringstuff.com/2e/chapter13/)
+  * [Openpyxl](https://realpython.com/openpyxl-excel-spreadsheets-python/)
+  * [Plot charts](https://www.geeksforgeeks.org/python-plotting-charts-in-excel-sheet-using-openpyxl-module-set-1/?ref=lbp)
+  * [Pandas ExcelWriter](https://pandas.pydata.org/docs/reference/api/pandas.ExcelWriter.html#pandas.ExcelWriter)
 
 ## Reference
+* [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 * [IPython Cookbook](https://ipython-books.github.io/)
 * [Style guide](https://www.analyticsvidhya.com/blog/2020/07/python-style-guide/)
 
