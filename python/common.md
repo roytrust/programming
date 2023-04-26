@@ -5,13 +5,17 @@
 * `t=tempfile.TemporaryDirectory(); t.name; t.cleanup()`
 * Environment variable: `os.environ; shutil.which()`
 
-### <a id="modules">[Modules, import](https://realpython.com/python-import)
+### <a id="modules">[venv, modules, import](https://realpython.com/python-import)
 * module path: PYTHONPATH; sys.path.append()
 * `sys.modules[], sys.meta_path`
 * from importlib import reload; reload()
 * **Packages**: __path__, __init__.py
 * List contents of a namespace: `dir(); dir(ns)`
 * [Virtual environments: venv](https://realpython.com/python-virtual-environments-a-primer)
+* List outdated: `pip list --outdated`. `pip show --verbose -f pandas`
+* `pip cache info`, `pip config list`
+    
+   
 
 ### logging
 * Reset log level: logging.getLogger().setLevel(logging.DEBUG)
