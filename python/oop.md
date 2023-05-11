@@ -8,7 +8,8 @@
   * can take two parameters: 1st is a subclass, 2nd is an instance of that subclass.
   * the delegation chain stops here: `
         assert not hasattr(super(), 'draw')`
-
+* Refer to class dynamically: `type(self).attr`
+* Dynamic class and instance attributes: `instance.__dict__['attr']=v;setattr(obj, field, val)`
 * `**kwargs dictionary` to pass parameters 
   ```
   def __init__(self, name, **kwds):
