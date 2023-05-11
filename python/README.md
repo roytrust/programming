@@ -35,6 +35,7 @@
 1. Size: len(pickle.dumps(o))
 2. [collection, counter, ChainMap, defaultdict queues](https://realpython.com/python-collections-module/)
 3. Multiple constructor: @classmethod, @singledispatchmethod
+4. [namedtuple](https://realpython.com/python-namedtuple/): `from collections import namedtuple; Point = namedtuple("Point", "x, y")`
 
 ### [Decorators](https://realpython.com/primer-on-python-decorators/)
 * [@lru_cache, @total_ordering, @contextmanager, @property, @cached_property, @classmethod, @staticmethod, @dataclass, @atexit.register](https://medium.com/techtofreedom/9-python-built-in-decorators-that-optimize-your-code-significantly-bc3f661e9017). 
