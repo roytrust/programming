@@ -71,6 +71,11 @@
   * [Plot charts](https://www.geeksforgeeks.org/python-plotting-charts-in-excel-sheet-using-openpyxl-module-set-1/?ref=lbp)
   * [Pandas ExcelWriter](https://pandas.pydata.org/docs/reference/api/pandas.ExcelWriter.html#pandas.ExcelWriter)
 
+### Protocols
+* [Iterators and Iterables](https://realpython.com/python-iterators-iterables/)
+* [Descriptors](https://realpython.com/python-descriptors)
+* [Context Managers](https://realpython.com/python-with-statement)
+
 ## Reference
 * [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 * [IPython Cookbook](https://ipython-books.github.io/)
