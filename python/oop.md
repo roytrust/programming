@@ -11,7 +11,8 @@
 * Refer to class dynamically: `type(self).attr`
 * Dynamic class and instance attributes: `instance.__dict__['attr']=v;setattr(obj, field, val)`
 * Save memory, can't add new attr, no `__dict__`: `__slots__=('x', 'y')`
-* 
+* Delegation: `def __getattr__(self, attr)`
+* [Static duck typing](https://devpress.csdn.net/python/62f5260a7e6682346618a2a1.html): `from typing import Protocol, TypeVar; class Duck(Protocol): id: int; M = TypeVar('M', bound=Duck); def func(d: M) -> M: pass`
 * `**kwargs dictionary` to pass parameters 
   ```
   def __init__(self, name, **kwds):
