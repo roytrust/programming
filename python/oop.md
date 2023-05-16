@@ -13,6 +13,9 @@
 * Save memory, can't add new attr, no `__dict__`: `__slots__=('x', 'y')`
 * Delegation: `def __getattr__(self, attr)`
 * [Static duck typing](https://devpress.csdn.net/python/62f5260a7e6682346618a2a1.html): `from typing import Protocol, TypeVar; class Duck(Protocol): id: int; M = TypeVar('M', bound=Duck); def func(d: M) -> M: pass`
+* [Enum, enumerations](https://realpython.com/python-enum/). Replacing Magic Numbers, Creating a State Machine
+  * `from enum import Enum; class Day(Enum); Enum(value, names, *, module=None, qualname=None, type=None, start=1); auto(); @unique; aliases; .name; .value`
+  * Mixing: `class Size(int, Enum); IntEnum; StrEnum; IntFlag; Flag`
 * `**kwargs dictionary` to pass parameters 
   ```
   def __init__(self, name, **kwds):
