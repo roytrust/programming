@@ -1,13 +1,8 @@
-### Tips
-* sys.version, sys.executable
-* module location: `m.__file__`
-* os.name == 'nt'  # Windows
-* `t=tempfile.TemporaryDirectory(); t.name; t.cleanup()`
-* Environment variable: `os.environ; shutil.which()`
 
 ### <a id="modules">[venv, modules, import](https://realpython.com/python-import)
 * module path: PYTHONPATH; sys.path.append()
 * `sys.modules[], sys.meta_path`
+* module location: `m.__file__`
 * from importlib import reload; reload()
 * **Packages**: __path__, __init__.py
 * List contents of a namespace: `dir(); dir(ns)`
@@ -15,8 +10,6 @@
 * List outdated: `pip list --outdated`. `pip show --verbose -f pandas`
 * `pip cache info`, `pip config list`
 * 3rd party dependences: `{m for m in sys.modules if "." not in m} - sys.stdlib_module_names`
-    
-   
 
 ### logging
 * Reset log level: logging.getLogger().setLevel(logging.DEBUG)
@@ -24,6 +17,14 @@
 * [logging tips](https://realpython.com/python-logging/): `logging.error(msg, exc_info=True); logging.exception()`
 * [tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
 
+### <a id=env> Args, shell, env
+* argparse: `parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter) # show default; add_argument(help="(default: %(default)s)")
+    nargs='*' # list like 1 2. + 1 or more; action='append' # multi times`
+* args: `sys.argv; sys.orig_argv`
+* Environment variable: `os.environ; shutil.which()`
+* Run script interactive: python -i
+* Check version: `sys.version_info >= (3, 11)`
+    
 ### exception
 * sys.exc_info(), logging.exception(e), repr(e)
 * traceback.print_exc()
