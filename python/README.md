@@ -8,20 +8,9 @@
 7. [iteration](common.md#iteration)
 11. [Asterisk `*,**` prefix operator](common.md#asterisk--prefix-operator)
 16. [regex: regular expression](common.md#regex)
-17. Current user: getpass.getuser()
-18. Find in a list: `[[i,s] for i,s in enumerate(sys.path) if 'pandas' in s]`
-19. Converts a string into an expression: eval()
-20. Converts an integer to binary string: bin()
-21. Execution time: `timeit.timeit(globals=globals(), number=3, stmt=""); from __main__ import x`
-22. Get script directory: os.path.dirname(os.path.realpath(__file__))
-23. File modify timestamp: `Path().stat.st_mtime; datetime.datetime.fromtimestamp(tm)`
-24. File exists: Path.exists(); File mode: Path.chmod(stat.S_IWUSR) # owner writable
-25. First not null: `next((i for i in lst if i), 0)
-26. Read dict from a file: `dc=ast.literal_eval(open('dict.txt').read())`
 27. argparse: `parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter) # show default; add_argument(help="(default: %(default)s)")
     nargs='*' # list like 1 2. + 1 or more; action='append' # multi times`
 1. [Memory mapped file mmap](https://realpython.com/python-mmap/). `mmap.mmap(file_obj.fileno(), length=0, access=mmap.ACCESS_READ); mmap_obj[10:20] # as string; `
-1. Reflection: `dir(dir); a=getattr(dir, '__str__'); callable(a)`
 1. [from dataclasses import dataclass](https://realpython.com/python-data-classes/). `@dataclass(order=True); make_dataclass('Position', ['name', 'lat', 'lon']); typing.Any; cards: List[PlayingCard] = field(default_factory=make_french_deck)`
 1. Run script interactive: python -i
 1. [Multiprocessing](http://zetcode.com/python/multiprocessing/)
