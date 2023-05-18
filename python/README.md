@@ -1,30 +1,31 @@
 ## Tips
-1. [venv, module, reload, import](common.md#modules)
-1. [Environment variable](common.md)
-1. [logging](common.md#logging)
-1. [exception](common.md#exception)
-1. [Date time](common.md#datetime)
-2. [iteration](common.md#iteration)
-3. Platform: os.name=='nt'
-4. Sublist: list(zip(*a))[0]
-5. Append dict: {**d1, **d2}
-6. [Asterisk `*,**` prefix operator](common.md#asterisk--prefix-operator)
-7. Remove Emojis: `t.encode('ascii', 'ignore').decode('ascii')`
-8. Parallel loop with zip. itertools.zip_longest()
-9. types.SimpleNamespace
-10. Partial func call: g=functools.partial(f,1)
-11. [regex: regular expression](common.md#regex)
-12. Current user: getpass.getuser()
-13. Find in a list: `[[i,s] for i,s in enumerate(sys.path) if 'pandas' in s]`
-14. Converts a string into an expression: eval()
-15. Converts an integer to binary string: bin()
-16. Execution time: `timeit.timeit(globals=globals(), number=3, stmt=""); from __main__ import x`
-17. Get script directory: os.path.dirname(os.path.realpath(__file__))
-18. File modify timestamp: `Path().stat.st_mtime; datetime.datetime.fromtimestamp(tm)`
-19. File exists: Path.exists(); File mode: Path.chmod(stat.S_IWUSR) # owner writable
-20. First not null: `next((i for i in lst if i), 0)
-21. Read dict from a file: `dc=ast.literal_eval(open('dict.txt').read())`
-22. argparse: `parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter) # show default; add_argument(help="(default: %(default)s)")
+1. [Jupyter online](https://jupyter.org/try)
+2. [venv, module, reload, import](common.md#modules)
+3. [Environment variable](common.md)
+4. [logging](common.md#logging)
+5. [exception](common.md#exception)
+6. [Date time](common.md#datetime)
+7. [iteration](common.md#iteration)
+8. Platform: os.name=='nt'
+9. Sublist: list(zip(*a))[0]
+10. Append dict: {**d1, **d2}
+11. [Asterisk `*,**` prefix operator](common.md#asterisk--prefix-operator)
+12. Remove Emojis: `t.encode('ascii', 'ignore').decode('ascii')`
+13. Parallel loop with zip. itertools.zip_longest()
+14. types.SimpleNamespace
+15. Partial func call: g=functools.partial(f,1)
+16. [regex: regular expression](common.md#regex)
+17. Current user: getpass.getuser()
+18. Find in a list: `[[i,s] for i,s in enumerate(sys.path) if 'pandas' in s]`
+19. Converts a string into an expression: eval()
+20. Converts an integer to binary string: bin()
+21. Execution time: `timeit.timeit(globals=globals(), number=3, stmt=""); from __main__ import x`
+22. Get script directory: os.path.dirname(os.path.realpath(__file__))
+23. File modify timestamp: `Path().stat.st_mtime; datetime.datetime.fromtimestamp(tm)`
+24. File exists: Path.exists(); File mode: Path.chmod(stat.S_IWUSR) # owner writable
+25. First not null: `next((i for i in lst if i), 0)
+26. Read dict from a file: `dc=ast.literal_eval(open('dict.txt').read())`
+27. argparse: `parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter) # show default; add_argument(help="(default: %(default)s)")
     nargs='*' # list like 1 2. + 1 or more; action='append' # multi times`
 1. [Memory mapped file mmap](https://realpython.com/python-mmap/). `mmap.mmap(file_obj.fileno(), length=0, access=mmap.ACCESS_READ); mmap_obj[10:20] # as string; `
 1. Reflection: `dir(dir); a=getattr(dir, '__str__'); callable(a)`
