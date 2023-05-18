@@ -14,6 +14,7 @@
 * [Virtual environments: venv](https://realpython.com/python-virtual-environments-a-primer)
 * List outdated: `pip list --outdated`. `pip show --verbose -f pandas`
 * `pip cache info`, `pip config list`
+* 3rd party dependences: `{m for m in sys.modules if "." not in m} - sys.stdlib_module_names`
     
    
 
