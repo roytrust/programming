@@ -1,6 +1,7 @@
 ### Tips
 * https://realpython.com/python-classes/
 * Use single main inheritance, plus Mixin for addon features 
+* Multiple constructor: @classmethod, @singledispatchmethod
 * MRO (Method Resolution Order): mro(), __mro__  
   children precede their parents and the order of appearance in __bases__ is respected.
 * the order of your inheritance is to make the highest to lowest from left to right.
