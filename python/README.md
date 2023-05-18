@@ -1,4 +1,4 @@
-## Tips
+## [Tips](tips.md)
 1. [Jupyter online](https://jupyter.org/try)
 2. [venv, module, reload, import](common.md#modules)
 3. [Environment variable](common.md)
@@ -6,14 +6,7 @@
 5. [exception](common.md#exception)
 6. [Date time](common.md#datetime)
 7. [iteration](common.md#iteration)
-8. Platform: os.name=='nt'
-9. Sublist: list(zip(*a))[0]
-10. Append dict: {**d1, **d2}
 11. [Asterisk `*,**` prefix operator](common.md#asterisk--prefix-operator)
-12. Remove Emojis: `t.encode('ascii', 'ignore').decode('ascii')`
-13. Parallel loop with zip. itertools.zip_longest()
-14. types.SimpleNamespace
-15. Partial func call: g=functools.partial(f,1)
 16. [regex: regular expression](common.md#regex)
 17. Current user: getpass.getuser()
 18. Find in a list: `[[i,s] for i,s in enumerate(sys.path) if 'pandas' in s]`
