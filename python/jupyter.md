@@ -15,6 +15,8 @@ display(HTML(df.to_html()))
 * [nbconvert](https://nbconvert.readthedocs.io/en/latest/): clean output: `jupyter nbconvert --to notebook --ClearOutputPreprocessor.enabled=True note.ipynb --output note2.ipynb`
 * Jupyterlab: `pip install jupyterlab; python -m jupyter lab`
 
+* Config: `jupyter --paths`
+
 
 ### Nbextensions
 * ExecuteTime: Display when each cell has been executed and how long it took.
