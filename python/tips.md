@@ -14,3 +14,5 @@
 1. Reflection: `dir(dir); a=getattr(dir, '__str__'); callable(a)`
 1. temp files: `t=tempfile.TemporaryDirectory(); t.name; t.cleanup()`
 1. Size: `len(pickle.dumps(o))`
+1. Disassembler: `dis.dis(myfunc)`
+1.  
