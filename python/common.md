@@ -29,6 +29,8 @@
 * sys.exc_info(), logging.exception(e), repr(e)
 * traceback.print_exc()
 * pdb ! run code. alias in ~/.pdbrc
+* Notes: `err = ValueError(123); err.add_note("Enriching Exceptions with Notes"); err.__notes__; raise err`
+
 
 ### Datetime
 * [datetime formatting](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)
