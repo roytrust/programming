@@ -13,7 +13,7 @@
 1. Read dict from a file: `dc=ast.literal_eval(open('dict.txt').read())`
 1. Reflection: `dir(dir); a=getattr(dir, '__str__'); callable(a)`
 1. temp files: `t=tempfile.TemporaryDirectory(); t.name; t.cleanup()`
-1. Size: `len(pickle.dumps(o))`
+1. Size: `len(pickle.dumps(o)); sys.getsizeof(list(range(200)))`
 1. Disassembler: `dis.dis(myfunc)`
 1. File operation: `pathlib.read_text, write_text; read/write bytes` 
 1. Dict: `{**dict1, **dict2}; dict1.update(dict2); dict1 | dict2; dict1 |= dict2`
