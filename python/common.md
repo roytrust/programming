@@ -43,6 +43,7 @@ datetime.strptime('20200801', '%Y%m%d').weekday()
 from datetime import date; date.today()
 datetime.timedelta(days=1)
 ```
+* Timezone: `from zoneinfo import ZoneInfo; tz=ZoneInfo("America/Vancouver"); ts = datetime.now(tz=ZoneInfo("America/Vancouver")); ts.astimezone(ZoneInfo("Europe/Oslo")); zoneinfo.available_timezones(); hour = timedelta(hours=1); (ts + 1 * hour).astimezone(tz); tz.utcoffset(datetime(1995, 1, 1)) / hour; tz.tzname(datetime(2021, 1, 28))`
 
 ### [Asterisk `*,**` prefix operator](https://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/)
 * unpack into function call. 
