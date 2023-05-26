@@ -16,3 +16,4 @@
 1. Size: `len(pickle.dumps(o))`
 1. Disassembler: `dis.dis(myfunc)`
 1. File operation: `pathlib.read_text, write_text; read/write bytes` 
+1. Dict: `{**dict1, **dict2}; dict1.update(dict2); dict1 | dict2; dict1 |= dict2`
