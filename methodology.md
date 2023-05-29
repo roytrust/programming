@@ -48,7 +48,9 @@
 * Creative cooperation
 * Daily selfhrenewal
 
-# Design Patterns
+# [Design Patterns](https://refactoring.guru/design-patterns)
+* __algorithm__ always defines a clear set of actions that can achieve some goal, a __pattern__ is a more high-level description of a solution. algorithm is a cooking recipe, a pattern is more like a blueprint.
+
 ## Creational Patterns
 ### Abstract Factory
 Produce families of related objects without specifying their concrete classes.
