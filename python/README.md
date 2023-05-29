@@ -59,7 +59,8 @@
 
 ### Protocols
 * [Iterators and Iterables](https://realpython.com/python-iterators-iterables/)
-* [Descriptors](https://realpython.com/python-descriptors)
+* [Descriptors](https://realpython.com/python-descriptors), lookup chain: `att1=property(getter, setter); `
+  * descriptors are instantiated just once per class. Lazy Properties. share behavior among all the properties.
 * [Context Managers](https://realpython.com/python-with-statement)
 
 ## Reference
