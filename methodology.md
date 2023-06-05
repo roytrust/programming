@@ -49,6 +49,12 @@
 * Daily selfhrenewal
 
 # [Design Patterns](https://refactoring.guru/design-patterns)
+## Design Principle
+* Favor composition over inheritance. 
+  Flexibility: encapsulate a family of algorithms. change behavior at runtime.
+* 
+
+## Concepts
 * __algorithm__ always defines a clear set of actions that can achieve some goal, a __pattern__ is a more high-level description of a solution. algorithm is a cooking recipe, a pattern is more like a blueprint.
 
 ## Creational Patterns
