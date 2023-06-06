@@ -50,7 +50,7 @@
 
 # [Design Patterns](https://refactoring.guru/design-patterns)
 ## Design Principle
-* Identify the aspects of your application that vary and separate them from what stays the same.  
+* __Encapsulate what varies__. Identify the aspects of your application that vary and separate them from what stays the same.  
   Take the parts that vary and encapsulate them, so that later you can alter or extend the parts that vary without affecting those that don't.
 * __Promgram to an interface__, not an implementation. Program to a supertype.  
   Exploit polymorphism by programming to a supertype so that the actual runtime object isn't locked into the code. 
@@ -63,6 +63,8 @@
 
 ## Concepts
 * __algorithm__ always defines a clear set of actions that can achieve some goal, a __pattern__ is a more high-level description of a solution. algorithm is a cooking recipe, a pattern is more like a blueprint.
+* Patterns aren't invented, they are discovered.
+* OO Basics: abstraction, encapsulation, polymorphism, inheritance.
 
 ## Creational Patterns
 ### Abstract Factory
@@ -72,6 +74,10 @@ Produce families of related objects without specifying their concrete classes.
 Provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 
 ## Behavioral Patterns
+### [Strategy](https://refactoring.guru/design-patterns/strategy)
+* Define a family of algorithms, encapsulates each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+
+
 ### Template Method
 defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
 
