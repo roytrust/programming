@@ -50,7 +50,14 @@
 
 # [Design Patterns](https://refactoring.guru/design-patterns)
 ## Design Principle
-* Favor composition over inheritance. 
+* Identify the aspects of your application that vary and separate them from what stays the same.  
+  Take the parts that vary and encapsulate them, so that later you can alter or extend the parts that vary without affecting those that don't.
+* __Promgram to an interface__, not an implementation. Program to a supertype.  
+  Exploit polymorphism by programming to a supertype so that the actual runtime object isn't locked into the code. 
+  "program to a supertype" as "the declared type of the variables should be a supertype, usually an abstract class or interface, so that the objects
+  assigned to those variables can be any concrete implementation of the supertype,
+  which means the class declaring them doesn't have to know about the actual boject types.
+* __Favor composition over inheritance__. HAS-A can be better than IS-A.
   Flexibility: encapsulate a family of algorithms. change behavior at runtime.
 * 
 
