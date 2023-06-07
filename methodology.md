@@ -76,6 +76,9 @@ Provides an interface for creating objects in a superclass, but allows subclasse
 ## Behavioral Patterns
 ### [Strategy](https://refactoring.guru/design-patterns/strategy)
 * Define a family of algorithms, encapsulates each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+* __context__ must have a field for storing a reference to one of the strategies. The context delegates the work to a linked strategy object instead of executing it on its own.
+* __client__ passes the desired strategy to the context. In fact, the context doesn’t know much about strategies. It works with all strategies through the same generic interface, which only exposes a single method for triggering the algorithm encapsulated within the selected strategy.
+* This way the context becomes independent of concrete strategies, so you can add new algorithms or modify existing ones without changing the code of the context or other strategies.
 
 
 ### Template Method
