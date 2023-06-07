@@ -59,7 +59,7 @@
   which means the class declaring them doesn't have to know about the actual boject types.
 * __Favor composition over inheritance__. HAS-A can be better than IS-A.
   Flexibility: encapsulate a family of algorithms. change behavior at runtime.
-* 
+* Strive for __loosely coupled designs__ between objects that interact.
 
 ## Concepts
 * __algorithm__ always defines a clear set of actions that can achieve some goal, a __pattern__ is a more high-level description of a solution. algorithm is a cooking recipe, a pattern is more like a blueprint.
@@ -80,6 +80,9 @@ Provides an interface for creating objects in a superclass, but allows subclasse
 * __client__ passes the desired strategy to the context. In fact, the context doesn’t know much about strategies. It works with all strategies through the same generic interface, which only exposes a single method for triggering the algorithm encapsulated within the selected strategy.
 * This way the context becomes independent of concrete strategies, so you can add new algorithms or modify existing ones without changing the code of the context or other strategies.
 
+### [Observer](https://refactoring.guru/design-patterns/observer)
+* Defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically. Subject, observer.
+* 
 
 ### Template Method
 defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
