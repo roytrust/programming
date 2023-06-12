@@ -60,6 +60,8 @@
 * __Favor composition over inheritance__. HAS-A can be better than IS-A.
   Flexibility: encapsulate a family of algorithms. change behavior at runtime.
 * Strive for __loosely coupled designs__ between objects that interact.
+* __Open-Closed__: classes should be open for extension, but closed for modification.
+
 
 ## Concepts
 * __algorithm__ always defines a clear set of actions that can achieve some goal, a __pattern__ is a more high-level description of a solution. algorithm is a cooking recipe, a pattern is more like a blueprint.
@@ -87,9 +89,10 @@ Provides an interface for creating objects in a superclass, but allows subclasse
 ### Template Method
 defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
 
-## Test Patterns
-* Build operate chech
-* Given when then
+## Structural Patterns
+### [Decorator](https://refactoring.guru/design-patterns/decorator)
+* Attaches additional responsibilities to an object dynamically, by placing these objects inside special wrapper objects that contain the behaviors. Decorators provide a flexible alternative to subclassing for extending fucntionality.
+* 
 
 ## References
 * https://refactoring.guru/design-patterns
