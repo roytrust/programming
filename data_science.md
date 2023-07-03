@@ -31,7 +31,7 @@
 * Slice by mask: `df[mask]; isin([]); isin(dict)`
 * df[co].last_valid_index; first_valid_index
 * Series: s.rename(); s.to_frame()
-* Rows with missing: df[df.isnull().any(axis=1)]
+* Handle missing values: `df[df.isnull().any(axis=1)]; df_null = pd.read_csv("data.csv", dtype_backend='numpy_nullable')`
 * Month end: date.to_period('M').to_timestamp('M')
 * Null: np.nan - float, pd.NaT - datetime, notnull()
 * Compare: df.equals(df1)
@@ -57,6 +57,7 @@
 * [SQL like non-equal join](https://stackoverflow.com/questions/15581829/how-to-perform-an-inner-or-outer-join-of-dataframes-with-pandas-on-non-simplisti)
 * [merge with logic - searchsorted](https://stackoverflow.com/questions/25125626/pandas-merge-with-logic/2512764)
 * Add multiple new columns: `df = df.assign(c1='1', c2='2'); df[['c1', 'c2']] = pd.DataFrame([[np.nan, 3]], index=df.index)`
+* Performance: `%timeit df_arrow = pd.read_csv("data.csv", engine='pyarrow', dtype_backend='pyarrow')`
 
 ### [Grouping and aggregating](https://pbpython.com/groupby-agg.html)
 * prefer to use dictionaries for aggregations
