@@ -58,6 +58,8 @@
 * [merge with logic - searchsorted](https://stackoverflow.com/questions/25125626/pandas-merge-with-logic/2512764)
 * Add multiple new columns: `df = df.assign(c1='1', c2='2'); df[['c1', 'c2']] = pd.DataFrame([[np.nan, 3]], index=df.index)`
 * Performance: `%timeit df_arrow = pd.read_csv("data.csv", engine='pyarrow', dtype_backend='pyarrow')`
+* [copy_on_write](https://stackoverflow.com/questions/23296282/what-rules-does-pandas-use-to-generate-a-view-vs-a-copy)
+* 
 
 ### [Grouping and aggregating](https://pbpython.com/groupby-agg.html)
 * prefer to use dictionaries for aggregations
