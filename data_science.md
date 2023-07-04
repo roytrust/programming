@@ -5,7 +5,9 @@
 
 ## EDA (Exploratory Data Analysis)
 * [profiling](https://github.com/ydataai/ydata-profiling)
-
+* [Pandas visualization](https://pandas.pydata.org/docs/user_guide/visualization.htm)
+* [Easy and Simple Syntax of Pandas for Data Visualization](https://medium.com/@shouke.wei/easy-and-simple-syntax-of-pandas-for-data-visualization-c213e232ec46)
+* [plotly interactive](https://plotly.com/python/pandas-backend/)
 
 ## pandas
 * DataFrame: A set of pandas Series that shares the same index.
