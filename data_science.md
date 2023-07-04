@@ -3,6 +3,10 @@
 * [pandas cheat sheet](https://github.com/pandas-dev/pandas/blob/master/doc/cheatsheet/Pandas_Cheat_Sheet.pdf)
 * [matplotlib cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Matplotlib_Cheat_Sheet.pdf)
 
+## EDA (Exploratory Data Analysis)
+* [profiling](https://github.com/ydataai/ydata-profiling)
+
+
 ## pandas
 * DataFrame: A set of pandas Series that shares the same index.
 * `df = pd.DataFrame(np.random.rand(n, 3), columns=list('abc')); index = pd.date_range('1/1/2000', periods=8); df = pd.DataFrame(np.random.randn(8, 3), index=index, columns=['A', 'B', 'C'])` 
@@ -59,7 +63,7 @@
 * Add multiple new columns: `df = df.assign(c1='1', c2='2'); df[['c1', 'c2']] = pd.DataFrame([[np.nan, 3]], index=df.index)`
 * Performance: `%timeit df_arrow = pd.read_csv("data.csv", engine='pyarrow', dtype_backend='pyarrow')`
 * [copy_on_write](https://stackoverflow.com/questions/23296282/what-rules-does-pandas-use-to-generate-a-view-vs-a-copy)
-* 
+* check duplicated rows: df[df.duplicated()]
 
 ### [Grouping and aggregating](https://pbpython.com/groupby-agg.html)
 * prefer to use dictionaries for aggregations
@@ -177,4 +181,4 @@
 * [Pandas notebook](https://github.com/ageron/handson-ml2/blob/master/tools_pandas.ipynb)
 * [Matplotlib notebook](https://github.com/ageron/handson-ml2/blob/master/tools_matplotlib.ipynb)
 * [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
-* [pandas profiling](https://thenextweb.com/syndication/2020/10/12/10-simple-python-tips-to-speed-up-your-data-analysis/)
+
