@@ -42,7 +42,8 @@
 * `[[ $# -eq ]] && { echo "Usage: $0 format"; exit 1; }`
 * Numberic comparison: `[[ $a -lt $b ]] && echo ok`. alphabetic comparison: `[[ $a < $b ]] && echo ok`
 * http://linuxcommand.org/lc3_lts0080.php
-
+* [Shell Parameter Expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
+* 
 
 ### awk
 * `awk '{print $1,$2}'`; printf
