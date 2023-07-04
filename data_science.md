@@ -4,7 +4,8 @@
 * [matplotlib cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Matplotlib_Cheat_Sheet.pdf)
 
 ## EDA (Exploratory Data Analysis)
-* [profiling](https://github.com/ydataai/ydata-profiling)
+* [A Data Scientist’s Essential Guide to Exploratory Data Analysis](https://towardsdatascience.com/a-data-scientists-essential-guide-to-exploratory-data-analysis-25637eee0cf6): Dataset Overview and Descriptive Statistics, Feature Assessment and Visualization, Data Quality Evaluation
+* [ydata-profiling ](https://github.com/ydataai/ydata-profiling)
 * [Pandas visualization](https://pandas.pydata.org/docs/user_guide/visualization.htm)
 * [Easy and Simple Syntax of Pandas for Data Visualization](https://medium.com/@shouke.wei/easy-and-simple-syntax-of-pandas-for-data-visualization-c213e232ec46)
 * [plotly interactive](https://plotly.com/python/pandas-backend/)
