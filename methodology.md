@@ -61,6 +61,10 @@
   Flexibility: encapsulate a family of algorithms. change behavior at runtime.
 * Strive for __loosely coupled designs__ between objects that interact.
 * __Open-Closed__: classes should be open for extension, but closed for modification.
+* __Dependency Inversion__: Depend upon abstractions. Do not depend upon concrete classes.
+  * No variable should hold a reference to a concrete class.
+  * No class should derive from a concrete class.
+  * No method should override an implemented method of any of its base classes.
 
 
 ## Concepts
@@ -72,8 +76,8 @@
 ### Abstract Factory
 Produce families of related objects without specifying their concrete classes.
 
-### Factory Method
-Provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+### [Factory Method](https://refactoring.guru/design-patterns/factory-method)
+Defines an interface for creating an objects but let subclasses to decide which class to instantiate. Factory Method lets a class defer instantiation to subclass.
 
 ## Behavioral Patterns
 ### [Strategy](https://refactoring.guru/design-patterns/strategy)
