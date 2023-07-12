@@ -73,8 +73,8 @@
 * OO Basics: abstraction, encapsulation, polymorphism, inheritance.
 
 ## Creational Patterns
-### Abstract Factory
-Produce families of related objects without specifying their concrete classes.
+### [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
+Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 ### [Factory Method](https://refactoring.guru/design-patterns/factory-method)
 Defines an interface for creating an objects but let subclasses to decide which class to instantiate. Factory Method lets a class defer instantiation to subclass.
