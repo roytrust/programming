@@ -1,15 +1,13 @@
 ## [Tips](tips.md)
 1. [Jupyter online](https://jupyter.org/try)
 2. [venv, module, reload, import](common.md#modules)
-3. [Environment variable](common.md)
+3. [args, shell, environment](common.md#env)
 4. [logging](common.md#logging)
 5. [exception](common.md#exception)
 6. [Date time](common.md#datetime)
 7. [iteration](common.md#iteration)
 11. [Asterisk `*,**` prefix operator](common.md#asterisk--prefix-operator)
 16. [regex: regular expression](common.md#regex)
-27. argparse: `parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter) # show default; add_argument(help="(default: %(default)s)")
-    nargs='*' # list like 1 2. + 1 or more; action='append' # multi times`
 1. [Memory mapped file mmap](https://realpython.com/python-mmap/). `mmap.mmap(file_obj.fileno(), length=0, access=mmap.ACCESS_READ); mmap_obj[10:20] # as string; `
 1. [from dataclasses import dataclass](https://realpython.com/python-data-classes/). `@dataclass(order=True); make_dataclass('Position', ['name', 'lat', 'lon']); typing.Any; cards: List[PlayingCard] = field(default_factory=make_french_deck)`
 1. Run script interactive: python -i
