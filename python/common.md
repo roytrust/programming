@@ -35,34 +35,15 @@
 * Exception group: `try: raise ExceptionGroup("test2", [TypeError("int"), ValueError(654)])  except* ValueError as err: print(f"handling ValueError: {err.exceptions}")`
 
 ### Datetime
-* [datetime formatting](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)
-```python
-# current date time
-from datetime import datetime
-datetime.now(); datetime.now().time(); datetime.now().date()
-now.strftime('%Y%m%d')
-datetime.strptime('20200801', '%Y%m%d').weekday()
-from datetime import date; date.today()
-datetime.timedelta(days=1)
-```
-* Timezone: `from zoneinfo import ZoneInfo; tz=ZoneInfo("America/Vancouver"); ts = datetime.now(tz=ZoneInfo("America/Vancouver")); ts.astimezone(ZoneInfo("Europe/Oslo")); zoneinfo.available_timezones(); hour = timedelta(hours=1); (ts + 1 * hour).astimezone(tz); tz.utcoffset(datetime(1995, 1, 1)) / hour; tz.tzname(datetime(2021, 1, 28))`
+* [datetime formatting](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)  
+  `from datetime import datetime; datetime.now(); datetime.now().time(); datetime.now().date(); datetime.timedelta(days=1)`  
+  `now.strftime('%Y%m%d'); datetime.strptime('20200801', '%Y%m%d').weekday(); from datetime import date; date.today()`
+* Timezone: `from zoneinfo import ZoneInfo; tz=ZoneInfo("America/Vancouver"); ts = datetime.now(tz=ZoneInfo("America/Vancouver")); ts.astimezone(ZoneInfo("Europe/Oslo"));`
+  `zoneinfo.available_timezones(); hour = timedelta(hours=1); (ts + 1 * hour).astimezone(tz); tz.utcoffset(datetime(1995, 1, 1)) / hour; tz.tzname(datetime(2021, 1, 28))`
 
 ### [Asterisk `*,**` prefix operator](https://treyhunner.com/2018/10/asterisks-in-python-what-they-are-and-how-to-use-them/)
-* unpack into function call. 
-```python
-print(*sys.verson_info)
-list(row) for row in zip(*lists)
-
-```
-* pack arguments to func
-```python
-def tag(tag_name, **attributes):
-    attribute_list = [
-        f'{name}="{value}"'
-        for name, value in attributes.items()
-    ]
-    return f"<{tag_name} {' '.join(attribute_list)}>"
-```
+* unpack into function call: `print(*sys.verson_info); list(row) for row in zip(*lists)`
+* pack arguments to func: `def tag(tag_name, **attributes): [f'{name}="{value}"' for name, value in attributes.items()]`
 * Positional arguments with keyword only arguments. `func(*p, k)`
 * Keyword only arguments without positional arguments. `func(iterable,*,k)`
 * tuple unpacking. `f,*r,l=alist`
