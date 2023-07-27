@@ -1,7 +1,7 @@
 ## JavaScript
 * Tryout: http://jsbin.com/
 * onClick, onChange, event.target.value
-* Spread operator {...userInput} 
+* [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment): `{...userInput}; function f(a, ...theArgs){}; const obj={a:1,b:2};const {a,b}=obj;`
 * Prevent default submit: `event.preventDefault()`
 * [template literal](https://www.w3schools.com/js/js_string_templates.asp): ``` `${}` ```
 * [Arrow function](https://www.w3schools.com/js/js_arrow_function.asp)
