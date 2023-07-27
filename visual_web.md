@@ -3,7 +3,8 @@
 * onClick, onChange, event.target.value
 * Spread operator {...userInput} 
 * Prevent default submit: `event.preventDefault()`
-* template literal: ``` `${}` ```
+* [template literal](https://www.w3schools.com/js/js_string_templates.asp): ``` `${}` ```
+* [Arrow function](https://www.w3schools.com/js/js_arrow_function.asp)
 * `'use strict'`
 * `localStorage.setItem('key', 'value'); localStorage.getItem('key'); removeItem()`
 * `id=setTimeout((), 500) // milliseconds; clearTimeout(id)`
