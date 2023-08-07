@@ -1,5 +1,7 @@
 ## Linux/Unix
 ### Tips
+* Check executable: `type cmd`. Real path: `realpath pth`
+* Check functions: `typeset -f; typeset -f func`
 * ldd /bin/ls
 * ps aux; ps ef
 * memory: free
