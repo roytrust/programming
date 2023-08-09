@@ -79,7 +79,7 @@ Provides an interface for creating families of related or dependent objects with
 ### [Factory Method](https://refactoring.guru/design-patterns/factory-method)
 Defines an interface for creating an objects but let subclasses to decide which class to instantiate. Factory Method lets a class defer instantiation to subclass.
 
-## Singleton
+### Singleton
 
 ## Behavioral Patterns
 ### [Strategy](https://refactoring.guru/design-patterns/strategy)
