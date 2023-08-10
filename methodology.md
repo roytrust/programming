@@ -4,8 +4,8 @@
 
 
 ## Coaching
-* Coochie is not about fixing people problems; it is about believing in people and helping them grow.
-* tean build: conversational turn-taking, ostentatious listening -> psychological safety
+* Cooching is not about fixing people problems; it is about believing in people and helping them grow.
+* team build: conversational turn-taking, ostentatious listening -> psychological safety
 * Facilitative skills: emotional intelligence, connecting the dots, active listening, powerful questions, engaging conflict, flexibility
 * Elements of EQ
   * Self-awareness: knowing how you feel
@@ -65,6 +65,11 @@
   * No variable should hold a reference to a concrete class.
   * No class should derive from a concrete class.
   * No method should override an implemented method of any of its base classes.
+* Principle of **Least Knowledge**: talk only to your immediate friends.
+  * The object itself
+  * Objects passed in as a parameter to the method
+  * Any object the method creates or instantiates
+  * Any components of the object
 
 
 ## Concepts
@@ -110,7 +115,12 @@ defines the skeleton of an algorithm in the superclass but lets subclasses overr
 ## Structural Patterns
 ### [Decorator](https://refactoring.guru/design-patterns/decorator)
 * Attaches additional responsibilities to an object dynamically, by placing these objects inside special wrapper objects that contain the behaviors. Decorators provide a flexible alternative to subclassing for extending fucntionality.
-* 
+
+### [Adapter](https://refactoring.guru/design-patterns/adapter)
+* Converts the interface of a class into another interface clients expect. Lets classes work together that couldn't otherwise because of incompatible interfaces.
+### [Facade](https://refactoring.guru/design-patterns/facade)
+* Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
+
 
 ## References
 * https://refactoring.guru/design-patterns
