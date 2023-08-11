@@ -70,6 +70,9 @@
   * Objects passed in as a parameter to the method
   * Any object the method creates or instantiates
   * Any components of the object
+*  **Don't call us, we'll call you**
+  * Prevent "dependency rot". Allow low-level components to hook themselves into a system, but the high-level components determine when are needed, and how.
+  * DI avoid the use of concrete classes and instead work as much as possible with abstractions.
 
 
 ## Concepts
@@ -80,10 +83,10 @@
 
 ## Creational Patterns
 ### [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
-Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+* Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 ### [Factory Method](https://refactoring.guru/design-patterns/factory-method)
-Defines an interface for creating an objects but let subclasses to decide which class to instantiate. Factory Method lets a class defer instantiation to subclass.
+* Defines an interface for creating an objects but let subclasses to decide which class to instantiate. Factory Method lets a class defer instantiation to subclass.
 
 ### Singleton
 
@@ -109,8 +112,15 @@ Defines an interface for creating an objects but let subclasses to decide which 
 * Commands may also be used to implement logging and transactional systems.
 * Turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
 
-### Template Method
-defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+### [Template Method](https://refactoring.guru/design-patterns/template-method)
+* Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+* Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
+* Methods: concrete, abstract, hook
+* Hooks are methods that do nothing or default behavior in the abstract class, but may be override in the subclass.
+* High-level modules decide how and when to call low-level modules.
+* The strategy and template method patterns both encapsulate algorithms, the first by composition and the other by inheritance.
+* Factory method is a specialization of template method.
+* For creating frameworks.
 
 ## Structural Patterns
 ### [Decorator](https://refactoring.guru/design-patterns/decorator)
