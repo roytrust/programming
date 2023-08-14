@@ -70,7 +70,7 @@
   * Objects passed in as a parameter to the method
   * Any object the method creates or instantiates
   * Any components of the object
-*  **Don't call us, we'll call you**
+* **Don't call us, we'll call you**
   * Prevent "dependency rot". Allow low-level components to hook themselves into a system, but the high-level components determine when are needed, and how.
   * DI avoid the use of concrete classes and instead work as much as possible with abstractions.
 
