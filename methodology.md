@@ -73,7 +73,8 @@
 * **Don't call us, we'll call you**
   * Prevent "dependency rot". Allow low-level components to hook themselves into a system, but the high-level components determine when are needed, and how.
   * DI avoid the use of concrete classes and instead work as much as possible with abstractions.
-
+* **Single Responsibility**: A class should have only one reason to change. Cohesion.
+* 
 
 ## Concepts
 * __algorithm__ always defines a clear set of actions that can achieve some goal, a __pattern__ is a more high-level description of a solution. algorithm is a cooking recipe, a pattern is more like a blueprint.
@@ -122,6 +123,11 @@
 * Factory method is a specialization of template method.
 * For creating frameworks.
 
+### [Iterator](https://refactoring.guru/design-patterns/iterator)
+* Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+* An Iterator takes the job of iterating over an aggregate and encapsulates it in another object.
+* Iterable return an Iterator.
+
 ## Structural Patterns
 ### [Decorator](https://refactoring.guru/design-patterns/decorator)
 * Attaches additional responsibilities to an object dynamically, by placing these objects inside special wrapper objects that contain the behaviors. Decorators provide a flexible alternative to subclassing for extending fucntionality.
@@ -131,6 +137,10 @@
 ### [Facade](https://refactoring.guru/design-patterns/facade)
 * Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
 
+### [Composite](https://refactoring.guru/design-patterns/composite)
+* Compose objects into tree structure to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+* A component is any object in a Composite structure. Components may be other composites or leaves.
+* Balance transparency and safety.
 
 ## References
 * https://refactoring.guru/design-patterns
