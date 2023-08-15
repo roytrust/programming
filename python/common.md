@@ -34,6 +34,7 @@
 * pdb ! run code. alias in ~/.pdbrc
 * Notes: `err = ValueError(123); err.add_note("Enriching Exceptions with Notes"); err.__notes__; raise err`
 * Exception group: `try: raise ExceptionGroup("test2", [TypeError("int"), ValueError(654)])  except* ValueError as err: print(f"handling ValueError: {err.exceptions}")`
+* `exec("try 1/0\nexcept Exception as e:exc=e;args,  __traceback__, with_traceback(), __cause__`
 
 ### Datetime
 * [datetime formatting](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)  
