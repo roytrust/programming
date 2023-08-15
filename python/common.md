@@ -27,7 +27,8 @@
 * Run script interactive: python -i
 * Check version: `sys.version_info >= (3, 11)`
     
-### exception
+### [exception](https://docs.python.org/3/library/exceptions.html)
+* raise [expression [from another_expression]]. A func returns exception. exc.args - multi args.
 * sys.exc_info(), logging.exception(e), repr(e)
 * traceback.print_exc()
 * pdb ! run code. alias in ~/.pdbrc
