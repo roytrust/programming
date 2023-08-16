@@ -49,6 +49,19 @@
 * Daily selfhrenewal
 
 # [Design Patterns](https://refactoring.guru/design-patterns)
+## Concepts
+* A **Pattern** is a solution to a problem in a context.
+  * The **context** is the situation in which the pattern applies. This should be a recurring situation.
+  * The **problem** refers to the goal you are trying to achieve in this context, but it also refers to any constraints that occur in the context.
+  * The **solution** is what you're after: a general design that anyone can apply that resolves the goal and set of constraints.
+* __algorithm__ always defines a clear set of actions that can achieve some goal, a __pattern__ is a more high-level description of a solution. algorithm is a cooking recipe, a pattern is more like a blueprint.
+* Patterns aren't invented, they are discovered.
+* OO Basics: abstraction, encapsulation, polymorphism, inheritance.
+* __Null Objects__: don't have a meaningful object to return, and yet want to remove the responsibility for handling null from the client.
+* Compound Patterns: combines two or more patterns into a solution that solves a recurring or general problem. MVC.
+* 
+
+
 ## Design Principle
 * __Encapsulate what varies__. Identify the aspects of your application that vary and separate them from what stays the same.  
   Take the parts that vary and encapsulate them, so that later you can alter or extend the parts that vary without affecting those that don't.
@@ -74,15 +87,7 @@
   * Prevent "dependency rot". Allow low-level components to hook themselves into a system, but the high-level components determine when are needed, and how.
   * DI avoid the use of concrete classes and instead work as much as possible with abstractions.
 * **Single Responsibility**: A class should have only one reason to change. Cohesion.
-* 
-
-## Concepts
-* __algorithm__ always defines a clear set of actions that can achieve some goal, a __pattern__ is a more high-level description of a solution. algorithm is a cooking recipe, a pattern is more like a blueprint.
-* Patterns aren't invented, they are discovered.
-* OO Basics: abstraction, encapsulation, polymorphism, inheritance.
-* __Null Objects__: don't have a meaningful object to return, and yet want to remove the responsibility for handling null from the client.
-* Compound Patterns: combines two or more patterns into a solution that solves a recurring or general problem. MVC.
-* 
+ 
 
 ## Creational Patterns
 ### [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
