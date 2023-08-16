@@ -81,6 +81,8 @@
 * Patterns aren't invented, they are discovered.
 * OO Basics: abstraction, encapsulation, polymorphism, inheritance.
 * __Null Objects__: don't have a meaningful object to return, and yet want to remove the responsibility for handling null from the client.
+* Compound Patterns: combines two or more patterns into a solution that solves a recurring or general problem. MVC.
+* 
 
 ## Creational Patterns
 ### [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
