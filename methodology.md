@@ -153,6 +153,10 @@
 * A component is any object in a Composite structure. Components may be other composites or leaves.
 * Balance transparency and safety.
 
+### [Proxy: controlling object access](https://refactoring.guru/design-patterns/proxy)
+* Provide a surrogate or placeholder for another object to control access to it.
+* Remote, Virtual, Protection, caching, firewall, synchronization, smart reference, logging.
+
 ## References
 * https://refactoring.guru/design-patterns
 
