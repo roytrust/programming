@@ -101,7 +101,8 @@
 ### [Factory Method](https://refactoring.guru/design-patterns/factory-method)
 * Defines an interface for creating an objects but let subclasses to decide which class to instantiate. Factory Method lets a class defer instantiation to subclass.
 
-### Singleton
+### [Singleton](https://refactoring.guru/design-patterns/singleton)
+* ensure that a class has only one instance, while providing a global access point to this instance.
 
 ## Behavioral Patterns
 ### [Strategy](https://refactoring.guru/design-patterns/strategy)
@@ -168,6 +169,11 @@
 ### [Proxy: controlling object access](https://refactoring.guru/design-patterns/proxy)
 * Provide a surrogate or placeholder for another object to control access to it.
 * Remote, Virtual, Protection, caching, firewall, synchronization, smart reference, logging.
+
+### [Bridge](https://refactoring.guru/design-patterns/bridge)
+* Lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
+* _Abstraction_ (also called interface) is a high-level control layer for some entity. This layer isn’t supposed to do any real work on its own. It should delegate the work to the _implementation_ layer (also called platform).
+* simplifies code maintenance and minimizes the risk of breaking existing code.
 
 ## References
 * https://refactoring.guru/design-patterns
