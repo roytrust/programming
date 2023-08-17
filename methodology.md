@@ -147,7 +147,10 @@
 * The State Pattern allows a Context to change its behavior as the state of the Context changes.
 * State transitions can be controlled by the State classes or by the Context classes.
 * State classes may be shared among Context instances.
+### [Chain of Resposibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
+* Pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
+  
 ## Structural Patterns
 ### [Decorator](https://refactoring.guru/design-patterns/decorator)
 * Attaches additional responsibilities to an object dynamically, by placing these objects inside special wrapper objects that contain the behaviors. Decorators provide a flexible alternative to subclassing for extending fucntionality.
