@@ -58,7 +58,12 @@
 * Patterns aren't invented, they are discovered.
 * OO Basics: abstraction, encapsulation, polymorphism, inheritance.
 * __Null Objects__: don't have a meaningful object to return, and yet want to remove the responsibility for handling null from the client.
-* Compound Patterns: combines two or more patterns into a solution that solves a recurring or general problem. MVC.
+* __Compound Patterns__: combines two or more patterns into a solution that solves a recurring or general problem. MVC.
+* Principles, tradeoffs
+* Patterns are tools, not rules--they need to be tweeked and adapted to your problem.
+* Let Design Patterns emerge in your designs; don't force them in just for the sake of using a pattern.
+* Always use the simplest solution that meets your needs, even if it doesn't include a pattern.
+* Build your team's shared vocabulary. This is one of the most powerful benefits of using patterns.
 * 
 
 
