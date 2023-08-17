@@ -97,12 +97,13 @@
 ## Creational Patterns
 ### [Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)
 * Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
-
 ### [Factory Method](https://refactoring.guru/design-patterns/factory-method)
 * Defines an interface for creating an objects but let subclasses to decide which class to instantiate. Factory Method lets a class defer instantiation to subclass.
-
 ### [Singleton](https://refactoring.guru/design-patterns/singleton)
 * ensure that a class has only one instance, while providing a global access point to this instance.
+### [Builder](https://refactoring.guru/design-patterns/builder)
+* Construct complex objects step by step. Allows you to produce different types and representations of an object using the same construction code.
+* Get rid of a “telescoping constructor”.
 
 ## Behavioral Patterns
 ### [Strategy](https://refactoring.guru/design-patterns/strategy)
@@ -110,10 +111,8 @@
 * __context__ must have a field for storing a reference to one of the strategies. The context delegates the work to a linked strategy object instead of executing it on its own.
 * __client__ passes the desired strategy to the context. In fact, the context doesn’t know much about strategies. It works with all strategies through the same generic interface, which only exposes a single method for triggering the algorithm encapsulated within the selected strategy.
 * This way the context becomes independent of concrete strategies, so you can add new algorithms or modify existing ones without changing the code of the context or other strategies.
-
 ### [Observer](https://refactoring.guru/design-patterns/observer)
 * Defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically. Subject, observer.
-
 ### [Command: encapsulate invocation](https://refactoring.guru/design-patterns/command)
 * Encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queue or log requests, and support undoable operations.
 * Decouples an object making a request from the one that knows how to perform it.
@@ -125,7 +124,6 @@
 * In practice, it's not uncommon for "smart" Command objects to implement the request themselves rather than delegating to a receiver.
 * Commands may also be used to implement logging and transactional systems.
 * Turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
-
 ### [Template Method](https://refactoring.guru/design-patterns/template-method)
 * Define the skeleton of an algorithm in an operation, deferring some steps to subclasses. Lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
 * Defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
@@ -135,12 +133,10 @@
 * The strategy and template method patterns both encapsulate algorithms, the first by composition and the other by inheritance.
 * Factory method is a specialization of template method.
 * For creating frameworks.
-
 ### [Iterator](https://refactoring.guru/design-patterns/iterator)
 * Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 * An Iterator takes the job of iterating over an aggregate and encapsulates it in another object.
 * Iterable return an Iterator.
-
 ### [State](https://refactoring.guru/design-patterns/state)
 * Lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
 * Unlike a procedural state machine, the State pattern represents each state as a full-blown class.
@@ -155,21 +151,17 @@
 ## Structural Patterns
 ### [Decorator](https://refactoring.guru/design-patterns/decorator)
 * Attaches additional responsibilities to an object dynamically, by placing these objects inside special wrapper objects that contain the behaviors. Decorators provide a flexible alternative to subclassing for extending fucntionality.
-
 ### [Adapter](https://refactoring.guru/design-patterns/adapter)
 * Converts the interface of a class into another interface clients expect. Lets classes work together that couldn't otherwise because of incompatible interfaces.
 ### [Facade](https://refactoring.guru/design-patterns/facade)
 * Provides a unified interface to a set of interfaces in a subsystem. Facade defines a higher-level interface that makes the subsystem easier to use.
-
 ### [Composite](https://refactoring.guru/design-patterns/composite)
 * Compose objects into tree structure to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
 * A component is any object in a Composite structure. Components may be other composites or leaves.
 * Balance transparency and safety.
-
 ### [Proxy: controlling object access](https://refactoring.guru/design-patterns/proxy)
 * Provide a surrogate or placeholder for another object to control access to it.
 * Remote, Virtual, Protection, caching, firewall, synchronization, smart reference, logging.
-
 ### [Bridge](https://refactoring.guru/design-patterns/bridge)
 * Lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
 * _Abstraction_ (also called interface) is a high-level control layer for some entity. This layer isn’t supposed to do any real work on its own. It should delegate the work to the _implementation_ layer (also called platform).
