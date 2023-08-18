@@ -169,6 +169,11 @@
 * Lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation—which can be developed independently of each other.
 * _Abstraction_ (also called interface) is a high-level control layer for some entity. This layer isn’t supposed to do any real work on its own. It should delegate the work to the _implementation_ layer (also called platform).
 * simplifies code maintenance and minimizes the risk of breaking existing code.
+### [Flyeight](https://refactoring.guru/design-patterns/flyweight)
+* One instance of a class can be used to provide many virtual instances.
+* _Intrinsic state_ lives within the object.  Pass _extrinsic_ state to specific methods which rely on it.
+* When a program must support a huge number of objects which barely fit into available RAM.
+
 
 ## References
 * https://refactoring.guru/design-patterns
