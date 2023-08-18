@@ -149,7 +149,8 @@
 * State classes may be shared among Context instances.
 ### [Chain of Resposibility](https://refactoring.guru/design-patterns/chain-of-responsibility)
 * Pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
-
+### [Memento](https://refactoring.guru/design-patterns/memento)
+* Save and restore the previous state of an object without revealing the details of its implementation.
   
 ## Structural Patterns
 ### [Decorator](https://refactoring.guru/design-patterns/decorator)
