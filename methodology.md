@@ -66,7 +66,6 @@
 * Build your team's shared vocabulary. This is one of the most powerful benefits of using patterns.
 * 
 
-
 ## Design Principle
 * __Encapsulate what varies__. Identify the aspects of your application that vary and separate them from what stays the same.  
   Take the parts that vary and encapsulate them, so that later you can alter or extend the parts that vary without affecting those that don't.
@@ -151,6 +150,9 @@
 * Pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 ### [Memento](https://refactoring.guru/design-patterns/memento)
 * Save and restore the previous state of an object without revealing the details of its implementation.
+### [Visitor](https://refactoring.guru/design-patterns/visitor)
+* Separate algorithms from the objects on which they operate.
+* Add capabilities to a composite of objects and encapsulation is not important.
   
 ## Structural Patterns
 ### [Decorator](https://refactoring.guru/design-patterns/decorator)
