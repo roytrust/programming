@@ -103,6 +103,9 @@
 ### [Builder](https://refactoring.guru/design-patterns/builder)
 * Construct complex objects step by step. Allows you to produce different types and representations of an object using the same construction code.
 * Get rid of a “telescoping constructor”.
+### Prototype
+* Copy existing objects without making your code dependent on their classes.
+* Delegates the cloning process to the actual objects that are being cloned. The pattern declares a common interface for all objects that support cloning. 
 
 ## Behavioral Patterns
 ### [Strategy](https://refactoring.guru/design-patterns/strategy)
