@@ -11,6 +11,7 @@
 * [plotly interactive](https://plotly.com/python/pandas-backend/)
 
 ## pandas
+* [Select rows and columns in MultiIndex dataframe](https://kanoki.org/2022/07/25/pandas-select-slice-rows-columns-multiindex-dataframe/)
 * DataFrame: A set of pandas Series that shares the same index.
 * `df = pd.DataFrame(np.random.rand(n, 3), columns=list('abc')); index = pd.date_range('1/1/2000', periods=8); df = pd.DataFrame(np.random.randn(8, 3), index=index, columns=['A', 'B', 'C'])` 
 * From text: `df = pd.read_csv(io.StringIO(text), header=0, index_col=0, sep='\s+')`
