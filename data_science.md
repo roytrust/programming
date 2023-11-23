@@ -34,7 +34,7 @@
 * Custom conversion: `f(x,**kwargs); df['c'].apply(f, a=1)`
 * Datetime: `d=np.to_datetime('2020-05-01'); d.weekofyear; d.strftime(format); pd.Timedelta(days=1); df['date'].dt.date; ` np.to_numeric()
 * functools.reduce()
-* filter(), map()
+* [filter()](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.filter.html), map()
 * read_csv(nrows=n)
 * Slice by mask: `df[mask]; isin([]); isin(dict)`
 * df[co].last_valid_index; first_valid_index
