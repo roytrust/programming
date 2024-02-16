@@ -11,7 +11,7 @@
 * `pip cache info`, `pip config list`
 * 3rd party dependences: `{m for m in sys.modules if "." not in m} - sys.stdlib_module_names`
 * `from importlib import metadata; metadata.requires("pandas")`
-*
+* replace module: `sys.modules['somemodule'] = __import__('somefakemodule')`
 
 ### logging
 * Reset log level: logging.getLogger().setLevel(logging.DEBUG)
