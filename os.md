@@ -32,6 +32,7 @@
 * Remove/cut first n chars: `${var:1}`. Exclude by pattern: `${var#p}`
 * [How to detect if a script is being sourced](https://stackoverflow.com/questions/2683279/how-to-detect-if-a-script-is-being-sourced): `case ${0##*/} in dash|-dash|bash|-bash|ksh|-ksh|sh|-sh) IS_SOURCED=1;; esac`
 * [Test IO disk/storage performance/speed](https://www.cyberciti.biz/faq/howto-linux-unix-test-disk-performance-with-dd-command/): `dd if=/dev/zero of=testfile bs=1M count=1000; dd if=testfile of=/dev/null bs=8k`
+* Check system services: `systemctl status sendmail`
 
 ### Shell expansion
 * Pathname Expansion: echo *; echo [[:upper:]]*
