@@ -68,6 +68,8 @@
 * Performance: `%timeit df_arrow = pd.read_csv("data.csv", engine='pyarrow', dtype_backend='pyarrow')`
 * [copy_on_write](https://stackoverflow.com/questions/23296282/what-rules-does-pandas-use-to-generate-a-view-vs-a-copy)
 * check duplicated rows: df[df.duplicated()]
+* backfill when value matches another column: `df.update(df.groupby('ID').bfill())`
+* 
 
 ### [Grouping and aggregating](https://pbpython.com/groupby-agg.html)
 * prefer to use dictionaries for aggregations
