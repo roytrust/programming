@@ -19,7 +19,7 @@
 4. [namedtuple](https://realpython.com/python-namedtuple/): `from collections import namedtuple; Point = namedtuple("Point", "x, y")`
 5. [Structural Pattern Matching](https://realpython.com/python310-new-features/#structural-pattern-matching): `match user: case {"dob": {"age": int(age)}}:; `. 
    sequence pattern, wildcard pattern, class pattern, OR pattern, value pattern. literal. `match (mod_3, mod_5): case (_, 0): case _:`
-6. 
+6. [mock](test_debug.md#mock)
 
 ### [Decorators](https://realpython.com/primer-on-python-decorators/)
 * [@lru_cache, @total_ordering, @contextmanager, @property, @cached_property, @classmethod, @staticmethod, @dataclass, @atexit.register](https://medium.com/techtofreedom/9-python-built-in-decorators-that-optimize-your-code-significantly-bc3f661e9017). 
