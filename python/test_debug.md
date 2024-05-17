@@ -2,6 +2,11 @@
 * [most recently raised exception](https://wil.yegelwel.com/pdb-pm/): `import pdb; pdb.pm()`. u - up. 
 * 
 
+### Mock
+* [Understanding the Python Mock Object Library](https://realpython.com/python-mock-library/)
+* Mock, fake import package: `from unittest import mock; sys.modules['a.b']=mock.MagicMock()`
+* Replace a package: `sys.modules['B'] = __import__('mock_B')`
+
 ### [Pytest](https://realpython.com/pytest-python-testing/)
 * log config: `-v -o log_cli=true --log-cli-level=DEBUG --capture=tee-sys`
 * **Fixtures** for handling test dependencies, state, and reusable functionality
