@@ -1,5 +1,6 @@
 ## JavaScript
 * Tryout: http://jsbin.com/
+* [Test css selector](https://www.glowmetrics.com/blog/how-to-test-css-selectors-using-the-chrome-dev-console/): `document.querySelectorAll(‘.button’)`
 * onClick, onChange, event.target.value
 * [Destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment): `{...userInput}; function f(a, ...theArgs){}; const obj={a:1,b:2};const {a,b}=obj;`
 * Prevent default submit: `event.preventDefault()`
