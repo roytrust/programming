@@ -18,6 +18,7 @@
 * `logging.basicConfig(format='%(asctime)s %(message)s', level=os.environ.get('LOGLEVEL', 'INFO'))`
 * [logging tips](https://realpython.com/python-logging/): `logging.error(msg, exc_info=True); logging.exception()`
 * [tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
+* logging.root.manager.loggerDict
 
 ### <a id=env> Args, shell, env
 * argparse: `parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter) # show default; add_argument(help="(default: %(default)s)")
