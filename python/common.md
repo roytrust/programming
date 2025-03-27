@@ -16,7 +16,7 @@
 ### logging
 * Reset log level: logging.getLogger().setLevel(logging.DEBUG)
 * `logging.basicConfig(format='%(asctime)s %(message)s', level=os.environ.get('LOGLEVEL', 'INFO'))`
-* [https://docs.python.org/3/howto/logging-cookbook.html](Logging cookbook: formatter)
+* [Logging cookbook: formatter](https://docs.python.org/3/howto/logging-cookbook.html)
 * [logging tips](https://realpython.com/python-logging/): `logging.error(msg, exc_info=True); logging.exception()`
 * [tutorial](https://docs.python.org/3/howto/logging.html#logging-basic-tutorial)
 * logging.root.manager.loggerDict
