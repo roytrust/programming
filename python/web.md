@@ -25,6 +25,8 @@ urllib.request.install_opener(opener)
 * Disable security check: `chrome.exe --user-data-dir="C:\Users\user1\chomedev" --disable-web-security --disable-site-isolation-trials`
 * Switch tab: `driver.switch_to.window(driver.window_handles[-1])`
 * Open new tab or url: `driver.execute_script("window.open('');")`
+* [Download file](https://scrapingant.com/blog/selenium-download-file)
+* [ScrapeOps: download file](https://scrapeops.io/selenium-web-scraping-playbook/python-selenium-downloading-a-file/)
 
 ### requests
 * `import requests; r=requests.get("https://httpbin.org/get"); r.content; r.text; r.status_code, r.headers['Content-Type']; r.request.headers`
